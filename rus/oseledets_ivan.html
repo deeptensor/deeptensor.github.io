@@ -1,0 +1,2640 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta http-equiv="content-type" 
+   content="text/html; charset=utf-8" />
+        <meta name="viewport" 
+         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="keywords" 
+   content="Тензорные сети, глубинное обучение, глубокое обучение, нейронные сети, Иван Валерьевич Оселедец" />
+  <meta name="description" 
+   content="Лаборатория Тензорные сети и глубинное обучение для интеллектуального анализа данных под руководством доктора Анджея Чихоцкого | Сотрудник Иван Валерьевич Оселедец" />
+     <title>
+      И. В. Оселедец
+     </title>
+        
+<style type="text/css">
+
+   @import url('https://fonts.googleapis.com/css?family=Bad+Script|Jura:300,400,600|Open+Sans+Condensed:300,300i,700|Pattaya|Play:400,700|Ruslan+Display|Russo+One');
+  
+
+    .nav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background: #6B7E51;
+    }
+    .nav li {
+
+    }
+    .nav a {
+        display: inline-block;
+        margin: 0;
+        padding: 1.0rem;
+        text-decoration: none;
+        font-family: 'Jura', sans-serif;
+        font-weight: 600; /*For Jura: 300 400 600*/
+        font-size: 0.9rem;
+        color: white;
+    }
+    .nav a:hover {
+        text-decoration: underline;
+        background-color: #003A56;
+    }
+    .nav a.active_link {
+        cursor: default;
+    }
+    .nav a.active_link, .nav a.active_parent_link {
+        text-decoration: none;
+        text-decoration: underline;
+        background-color: #6B7E51;
+        color: #003A56;
+    }
+
+ @media all and (max-width: 1000px) {
+    .nav li {
+        flex: 1 0 30%;
+        color: red;
+    }
+}
+ @media all and (max-width: 10px) {
+    .nav {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .nav li:first-of-type a, .nav a { 
+        text-align: center; 
+        padding: 10px;
+        border-left: 1px solid deepskyblue;
+        border-right: 1px solid deepskyblue;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .nav li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+ header.root {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #003A56;
+ }
+ header.root a.logo {
+  margin-left: -9px;
+  flex 0;
+ }
+ header.root p.logo {
+  flex: 1000;
+  align-self: center;
+  margin: 0 auto;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5rem;
+  color: rgb(201, 201, 201);
+  padding-left: 1.0rem;
+ }
+ header.root a.langbox {
+  background-image: url("../static//pictures/icons/eng.gif" );
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 1.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.8rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px hidden white;
+  color: white;
+ }
+ header.root a.langbox:hover {
+  border-style: solid;
+  color: #BA0000;
+  box-shadow: 3px 3px 5px 6px white;
+  } 
+
+ @media all and (max-width: 800px) {
+  #p_logo {
+   font-size: 0.8rem;
+
+  }
+}
+
+        #dropdownbox84287074326 {
+            padding: 0;
+        }
+        #dropdownbox84287074326_checkbox {
+            display: none;
+        }
+        #dropdownbox84287074326_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(../static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox84287074326_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox84287074326_checkbox:checked ~ #dropdownbox84287074326_title {
+            background: url(../static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox84287074326_content {
+            display: none;
+        }
+        #dropdownbox84287074326_checkbox:checked ~ #dropdownbox84287074326_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox601257924220 {
+            padding: 0;
+        }
+        #dropdownbox601257924220_checkbox {
+            display: none;
+        }
+        #dropdownbox601257924220_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(../static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox601257924220_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox601257924220_checkbox:checked ~ #dropdownbox601257924220_title {
+            background: url(../static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox601257924220_content {
+            display: none;
+        }
+        #dropdownbox601257924220_checkbox:checked ~ #dropdownbox601257924220_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox434445688856 {
+            padding: 0;
+        }
+        #dropdownbox434445688856_checkbox {
+            display: none;
+        }
+        #dropdownbox434445688856_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(../static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox434445688856_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox434445688856_checkbox:checked ~ #dropdownbox434445688856_title {
+            background: url(../static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox434445688856_content {
+            display: none;
+        }
+        #dropdownbox434445688856_checkbox:checked ~ #dropdownbox434445688856_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox423952336208 {
+            padding: 0;
+        }
+        #dropdownbox423952336208_checkbox {
+            display: none;
+        }
+        #dropdownbox423952336208_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(../static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox423952336208_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox423952336208_checkbox:checked ~ #dropdownbox423952336208_title {
+            background: url(../static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox423952336208_content {
+            display: none;
+        }
+        #dropdownbox423952336208_checkbox:checked ~ #dropdownbox423952336208_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox499272503679 {
+            padding: 0;
+        }
+        #dropdownbox499272503679_checkbox {
+            display: none;
+        }
+        #dropdownbox499272503679_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(../static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox499272503679_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox499272503679_checkbox:checked ~ #dropdownbox499272503679_title {
+            background: url(../static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox499272503679_content {
+            display: none;
+        }
+        #dropdownbox499272503679_checkbox:checked ~ #dropdownbox499272503679_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox378429298137 {
+            padding: 0;
+        }
+        #dropdownbox378429298137_checkbox {
+            display: none;
+        }
+        #dropdownbox378429298137_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(../static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox378429298137_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox378429298137_checkbox:checked ~ #dropdownbox378429298137_title {
+            background: url(../static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox378429298137_content {
+            display: none;
+        }
+        #dropdownbox378429298137_checkbox:checked ~ #dropdownbox378429298137_content {
+            display: block; 
+        }
+    
+
+ .publist ul li:first-of-type {
+  margin-top: 1.0rem;
+ }
+
+ @media only screen and (max-width: 500px) {
+ .publist h1 > a {
+  font-size: 0.9rem;
+ }
+}
+
+
+    
+ @media only screen and (max-width: 800px) {
+        div.widgetname_navsub { 
+            display: none;
+        }
+    }
+
+    .widgetname_navsub {
+        width: 12.0rem;
+        margin: 1.5rem 0 2.0rem 0;
+    }
+    .widgetname_navsub ul { 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        background: #003A56;
+        background: linear-gradient(0deg, rgb(0, 105, 152), #003A56);
+    }
+    .widgetname_navsub a {
+        width: 10.0rem;
+        padding: 1.0rem;
+        display: block;
+        text-decoration: none;
+        font-family: 'Jura', sans-serif;
+        font-weight: 600; /*For Jura: 300 400 600*/
+        font-size: 0.8rem;
+        color: white;
+        border-left: 2.0rem hidden white;
+    }
+    .widgetname_navsub a:hover, .widgetname_navsub a.active_link {
+        background-color: rgb(201, 201, 201);
+        color: #003A56;
+    }
+    .widgetname_navsub a:hover {
+        text-decoration: underline;
+        border: 1px hidden #003A56;
+        box-shadow: 3px 3px 5px 6px #003A56;
+    }
+    .widgetname_navsub a.widgetname_navsub {
+        cursor: default;
+        text-decoration: none;
+        box-shadow: none;
+        border-left: 2.0rem solid #6B7E51;
+    }
+
+
+  main.root {
+   flex-grow: 1;
+   display: flex;
+   flex-flow: row wrap-reverse;
+   justify-content: space-between;
+   background-color: white;
+  }
+  #content_main {
+   padding: 1.0rem;
+   margin: 0;
+   flex: 1 1 330px;
+  }
+ 
+
+ footer.root {
+  background-image: url("../static//pictures/background/blue_net2.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ footer.root, footer.root figure.footer_links_imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+ }
+ footer.root > * {
+  flex: 1 0 auto;
+ }
+ footer.root .footer_info {
+  flex: 1000 0 15.0rem;  
+  padding: 0.9rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: rgb(201, 201, 201);
+ }
+ footer.root .footer_links_imgs img {
+  height: 3.0rem;
+  width: auto;
+ }
+ footer.root .footer_links_imgs img:first-of-type {
+  padding-right: 1.5rem;
+ }
+ @media only screen and (max-width: 400px) {
+  footer.root .footer_info {
+   max-width: 250px;
+  }
+  footer.root .footer_links_imgs img {
+   height: 2.0rem;
+  }
+    }
+
+
+ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,label,textarea,select,p,blockquote,th,td,header,footer,section,ul,li,fugure {
+   margin: 0;
+   padding: 0;
+   border: 0;
+ }
+ .nopadding { padding: 0; }
+ .nomargin { margin: 0; }
+
+ html {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  color: black;
+ }
+ @media all and (max-width:9999px) { html { font-size: 24px; } }
+ @media all and (max-width: 700px) { html { font-size: 20px; } }
+ @media all and (max-width: 500px) { html { font-size: 18px; } }
+
+ body {
+  padding: 0 15px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(201, 201, 201);
+ }
+ .root {
+  margin: 0 auto;
+  width: 100%;
+  min-width:  300px;
+  max-width: 1400px;
+  box-sizing: border-box;
+ }
+ img {
+  padding: 30px;
+ }
+
+/*----- LOADED FONTS (SOURCE: GOOGLE)
+Regular       Open+Sans+Condensed     300,300i,700
+Headers       Play                    400,700
+Nav           Jura                    300,400,600
+Logo(old)     Pattaya
+Logo(old)     Ruslan+Display
+Logo          Russo+One
+Funny text    Bad+Script
+------- */
+
+
+
+
+
+
+p, i, b {
+  font-size: 1.0rem;
+}
+i {
+  font-style: italic;
+}
+b {
+  font-weight: 700;
+}
+
+h1, h1>a, h2, h2>a, h3, h3>a {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  color: #004566;
+}
+h1, h1>a {
+  font-size: 1.4rem;
+}
+h2, h2>a {
+  font-size: 1.2rem;
+}
+h3, h3>a {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.txt_funny {
+  font-family: 'Bad Script', cursive;
+  font-size: 0.8rem;
+}
+.txt_center {
+  text-align: center;
+}
+.pad_left_1x {
+  padding-left: 1.5rem;
+}
+.pad_left_2x {
+  padding-left: 3.0rem;
+}
+.pad_top_1x {
+  padding-top: 1.5rem;
+}
+.pad_top_2x {
+  padding-top: 3.0rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  /*font-family: 'Jura', sans-serif;
+  font-weight: 400;*/
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link_none, .link_broken {
+  pointer-events: none;
+  cursor: default;
+}
+.link_broken {
+  background: url(../static/pictures/icons/cross.png) no-repeat;
+}
+.link_pdf_inner, .link_pdf_outer {
+  background: url(../static/pictures/icons/pdf.png) no-repeat;
+}
+.link_www_inner, .link_www_outer {
+  background: url(../static/pictures/icons/www.png) no-repeat;
+}
+.link_pdf_inner, .link_pdf_outer,
+.link_www_inner, .link_www_outer, .link_none, .link_broken {
+  display: inline-block;
+  background-size: 1.0rem, 1.0rem;
+  padding-left: 1.2rem;
+  background-position: left center;
+}
+.link_pdf_inner:hover, .link_pdf_outer:hover,
+.link_www_inner:hover, .link_www_outer:hover {
+  text-decoration: none;
+  background-size: 1.2rem 1.2rem;
+  background-position: left top;
+}
+/*
+a[href$=".pdf"] {
+  background: url(./../pictures/icons/pdf.png) no-repeat;
+  background-size: 1.5rem, 1.5rem;
+  padding-left: 1.6rem;
+}*/
+
+li {
+  list-style: none;
+}
+
+.box_img_txt {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-direction: ltr;
+}
+.box_img_txt_inv {
+  justify-content: flex-end;
+}
+  @media only screen and (max-width: 800px) {
+    .box_img_txt {
+      display: block;
+    }
+    .box_img_txt .box_img {
+      float: left;
+    }
+    .box_img_txt ~ * {
+      clear: both;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .box_img_txt {
+      display: flex;
+    }
+    .box_img_txt .box_img {
+      float: none;
+    }
+  }
+  .box_img_txt_inv .box_img {
+    order: 3;
+  }
+.box_img_txt .box_img {
+  order: 1;
+  max-width: 300px;
+  padding: 10px;
+}
+.box_img_txt .box_img img {
+  padding: 0;
+  padding-right: 2.0rem;
+}
+.box_img_txt .box_txt {
+  order: 2;
+  align-self: flex-start;
+  text-align: left;
+  flex: 1;
+  min-width: 30%;
+  padding-left: 2.0rem;
+}
+
+
+
+</style>
+
+        
+
+        <link rel="stylesheet" type="text/css" 
+         href="style.css" />
+     <link rel="icon" 
+      href="../static/pictures/logo/logo.png">
+ </head>
+ <body>
+  <header class="root">
+ <a class="logo" href="">
+  <img class="logo nopadding" 
+    src="../static//pictures/logo/logo.png"
+    alt="Logo: Тензорные сети и глубинное обучение для интеллектуального анализа данных"
+    width="161px" height="122px">
+ </a>
+ <p id="p_logo" class="logo">
+  Тензорные сети и глубинное обучение для интеллектуального анализа данных
+ </p> 
+ <a class="langbox" href="../oseledets_ivan.html">
+  en
+ </a>
+ 
+
+<ul class='nav'>
+    
+        <li>
+         <a
+                href="index.html" 
+                
+                
+            >
+                Главная
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="team.html" 
+                
+                class="active_parent_link"
+            >
+                Команда
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="research.html" 
+                
+                
+            >
+                Исследования
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="news.html" 
+                
+                
+            >
+                События
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="papers.html" 
+                
+                
+            >
+                Публикации
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="contacts.html" 
+                
+                
+            >
+                Контакты
+            </a>
+        </li>
+    
+</ul>
+
+
+
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+     
+ <main class="root">
+  <div id='content_main' class="pages_oseledets_ivan">
+      
+    
+    <div id="man" class="box_img_txt">
+        <div class="box_img">
+        <img src="../static/pictures/team/oseledets_ivan.jpg" width="300px">
+        </div>
+        <div class="box_txt">
+         <h1>
+                Иван
+                Валерьевич
+                <br>
+                Оселедец
+            </h1>
+            <p>
+                Сколковский институт науки и технологий</br>
+                Доктор ф.-м. наук, Доцент.
+            </p><br>
+            <p><a href="../static/pdf/cv/CV_Oseledets_Ivan.pdf" target="_blank"
+                  class="
+                    link_pdf_inner">
+                Загрузить резюме
+            </a></p>
+            
+                <p><a class="link_www_outer" href="http://oseledets.github.io" target="_blank">
+                    Домашняя страница
+                </a></p>
+            
+            <h2 class="pad_top_2x pad_left_1x">
+                Научные интересы
+            </h2>
+            <p class="pad_left_1x">
+                Данное поле в процессе формирования.
+            </p>
+            <br>
+        </div>
+    </div>
+    <div class="publist">
+ 
+ 
+
+ <h1>
+     
+         Основные публикации с 2011 г.
+     
+ </h1>
+ <br>
+ <ul>
+  
+   
+
+    <div id="dropdownbox84287074326">
+        <input type="checkbox" id="dropdownbox84287074326_checkbox"/>
+        <label for="dropdownbox84287074326_checkbox" id="dropdownbox84287074326_title">2016</label> 
+        <div id="dropdownbox84287074326_content">
+    <ul>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1504.06149" 
+               
+              >Low-rank approach to the computation of path integrals</a>
+             </h1>
+             <p>
+              
+               
+          Litsarev M. S. ,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>J. Comp. Phys.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1508.07632" 
+               
+              >Grid-based electronic structure calculations: the tensor decomposition approach</a>
+             </h1>
+             <p>
+              
+               
+          Rakhuba M. V.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>J. Comp. Phys.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_www_outer"
+                href="http://www.sam.math.ethz.ch/reports/2016/06" 
+               
+              >QTT-Finite-Element Approximation For Multiscale Problems</a>
+             </h1>
+             <p>
+              
+               
+          Vladimir Kazeev,
+               
+              
+               
+           Ivan Oseledets,
+               
+              
+               
+           Maxim Rakhuba,
+               
+              
+               
+           Christoph Schwab
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1603.06038" 
+               
+              >Tensor methods and recommender systems</a>
+             </h1>
+             <p>
+              
+               
+          Frolov Evgeny,
+               
+              
+               
+           Oseledets Ivan
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1604.02111" 
+               
+              >Convergence analysis of projected fixed-point iteration on a low-rank matrix manifold</a>
+             </h1>
+             <p>
+              
+               
+          Kolesnikov Denis,
+               
+              
+               
+           Oseledets Ivan
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1603.09133" 
+               
+              >"Compress and eliminate" solver for symmetric positive definite sparse matrices</a>
+             </h1>
+             <p>
+              
+               
+          Sushnikova Daria A.,
+               
+              
+               
+           Oseledets Ivan V.
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1412.1253" 
+               
+              >Preconditioners for hierarchical matrices based on their extended sparse form</a>
+             </h1>
+             <p>
+              
+               
+          Sushnikova Daria A.,
+               
+              
+               
+           Oseledets Ivan V.
+               
+              
+              
+               (<i>Russ. J. Numer. Anal. Math. Modelling</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1605.08422" 
+               
+              >Calculating vibrational spectra of molecules using tensor train decomposition</a>
+             </h1>
+             <p>
+              
+               
+          Rakhuba Maxim,
+               
+              
+               
+           Oseledets Ivan
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1605.03795" 
+               
+              >Tensor Train polynomial models via Riemannian optimization</a>
+             </h1>
+             <p>
+              
+               
+          Novikov Alexander,
+               
+              
+               
+           Trofimov Mikhail,
+               
+              
+               
+           Oseledets Ivan
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1410.0717" 
+               
+              >Fast, memory efficient low-rank approximation of SimRank</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.,
+               
+              
+               
+           Ovchinnikov G. V.,
+               
+              
+               
+           Katrutsa A. M.
+               
+              
+              
+               (<i>Journal of Complex Networks</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_www_outer"
+                href="http://www.sciencedirect.com/science/article/pii/S0169743916301368" 
+               
+              >Machine learning for LC-MS medicinal plants identification</a>
+             </h1>
+             <p>
+              
+               
+          Nazarenko D. V.,
+               
+              
+               
+           Kharyuk P. V.,
+               
+              
+               
+           Oseledets I. V.,
+               
+              
+               
+           Rodin I. A.,
+               
+              
+               
+           Shpigun O. A.
+               
+              
+              
+               (<i>Chemometrics and Intelligent Laboratory Systems</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1607.04228" 
+               
+              >Fifty shades of ratings: how to benefit from a negative feedback in top-n recommendations tasks</a>
+             </h1>
+             <p>
+              
+               
+          Frolov Evgeny,
+               
+              
+               
+           Oseledets Ivan
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="https://www.eccomas2016.org/proceedings/pdf/10906.pdf" 
+               
+              >Black-box solver for multiscale modelling using the QTT format</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets Ivan V.,
+               
+              
+               
+           Rakhuba Maxim V.,
+               
+              
+               
+           Chertkov Andrei V.
+               
+              
+              
+               (<i>Proc. ECCOMAS</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="https://arxiv.org/pdf/1612.01166.pdf" 
+               
+              >Robust discretization in quantized tensor train format for elliptic problems in two dimensions</a>
+             </h1>
+             <p>
+              
+               
+          Chertkov A. V.,
+               
+              
+               
+           Oseledets I. V.,
+               
+              
+               
+           Rakhuba M. V.
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_www_outer"
+                href="http://ftp.nowpublishers.com/article/DownloadSummary/MAL-059" 
+               
+              >Tensor Networks for Dimensionality Reduction and Large-scale Optimization: Part 1 Low-Rank Tensor Decompositions</a>
+             </h1>
+             <p>
+              
+               
+          Cichocki Andrzej,
+               
+              
+               
+           Lee Namgil,
+               
+              
+               
+           Oseledets Ivan,
+               
+              
+               
+           Phan Anh-Huy,
+               
+              
+               
+           Zhao Qibin,
+               
+              
+               
+           Mandic Danilo P,
+               
+              
+               
+           others
+               
+              
+              
+               (<i>Foundations and Trends in Machine Learning</i>).
+              
+       </p>
+      </li>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox601257924220">
+        <input type="checkbox" id="dropdownbox601257924220_checkbox"/>
+        <label for="dropdownbox601257924220_checkbox" id="dropdownbox601257924220_title">2015</label> 
+        <div id="dropdownbox601257924220_content">
+    <ul>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1407.3023" 
+               
+              >Enabling high-dimensional hierarchical uncertainty quantification by ANOVA and Tensor-Train decomposition</a>
+             </h1>
+             <p>
+              
+               
+          Zheng Zhang,
+               
+              
+               
+           Yang Xiu,
+               
+              
+               
+           Oseledets Ivan V.,
+               
+              
+               
+           Karniadakis George Em,
+               
+              
+               
+           Daniel Luca
+               
+              
+              
+               (<i>IEEE Trans. Comput-aided Des. Integr. Circuits Syst.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1502.06818" 
+               
+              >Tensor SimRank for Heterogeneous Information Networks</a>
+             </h1>
+             <p>
+              
+               
+          Usman Ben,
+               
+              
+               
+           Oseledets Ivan
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1502.07167" 
+               
+              >Linear complexity SimRank using iterative diagonal estimation</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.,
+               
+              
+               
+           Ovchinnikov G. V.,
+               
+              
+               
+           Katrutsa A. M.
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1502.07838" 
+               
+              >Rectangular maximum-volume submatrices and their applications</a>
+             </h1>
+             <p>
+              
+               
+          Mikhalev A. Yu.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Fast multidimensional convolution in low-rank tensor formats via cross approximation</a>
+             </h1>
+             <p>
+              
+               
+          Rakhuba M. V.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>SIAM J. Sci. Comput.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1503.02383" 
+               
+              >Toward fast topological-shape optimization</a>
+             </h1>
+             <p>
+              
+               
+          Ostanin Igor,
+               
+              
+               
+           Zorin Denis,
+               
+              
+               
+           Oseledets Ivan
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1407.2042" 
+               
+              >Time integration of tensor trains</a>
+             </h1>
+             <p>
+              
+               
+          Lubich Christian,
+               
+              
+               
+           Oseledets Ivan,
+               
+              
+               
+           Vandereycken Bart
+               
+              
+              
+               (<i>SIAM J. Numer. Anal.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1403.4068" 
+               
+              >Fast low-rank approximations of multidimensional integrals in ion-atomic
+collisions modelling</a>
+             </h1>
+             <p>
+              
+               
+          Litsarev M. S.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>Numer. Linear Algebra Appl.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_www_outer"
+                href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7228667&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7228667" 
+               
+              >Numerical solution of diffraction problems using large matrix compression</a>
+             </h1>
+             <p>
+              
+               
+          Ryzhakov G.V.,
+               
+              
+               
+           Mikhalev A.Yu.,
+               
+              
+               
+           Sushnikova D.A.,
+               
+              
+               
+           Oseledets I.V.
+               
+              
+              
+               (<i>Antennas and Propagation (EuCAP), 2015 9th European Conference on</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1410.3335" 
+               
+              >From low-rank approximation to arational Krylov subspace method for the Lyapunov equation</a>
+             </h1>
+             <p>
+              
+               
+          Kolesnikov D. A.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>SIAM J. Matrix Anal. Appl.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Fitting high-dimensional potential energy surface using active subspace and tensor train (AS+TT) method</a>
+             </h1>
+             <p>
+              
+               
+          Baranov V.,
+               
+              
+               
+           Oseledets I.
+               
+              
+              
+               (<i>J. Chem. Phys.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1309.1773" 
+               
+              >Iterative representing set selection fo nested cross approximation</a>
+             </h1>
+             <p>
+              
+               
+          Mikhalev A. Yu.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>Numer. Linear Algebra Appl.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Fast Toeplitz linear system inversion for solving two-dimensional acoustic inverse problem</a>
+             </h1>
+             <p>
+              
+               
+          Kabanikhin Sergey I.,
+               
+              
+               
+           Novikov Nikita S.,
+               
+              
+               
+           Oseledets Ivan V.,
+               
+              
+               
+           Shishlenin Maxim A.
+               
+              
+              
+               (<i>Inverse Problems</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Engineering optimization with the fast boundary element method</a>
+             </h1>
+             <p>
+              
+               
+          Ostanin I.,
+               
+              
+               
+           Mikhalev A.,
+               
+              
+               
+           Zorin D.,
+               
+              
+               
+           Oseledets I.
+               
+              
+              
+               (<i>WIT Transactions on Modelling and Simulation</i>).
+              
+       </p>
+      </li>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox434445688856">
+        <input type="checkbox" id="dropdownbox434445688856_checkbox"/>
+        <label for="dropdownbox434445688856_checkbox" id="dropdownbox434445688856_title">2014</label> 
+        <div id="dropdownbox434445688856_content">
+    <ul>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >A projector-splitting integrator for dynamical low-rank approximation</a>
+             </h1>
+             <p>
+              
+               
+          Lubich Christian,
+               
+              
+               
+           Oseledets Ivan V.
+               
+              
+              
+               (<i>BIT</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Solving high-dimensional problems via stable and efficient tensor factorization techniques</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets Ivan
+               
+              
+              
+               (<i>Abstracts of Papers of the American Chemical Society</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Computation of extreme eigenvalues in higher dimensions using block tensor train format</a>
+             </h1>
+             <p>
+              
+               
+          Dolgov S. V.,
+               
+              
+               
+           Khoromskij B. N.,
+               
+              
+               
+           Oseledets I. V.,
+               
+              
+               
+           Savostyanov D. V.
+               
+              
+              
+               (<i>Computer Phys. Comm.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >A computationally efficient technique for the solution of multi-dimensional PBMs of granulation</a>
+             </h1>
+             <p>
+              
+               
+          Chaudhury Anwesha,
+               
+              
+               
+           Oseledets Ivan,
+               
+              
+               
+           Ramachandran Rohit
+               
+              
+              
+               (<i>Comput. Chem. Eng.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Iterative across-time solution of linear differential equations: Krylov subspace versus waveform relaxation</a>
+             </h1>
+             <p>
+              
+               
+          Botchev M. A.,
+               
+              
+               
+           Oseledets I. V.,
+               
+              
+               
+           Tyrtyshnikov E. E.
+               
+              
+              
+               (<i>Comput. Math. Appl.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >The DEPOSIT computer code based on the low rank approximations</a>
+             </h1>
+             <p>
+              
+               
+          Litsarev Mikhail S.,
+               
+              
+               
+           Oseledets Ivan V.
+               
+              
+              
+               (<i>Computer Phys. Comm.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1408.5056" 
+               
+              >Unifying time evolution and optimization with matrix product states</a>
+             </h1>
+             <p>
+              
+               
+          Haegeman Jutho,
+               
+              
+               
+           Lubich Christian,
+               
+              
+               
+           Oseledets Ivan,
+               
+              
+               
+           Vandereycken Bart,
+               
+              
+               
+           Verstraete Frank
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1411.5995" 
+               
+              >Algebraic reputation model RepRank and its application to spambot detection</a>
+             </h1>
+             <p>
+              
+               
+          Ovchinnikov G. V.,
+               
+              
+               
+           Kolesnikov D. A.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_www_outer"
+                href="http://sites.uclouvain.be/absil/2013.04" 
+               
+              >Low-rank retractions: a survey and new results</a>
+             </h1>
+             <p>
+              
+               
+          Absil P. -A.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>Comput. Optim. Appl.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1412.6553" 
+               
+              >Speeding up convolutional neural networks using fine-tuned CP-decomposition</a>
+             </h1>
+             <p>
+              
+               
+          Lebedev Vadim,
+               
+              
+               
+           Ganin Yaroslav,
+               
+              
+               
+           Rakhuba Maxim,
+               
+              
+               
+           Oseledets Ivan,
+               
+              
+               
+           Lempitsky Victor
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox423952336208">
+        <input type="checkbox" id="dropdownbox423952336208_checkbox"/>
+        <label for="dropdownbox423952336208_checkbox" id="dropdownbox423952336208_title">2013</label> 
+        <div id="dropdownbox423952336208_content">
+    <ul>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Constructive representation of functions in low-rank tensor formats</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.
+               
+              
+              
+               (<i>Constr. Approx.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://arxiv.org/abs/1306.2150" 
+               
+              >Fast low-rank solution of the Poisson equation with application to the Stokes problem</a>
+             </h1>
+             <p>
+              
+               
+          Muravleva E.A.,
+               
+              
+               
+           Oseledets I.V.
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Tensor-Based Multiuser Detection and Intra-Cell Interference Mitigation in LTE PUCCH</a>
+             </h1>
+             <p>
+              
+               
+          Lyashev Vladimir,
+               
+              
+               
+           Oseledets Ivan,
+               
+              
+               
+           Zheng Delai
+               
+              
+              
+               (<i>Proc. TELFOR 2013</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://www.sam.math.ethz.ch/sam_reports/reports_final/reports2013/2013-28.pdf" 
+               
+              >The tensor structure of a class of adaptive algebraic wavelet transforms</a>
+             </h1>
+             <p>
+              
+               
+          Kazeev Vladimir A.,
+               
+              
+               
+           Oseledets Ivan V.
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox499272503679">
+        <input type="checkbox" id="dropdownbox499272503679_checkbox"/>
+        <label for="dropdownbox499272503679_checkbox" id="dropdownbox499272503679_title">2012</label> 
+        <div id="dropdownbox499272503679_content">
+    <ul>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >A reciprocal preconditioner for structured matrices arising from elliptic problems with jumping coefficients</a>
+             </h1>
+             <p>
+              
+               
+          Dolgov Sergey,
+               
+              
+               
+           Khoromskij Boris N.,
+               
+              
+               
+           Oseledets Ivan V. ,
+               
+              
+               
+           Tyrtyshnikov Eugene E.
+               
+              
+              
+               (<i>Linear Algebra Appl.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Representation of quasiseparable matrices using excluded sums and equivalent charges</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.,
+               
+              
+               
+           Mikhalev A. Yu
+               
+              
+              
+               (<i>Linear Algebra Appl.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_www_outer"
+                href="http://www.mis.mpg.de/de/publications/preprints/2011/prepr2011-12.html" 
+               
+              >Low-rank tensor structure of solutions to elliptic problems with jumping coefficients</a>
+             </h1>
+             <p>
+              
+               
+          Dolgov S. V.,
+               
+              
+               
+           Khoromskij Boris N.,
+               
+              
+               
+           Oseledets Ivan V.,
+               
+              
+               
+           Tyrtyshnikov Eugene E.
+               
+              
+              
+               (<i>J. Comput. Math.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Wedderburn rank reduction and Krylov subspace method for tensor approximation. Part 1: Tucker case</a>
+             </h1>
+             <p>
+              
+               
+          Goreinov S. A.,
+               
+              
+               
+            Oseledets I. V.,
+               
+              
+               
+           Savostyanov D. V.
+               
+              
+              
+               (<i>SIAM J. Sci. Comput.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_pdf_outer"
+                href="http://www.mis.mpg.de/preprints/2012/preprint2012_24.pdf" 
+               
+              >Efficient time-stepping scheme for dynamics on TT-manifolds</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.,
+               
+              
+               
+           Khoromskij B. N.,
+               
+              
+               
+           Schneider R.
+               
+              
+              
+               (<i>arXiv preprint</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Solution of linear systems and matrix inversion in the TT-format</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.,
+               
+              
+               
+           Dolgov S. V.
+               
+              
+              
+               (<i>SIAM J. Sci. Comput.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Fast solution of multi-dimensional parabolic problems in the tensor train/quantized tensor train--format with initial application to the Fokker-Planck equation</a>
+             </h1>
+             <p>
+              
+               
+          Dolgov S. V.,
+               
+              
+               
+           Khoromskij Boris N.,
+               
+              
+               
+           Oseledets Ivan V.
+               
+              
+              
+               (<i>SIAM J. Sci. Comput.</i>).
+              
+       </p>
+      </li>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox378429298137">
+        <input type="checkbox" id="dropdownbox378429298137_checkbox"/>
+        <label for="dropdownbox378429298137_checkbox" id="dropdownbox378429298137_title">2011</label> 
+        <div id="dropdownbox378429298137_content">
+    <ul>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >QTT-approximation of elliptic solution operators in higher dimensions</a>
+             </h1>
+             <p>
+              
+               
+          Khoromskij B. N.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>Rus. J. Numer. Anal. Math. Model.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Tensor-train decomposition</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.
+               
+              
+              
+               (<i>SIAM J. Sci. Comput.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Algebraic wavelet transform via quantics tensor train decomposition</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.,
+               
+              
+               
+           Tyrtyshnikov E. E.
+               
+              
+              
+               (<i>SIAM J. Sci. Comput.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >DMRG approach to fast linear algebra in the TT--format</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.
+               
+              
+              
+               (<i>Comput. Meth. Appl. Math.</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Tensor-train ranks of matrices and their inverses</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.,
+               
+              
+               
+           Tyrtyshnikov E. E.,
+               
+              
+               
+           Zamarashkin N. L.
+               
+              
+              
+               (<i>Comput. Meth. Appl. Math</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Improved n-term Karatsuba-like formulas in GF(2)</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.
+               
+              
+              
+               (<i>IEEE Trans. Computers</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Fast adaptive interpolation of multi-dimensional arrays in tensor train format</a>
+             </h1>
+             <p>
+              
+               
+          Savostyanov D. V.,
+               
+              
+               
+           Oseledets I. V.
+               
+              
+              
+               (<i>Proceedings of 7th International Workshop on Multidimensional Systems (nDS)</i>).
+              
+       </p>
+      </li>
+     
+            <li>
+             <h1>
+              <a target="_blank"
+               
+                class="link_none"
+               
+              >Tensor train decomposition for low-parametric representation of
+high-dimensional arrays and functions: Review of recent results</a>
+             </h1>
+             <p>
+              
+               
+          Oseledets I. V.
+               
+              
+              
+               (<i>Proceedings of 7th International Workshop on Multidimensional Systems (nDS)</i>).
+              
+       </p>
+      </li>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+ </ul>
+</div>
+
+
+
+
+
+
+    
+
+    
+    
+
+
+  </div>
+  
+      
+
+<div class='widgetname_navsub'>
+    <ul>
+             
+            <li>
+             <a href="cichocki_andrzej.html"  >
+                    А. С. Чихоцкий
+                </a>
+            </li>
+             
+            <li>
+             <a href="oseledets_ivan.html"  class="active_link">
+                    И. В. Оселедец
+                </a>
+            </li>
+             
+            <li>
+             <a href="lempitsky_victor.html"  >
+                    В. С. Лемпицкий
+                </a>
+            </li>
+             
+            <li>
+             <a href="vetrov_dmitry.html"  >
+                    Д. П. Ветров
+                </a>
+            </li>
+             
+            <li>
+             <a href="rakhuba_maxim.html"  >
+                    М. В. Рахуба
+                </a>
+            </li>
+             
+            <li>
+             <a href="chertkov_andrei.html"  >
+                    А. В. Чертков
+                </a>
+            </li>
+             
+            <li>
+             <a href="frolov_evgeny.html"  >
+                    Е. П. Фролов
+                </a>
+            </li>
+             
+            <li>
+             <a href="kolesnikov_denis.html"  >
+                    Д. А. Колесников
+                </a>
+            </li>
+             
+            <li>
+             <a href="lebedev_vadim.html"  >
+                    В. В. Лебедев
+                </a>
+            </li>
+             
+            <li>
+             <a href="ulyanov_dmitry.html"  >
+                    Д. В. Ульянов
+                </a>
+            </li>
+             
+            <li>
+             <a href="ustinova_evgeniya.html"  >
+                    Е. С. Устинова
+                </a>
+            </li>
+             
+            <li>
+             <a href="novikov_alexander.html"  >
+                    А. В. Новиков
+                </a>
+            </li>
+             
+            <li>
+             <a href="podoprikhin_dmitrii.html"  >
+                    Д. Подоприкин
+                </a>
+            </li>
+             
+            <li>
+             <a href="figurnov_michael.html"  >
+                    М. В. Фигурнов
+                </a>
+            </li>
+             
+            <li>
+             <a href="anikin_aleksandr.html"  >
+                    А. Ю. Аникин
+                </a>
+            </li>
+             
+            <li>
+             <a href="ekimov_leonid.html"  >
+                    Л. В. Екимов
+                </a>
+            </li>
+             
+            <li>
+             <a href="klokov_roman.html"  >
+                    Р. В. Клоков
+                </a>
+            </li>
+             
+            <li>
+             <a href="rykov_andrey.html"  >
+                    А. О. Рыков
+                </a>
+            </li>
+             
+            <li>
+             <a href="shvets_mikhail.html"  >
+                    М. Ю. Швец
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+
+
+  
+ </main>
+
+ 
+
+
+  <footer class="root">
+ <h3 class="footer_info">
+  © 2017. "Тензорные сети и глубинное обучение для интеллектуального анализа данных".
+  
+   Все права защищены.
+  
+ </h3>
+ <figure class="footer_links_imgs">
+  <a target="_blank" href="http://минобрнауки.рф/">
+   <img class="nopadding"  src="../static/pictures/logo/min_edu_rus.png" 
+     width="130"
+     height="112">
+  </a>
+  <a target="_blank" href="http://www.skoltech.ru/?lang=ru">
+   <img class="nopadding"  src="../static//pictures/logo/skoltech_rus.png"
+     width="400"
+     height="147">
+  </a>
+ </figure>
+</footer>
+
+
+
+ </body>
+</html>
+
+
+
+
+

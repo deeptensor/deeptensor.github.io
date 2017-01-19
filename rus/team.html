@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
  <head>
   <meta http-equiv="content-type" 
    content="text/html; charset=utf-8" />
         <meta name="viewport" 
          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="keywords" 
-   content="Tensor networks" />
+   content="Тензорные сети" />
   <meta name="description" 
-   content="Laboratory | Tensor networks and deep learning for applications in data mining | Skoltech |" />
+   content="Лаборатория Тензорные сети" />
      <title>
-      Home
+      Команда
      </title>
         
 <style type="text/css">
@@ -99,7 +99,7 @@
   padding-left: 1.0rem;
  }
  header.root a.langbox {
-  background-image: url("static//pictures/icons/rus.gif" );
+  background-image: url("../static//pictures/icons/eng.gif" );
   background-position: left center;
   background-repeat: no-repeat;
   background-size: auto 1.5rem;
@@ -124,6 +124,32 @@
   }
 }
 
+  .pages_team {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+  }
+  .pages_team a {
+   margin: 10px;
+   padding: 5px;
+   width: 300px;
+   text-align: center;
+   border: 1px solid #6B7E51;
+   box-shadow: 3px 3px 5px 6px #6B7E51;
+  }
+  .pages_team a:hover {
+   border: 1px solid #003A56;
+   box-shadow: 3px 3px 5px 6px #003A56;
+  }
+ 
+ @media only screen and (max-width: 500px) {
+  .pages_team a {
+   margin: 10px;
+   padding: 5px;
+   width: 260px;
+  }
+ }
+
   main.root {
    flex-grow: 1;
    display: flex;
@@ -139,7 +165,7 @@
  
 
  footer.root {
-  background-image: url("static//pictures/background/blue_net2.jpg");
+  background-image: url("../static//pictures/background/blue_net2.jpg");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -291,13 +317,13 @@ a:hover {
   cursor: default;
 }
 .link_broken {
-  background: url(static/pictures/icons/cross.png) no-repeat;
+  background: url(../static/pictures/icons/cross.png) no-repeat;
 }
 .link_pdf_inner, .link_pdf_outer {
-  background: url(static/pictures/icons/pdf.png) no-repeat;
+  background: url(../static/pictures/icons/pdf.png) no-repeat;
 }
 .link_www_inner, .link_www_outer {
-  background: url(static/pictures/icons/www.png) no-repeat;
+  background: url(../static/pictures/icons/www.png) no-repeat;
 }
 .link_pdf_inner, .link_pdf_outer,
 .link_www_inner, .link_www_outer, .link_none, .link_broken {
@@ -381,21 +407,21 @@ li {
         <link rel="stylesheet" type="text/css" 
          href="style.css" />
      <link rel="icon" 
-      href="static/pictures/logo/logo.png">
+      href="../static/pictures/logo/logo.png">
  </head>
  <body>
   <header class="root">
  <a class="logo" href="">
   <img class="logo nopadding" 
-    src="static//pictures/logo/logo.png"
-    alt="Logo: Tensor networks and deep learning for applications in data mining"
+    src="../static//pictures/logo/logo.png"
+    alt="Logo: Тензорные сети и глубинное обучение для интеллектуального анализа данных"
     width="161px" height="122px">
  </a>
  <p id="p_logo" class="logo">
-  Tensor networks and deep learning for applications in data mining
+  Тензорные сети и глубинное обучение для интеллектуального анализа данных
  </p> 
- <a class="langbox" href="rus/index.html">
-  ru
+ <a class="langbox" href="../team.html">
+  en
  </a>
  
 
@@ -404,20 +430,20 @@ li {
         <li>
          <a
                 href="index.html" 
-                class="active_link"
+                
                 
             >
-                Home
+                Главная
             </a>
         </li>
     
         <li>
          <a
                 href="team.html" 
-                
+                class="active_link"
                 
             >
-                Team
+                Команда
             </a>
         </li>
     
@@ -427,7 +453,7 @@ li {
                 
                 
             >
-                Research
+                Исследования
             </a>
         </li>
     
@@ -437,7 +463,7 @@ li {
                 
                 
             >
-                Events
+                События
             </a>
         </li>
     
@@ -447,7 +473,7 @@ li {
                 
                 
             >
-                Publications
+                Публикации
             </a>
         </li>
     
@@ -457,7 +483,7 @@ li {
                 
                 
             >
-                Contacts
+                Контакты
             </a>
         </li>
     
@@ -480,69 +506,129 @@ li {
 
      
  <main class="root">
-  <div id='content_main' class="pages_index">
+  <div id='content_main' class="pages_team">
       
- <div class="box_img_txt">
-        <div class="box_img">
-   <img class="nopadding" 
-    src="static/pictures/team/cichocki_andrzej.jpg"
-    alt=
-    
-     "Photo: Head of the Laboratory Andrzej Cichocki"
-    
-    width="300px"
-   >
-        </div>
-  <div class="box_txt">
-   <p>
-    
-     Laboratory <b>"Tensor networks and deep learning for applications in data mining"</b> on the basis of the Skolkovo Institute of Science and Technology under the guidance of prof. Andrzej Cichocki develop new fundamental approaches for training, testing and storing parameters of deep neural networks based on tensor decomposition techniques. These approaches allow to reduce by orders of magnitude computational complexity and required memory for the operation of the network, while maintaining a high quality of prediction.
-    
-   </p>
-   <p>
-    
-     The Laboratory  mission is to pursue cutting-edge  research in the design and analysis of deep neural networks, tensor decompositions, tensor networks and multiway analysis with many potential practical applications.
-    
-   </p>
-   <p>
-    
-     This initiative brings together several professors and young researchers in the fields of machine learning, vision, artificial intelligence, robotics, large scale data analysis,  mathematics as well as computational neuroscience and bioinformatics.
-    
-   </p>
-  </div>
- </div>
-<!--  <div class="box_img_txt">
-  <div class="box_txt">
-   <p>
-    
-      
-    
-   </p>
-  </div>
-        <div class="box_img">
-   <img 
-    src="static/pictures/tensor_direction.png"
-    alt=
-    
-     "Photo Directions"
-    
-    width="300px"
-   >
-        </div>
- </div> -->
- <div>
- </br></br>
- <p class="txt_funny">
-  
-   Website is under development now.
-   List of publications, team members and research areas are incomplete.
-  
-  
-   The logo and background images are taken from public sources and are used only for test purposes.
-   All of them may be removed at the request of the legal owner.
-  
- </p>
-</div>
+
+ 
+        <a href="cichocki_andrzej.html">
+   <img src="../static/pictures/team/tumb/cichocki_andrzej.jpg" height="200" width="200">
+   <h2>Анджей Чихоцкий</h2>
+         <h3>Доктор ф.-м. наук</h3>
+        </a>
+ 
+        <a href="oseledets_ivan.html">
+   <img src="../static/pictures/team/tumb/oseledets_ivan.jpg" height="200" width="200">
+   <h2>Иван Оселедец</h2>
+         <h3>Доктор ф.-м. наук</h3>
+        </a>
+ 
+        <a href="lempitsky_victor.html">
+   <img src="../static/pictures/team/tumb/lempitsky_victor.jpg" height="200" width="200">
+   <h2>Виктор Лемпицкий</h2>
+         <h3>Кандидат ф.-м. наук</h3>
+        </a>
+ 
+        <a href="vetrov_dmitry.html">
+   <img src="../static/pictures/team/tumb/vetrov_dmitry.jpg" height="200" width="200">
+   <h2>Дмитрий Ветров</h2>
+         <h3>Кандидат ф.-м. наук</h3>
+        </a>
+ 
+        <a href="rakhuba_maxim.html">
+   <img src="../static/pictures/team/tumb/rakhuba_maxim.jpg" height="200" width="200">
+   <h2>Максим Рахуба</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="chertkov_andrei.html">
+   <img src="../static/pictures/team/tumb/chertkov_andrei.jpg" height="200" width="200">
+   <h2>Андрей Чертков</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="frolov_evgeny.html">
+   <img src="../static/pictures/team/tumb/frolov_evgeny.jpg" height="200" width="200">
+   <h2>Евгений Фролов</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="kolesnikov_denis.html">
+   <img src="../static/pictures/team/tumb/kolesnikov_denis.jpg" height="200" width="200">
+   <h2>Денис Колесников</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="lebedev_vadim.html">
+   <img src="../static/pictures/team/tumb/lebedev_vadim.jpg" height="200" width="200">
+   <h2>Вадим Лебедев</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="ulyanov_dmitry.html">
+   <img src="../static/pictures/team/tumb/ulyanov_dmitry.jpg" height="200" width="200">
+   <h2>Дмитрий Ульянов</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="ustinova_evgeniya.html">
+   <img src="../static/pictures/team/tumb/ustinova_evgeniya.jpg" height="200" width="200">
+   <h2>Евгения Устинова</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="novikov_alexander.html">
+   <img src="../static/pictures/team/tumb/novikov_alexander.jpg" height="200" width="200">
+   <h2>Александр Новиков</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="podoprikhin_dmitrii.html">
+   <img src="../static/pictures/team/tumb/podoprikhin_dmitrii.jpg" height="200" width="200">
+   <h2>Дмитрий Подоприкин</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="figurnov_michael.html">
+   <img src="../static/pictures/team/tumb/figurnov_michael.jpg" height="200" width="200">
+   <h2>Михаил Фигурнов</h2>
+         <h3>Аспирант</h3>
+        </a>
+ 
+        <a href="anikin_aleksandr.html">
+   <img src="../static/pictures/team/tumb/anikin_aleksandr.jpg" height="200" width="200">
+   <h2>Александр Аникин</h2>
+         <h3>Магистр</h3>
+        </a>
+ 
+        <a href="ekimov_leonid.html">
+   <img src="../static/pictures/team/tumb/ekimov_leonid.jpg" height="200" width="200">
+   <h2>Леонид Екимов</h2>
+         <h3>Магистр</h3>
+        </a>
+ 
+        <a href="klokov_roman.html">
+   <img src="../static/pictures/team/tumb/klokov_roman.jpg" height="200" width="200">
+   <h2>Роман Клоков</h2>
+         <h3>Магистр</h3>
+        </a>
+ 
+        <a href="rykov_andrey.html">
+   <img src="../static/pictures/team/tumb/rykov_andrey.jpg" height="200" width="200">
+   <h2>Андрей Рыков</h2>
+         <h3>Магистр</h3>
+        </a>
+ 
+        <a href="shvets_mikhail.html">
+   <img src="../static/pictures/team/tumb/shvets_mikhail.jpg" height="200" width="200">
+   <h2>Михаил Швец</h2>
+         <h3>Магистр</h3>
+        </a>
+ 
+
+ 
+
+ 
+
 
   </div>
   
@@ -553,19 +639,19 @@ li {
 
   <footer class="root">
  <h3 class="footer_info">
-  © 2017. "Tensor networks and deep learning for applications in data mining".
+  © 2017. "Тензорные сети и глубинное обучение для интеллектуального анализа данных".
   
-   All rights reserved.
+   Все права защищены.
   
  </h3>
  <figure class="footer_links_imgs">
-  <a target="_blank" href="http://минобрнауки.рф/lang/en">
-   <img class="nopadding"  src="static//pictures/logo/min_edu.png" 
+  <a target="_blank" href="http://минобрнауки.рф/">
+   <img class="nopadding"  src="../static/pictures/logo/min_edu_rus.png" 
      width="130"
      height="112">
   </a>
-  <a target="_blank" href="http://www.skoltech.ru/en/">
-   <img class="nopadding"  src="static//pictures/logo/skoltech.png"
+  <a target="_blank" href="http://www.skoltech.ru/?lang=ru">
+   <img class="nopadding"  src="../static//pictures/logo/skoltech_rus.png"
      width="400"
      height="147">
   </a>

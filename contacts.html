@@ -8,9 +8,9 @@
   <meta name="keywords" 
    content="Tensor networks" />
   <meta name="description" 
-   content="Laboratory | Tensor networks and deep learning for applications in data mining | Skoltech |" />
+   content="Laboratory tensor networks" />
      <title>
-      Home
+      Contacts
      </title>
         
 <style type="text/css">
@@ -123,6 +123,25 @@
 
   }
 }
+
+  #map {
+   height: 600px;
+   min-width: 200px;
+   max-width: 90%;
+   background-color: grey;
+  }
+  .pages_contacts a {
+   text-decoration: underline;
+  }
+
+  @media all and (max-width: 600px) {
+   #map {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+   }
+  }
+ 
 
   main.root {
    flex-grow: 1;
@@ -394,7 +413,7 @@ li {
  <p id="p_logo" class="logo">
   Tensor networks and deep learning for applications in data mining
  </p> 
- <a class="langbox" href="rus/index.html">
+ <a class="langbox" href="rus/contacts.html">
   ru
  </a>
  
@@ -404,7 +423,7 @@ li {
         <li>
          <a
                 href="index.html" 
-                class="active_link"
+                
                 
             >
                 Home
@@ -454,7 +473,7 @@ li {
         <li>
          <a
                 href="contacts.html" 
-                
+                class="active_link"
                 
             >
                 Contacts
@@ -480,69 +499,50 @@ li {
 
      
  <main class="root">
-  <div id='content_main' class="pages_index">
+  <div id='content_main' class="pages_contacts">
       
- <div class="box_img_txt">
-        <div class="box_img">
-   <img class="nopadding" 
-    src="static/pictures/team/cichocki_andrzej.jpg"
-    alt=
-    
-     "Photo: Head of the Laboratory Andrzej Cichocki"
-    
-    width="300px"
-   >
-        </div>
-  <div class="box_txt">
-   <p>
-    
-     Laboratory <b>"Tensor networks and deep learning for applications in data mining"</b> on the basis of the Skolkovo Institute of Science and Technology under the guidance of prof. Andrzej Cichocki develop new fundamental approaches for training, testing and storing parameters of deep neural networks based on tensor decomposition techniques. These approaches allow to reduce by orders of magnitude computational complexity and required memory for the operation of the network, while maintaining a high quality of prediction.
-    
-   </p>
-   <p>
-    
-     The Laboratory  mission is to pursue cutting-edge  research in the design and analysis of deep neural networks, tensor decompositions, tensor networks and multiway analysis with many potential practical applications.
-    
-   </p>
-   <p>
-    
-     This initiative brings together several professors and young researchers in the fields of machine learning, vision, artificial intelligence, robotics, large scale data analysis,  mathematics as well as computational neuroscience and bioinformatics.
-    
-   </p>
+ <section class="box_img_txt">
+  <div class="box_img">
+   <img src="static/pictures/skoltech.jpg" width="300px">
   </div>
- </div>
-<!--  <div class="box_img_txt">
   <div class="box_txt">
-   <p>
-    
-      
-    
-   </p>
+   
+    <p>Skolkovo Institute of Science and Technology</p>
+    <p>Lab. Tensor networks and deep learning for applications in data mining</p></br>
+    <p>Skolkovo Innovation Center,</p>
+    <p>Building 3, Moscow, Russia, 143026</p>
+    <a target="_blank" class="link_www_outer"
+     href="http://www.skoltech.ru/en/about/contacts/"
+    >
+     Learn more how to reach us
+    </a></br></br>
+    <p>Phone (campus operator) <span class="phone_num">+7 (495) 280 14 81</span></p>
+    <p>Head of Laboratory</p>
+    <p>Doctor, Prof. Andrzej Cichocki <b>a.cichocki@riken.jp</b></p>
+   
   </div>
-        <div class="box_img">
-   <img 
-    src="static/pictures/tensor_direction.png"
-    alt=
-    
-     "Photo Directions"
-    
-    width="300px"
-   >
-        </div>
- </div> -->
- <div>
- </br></br>
- <p class="txt_funny">
-  
-   Website is under development now.
-   List of publications, team members and research areas are incomplete.
-  
-  
-   The logo and background images are taken from public sources and are used only for test purposes.
-   All of them may be removed at the request of the legal owner.
-  
- </p>
-</div>
+ </section>
+ <div id="map"></div>
+
+ <script>
+   function initMap() {
+     var uluru = {lat: 55.6844205, lng: 37.3410487};
+     var map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 10,
+       center: uluru
+     });
+     var marker = new google.maps.Marker({
+       position: uluru,
+       map: map
+     });
+   }
+ </script>
+ <script async defer 
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0HvlqbtfXpnS1rO4xMxXzPVrGQlWoVYA&callback=initMap">
+ </script>
+
+ 
+
 
   </div>
   

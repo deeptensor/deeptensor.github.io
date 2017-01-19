@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta http-equiv="content-type" 
+   content="text/html; charset=utf-8" />
+        <meta name="viewport" 
+         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="keywords" 
+   content="Tensor networks, deep learning, Dmitrii Podoprikhin" />
+  <meta name="description" 
+   content="Laboratory Tensor networks and deep learning for applications in data mining of Doctor, Prof. Andrzej Cichocki | Team memeber Dmitrii Podoprikhin" />
+     <title>
+      D. Podoprikhin
+     </title>
+        
+<style type="text/css">
+
+   @import url('https://fonts.googleapis.com/css?family=Bad+Script|Jura:300,400,600|Open+Sans+Condensed:300,300i,700|Pattaya|Play:400,700|Ruslan+Display|Russo+One');
+  
+
+    .nav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background: #6B7E51;
+    }
+    .nav li {
+
+    }
+    .nav a {
+        display: inline-block;
+        margin: 0;
+        padding: 1.0rem;
+        text-decoration: none;
+        font-family: 'Jura', sans-serif;
+        font-weight: 600; /*For Jura: 300 400 600*/
+        font-size: 0.9rem;
+        color: white;
+    }
+    .nav a:hover {
+        text-decoration: underline;
+        background-color: #003A56;
+    }
+    .nav a.active_link {
+        cursor: default;
+    }
+    .nav a.active_link, .nav a.active_parent_link {
+        text-decoration: none;
+        text-decoration: underline;
+        background-color: #6B7E51;
+        color: #003A56;
+    }
+
+ @media all and (max-width: 1000px) {
+    .nav li {
+        flex: 1 0 30%;
+        color: red;
+    }
+}
+ @media all and (max-width: 10px) {
+    .nav {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .nav li:first-of-type a, .nav a { 
+        text-align: center; 
+        padding: 10px;
+        border-left: 1px solid deepskyblue;
+        border-right: 1px solid deepskyblue;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .nav li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+ header.root {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #003A56;
+ }
+ header.root a.logo {
+  margin-left: -9px;
+  flex 0;
+ }
+ header.root p.logo {
+  flex: 1000;
+  align-self: center;
+  margin: 0 auto;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5rem;
+  color: rgb(201, 201, 201);
+  padding-left: 1.0rem;
+ }
+ header.root a.langbox {
+  background-image: url("static//pictures/icons/rus.gif" );
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 1.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.8rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px hidden white;
+  color: white;
+ }
+ header.root a.langbox:hover {
+  border-style: solid;
+  color: #BA0000;
+  box-shadow: 3px 3px 5px 6px white;
+  } 
+
+ @media all and (max-width: 800px) {
+  #p_logo {
+   font-size: 0.8rem;
+
+  }
+}
+
+        #dropdownbox174088953238 {
+            padding: 0;
+        }
+        #dropdownbox174088953238_checkbox {
+            display: none;
+        }
+        #dropdownbox174088953238_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox174088953238_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox174088953238_checkbox:checked ~ #dropdownbox174088953238_title {
+            background: url(static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox174088953238_content {
+            display: none;
+        }
+        #dropdownbox174088953238_checkbox:checked ~ #dropdownbox174088953238_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox70167271483 {
+            padding: 0;
+        }
+        #dropdownbox70167271483_checkbox {
+            display: none;
+        }
+        #dropdownbox70167271483_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox70167271483_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox70167271483_checkbox:checked ~ #dropdownbox70167271483_title {
+            background: url(static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox70167271483_content {
+            display: none;
+        }
+        #dropdownbox70167271483_checkbox:checked ~ #dropdownbox70167271483_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox597126898421 {
+            padding: 0;
+        }
+        #dropdownbox597126898421_checkbox {
+            display: none;
+        }
+        #dropdownbox597126898421_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox597126898421_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox597126898421_checkbox:checked ~ #dropdownbox597126898421_title {
+            background: url(static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox597126898421_content {
+            display: none;
+        }
+        #dropdownbox597126898421_checkbox:checked ~ #dropdownbox597126898421_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox425367517022 {
+            padding: 0;
+        }
+        #dropdownbox425367517022_checkbox {
+            display: none;
+        }
+        #dropdownbox425367517022_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox425367517022_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox425367517022_checkbox:checked ~ #dropdownbox425367517022_title {
+            background: url(static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox425367517022_content {
+            display: none;
+        }
+        #dropdownbox425367517022_checkbox:checked ~ #dropdownbox425367517022_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox742080183879 {
+            padding: 0;
+        }
+        #dropdownbox742080183879_checkbox {
+            display: none;
+        }
+        #dropdownbox742080183879_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox742080183879_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox742080183879_checkbox:checked ~ #dropdownbox742080183879_title {
+            background: url(static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox742080183879_content {
+            display: none;
+        }
+        #dropdownbox742080183879_checkbox:checked ~ #dropdownbox742080183879_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox356294894172 {
+            padding: 0;
+        }
+        #dropdownbox356294894172_checkbox {
+            display: none;
+        }
+        #dropdownbox356294894172_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox356294894172_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox356294894172_checkbox:checked ~ #dropdownbox356294894172_title {
+            background: url(static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox356294894172_content {
+            display: none;
+        }
+        #dropdownbox356294894172_checkbox:checked ~ #dropdownbox356294894172_content {
+            display: block; 
+        }
+    
+
+ .publist ul li:first-of-type {
+  margin-top: 1.0rem;
+ }
+
+ @media only screen and (max-width: 500px) {
+ .publist h1 > a {
+  font-size: 0.9rem;
+ }
+}
+
+
+    
+ @media only screen and (max-width: 800px) {
+        div.widgetname_navsub { 
+            display: none;
+        }
+    }
+
+    .widgetname_navsub {
+        width: 12.0rem;
+        margin: 1.5rem 0 2.0rem 0;
+    }
+    .widgetname_navsub ul { 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        background: #003A56;
+        background: linear-gradient(0deg, rgb(0, 105, 152), #003A56);
+    }
+    .widgetname_navsub a {
+        width: 10.0rem;
+        padding: 1.0rem;
+        display: block;
+        text-decoration: none;
+        font-family: 'Jura', sans-serif;
+        font-weight: 600; /*For Jura: 300 400 600*/
+        font-size: 0.8rem;
+        color: white;
+        border-left: 2.0rem hidden white;
+    }
+    .widgetname_navsub a:hover, .widgetname_navsub a.active_link {
+        background-color: rgb(201, 201, 201);
+        color: #003A56;
+    }
+    .widgetname_navsub a:hover {
+        text-decoration: underline;
+        border: 1px hidden #003A56;
+        box-shadow: 3px 3px 5px 6px #003A56;
+    }
+    .widgetname_navsub a.widgetname_navsub {
+        cursor: default;
+        text-decoration: none;
+        box-shadow: none;
+        border-left: 2.0rem solid #6B7E51;
+    }
+
+
+  main.root {
+   flex-grow: 1;
+   display: flex;
+   flex-flow: row wrap-reverse;
+   justify-content: space-between;
+   background-color: white;
+  }
+  #content_main {
+   padding: 1.0rem;
+   margin: 0;
+   flex: 1 1 330px;
+  }
+ 
+
+ footer.root {
+  background-image: url("static//pictures/background/blue_net2.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ footer.root, footer.root figure.footer_links_imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+ }
+ footer.root > * {
+  flex: 1 0 auto;
+ }
+ footer.root .footer_info {
+  flex: 1000 0 15.0rem;  
+  padding: 0.9rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: rgb(201, 201, 201);
+ }
+ footer.root .footer_links_imgs img {
+  height: 3.0rem;
+  width: auto;
+ }
+ footer.root .footer_links_imgs img:first-of-type {
+  padding-right: 1.5rem;
+ }
+ @media only screen and (max-width: 400px) {
+  footer.root .footer_info {
+   max-width: 250px;
+  }
+  footer.root .footer_links_imgs img {
+   height: 2.0rem;
+  }
+    }
+
+
+ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,label,textarea,select,p,blockquote,th,td,header,footer,section,ul,li,fugure {
+   margin: 0;
+   padding: 0;
+   border: 0;
+ }
+ .nopadding { padding: 0; }
+ .nomargin { margin: 0; }
+
+ html {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  color: black;
+ }
+ @media all and (max-width:9999px) { html { font-size: 24px; } }
+ @media all and (max-width: 700px) { html { font-size: 20px; } }
+ @media all and (max-width: 500px) { html { font-size: 18px; } }
+
+ body {
+  padding: 0 15px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(201, 201, 201);
+ }
+ .root {
+  margin: 0 auto;
+  width: 100%;
+  min-width:  300px;
+  max-width: 1400px;
+  box-sizing: border-box;
+ }
+ img {
+  padding: 30px;
+ }
+
+/*----- LOADED FONTS (SOURCE: GOOGLE)
+Regular       Open+Sans+Condensed     300,300i,700
+Headers       Play                    400,700
+Nav           Jura                    300,400,600
+Logo(old)     Pattaya
+Logo(old)     Ruslan+Display
+Logo          Russo+One
+Funny text    Bad+Script
+------- */
+
+
+
+
+
+
+p, i, b {
+  font-size: 1.0rem;
+}
+i {
+  font-style: italic;
+}
+b {
+  font-weight: 700;
+}
+
+h1, h1>a, h2, h2>a, h3, h3>a {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  color: #004566;
+}
+h1, h1>a {
+  font-size: 1.4rem;
+}
+h2, h2>a {
+  font-size: 1.2rem;
+}
+h3, h3>a {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.txt_funny {
+  font-family: 'Bad Script', cursive;
+  font-size: 0.8rem;
+}
+.txt_center {
+  text-align: center;
+}
+.pad_left_1x {
+  padding-left: 1.5rem;
+}
+.pad_left_2x {
+  padding-left: 3.0rem;
+}
+.pad_top_1x {
+  padding-top: 1.5rem;
+}
+.pad_top_2x {
+  padding-top: 3.0rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  /*font-family: 'Jura', sans-serif;
+  font-weight: 400;*/
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link_none, .link_broken {
+  pointer-events: none;
+  cursor: default;
+}
+.link_broken {
+  background: url(static/pictures/icons/cross.png) no-repeat;
+}
+.link_pdf_inner, .link_pdf_outer {
+  background: url(static/pictures/icons/pdf.png) no-repeat;
+}
+.link_www_inner, .link_www_outer {
+  background: url(static/pictures/icons/www.png) no-repeat;
+}
+.link_pdf_inner, .link_pdf_outer,
+.link_www_inner, .link_www_outer, .link_none, .link_broken {
+  display: inline-block;
+  background-size: 1.0rem, 1.0rem;
+  padding-left: 1.2rem;
+  background-position: left center;
+}
+.link_pdf_inner:hover, .link_pdf_outer:hover,
+.link_www_inner:hover, .link_www_outer:hover {
+  text-decoration: none;
+  background-size: 1.2rem 1.2rem;
+  background-position: left top;
+}
+/*
+a[href$=".pdf"] {
+  background: url(./../pictures/icons/pdf.png) no-repeat;
+  background-size: 1.5rem, 1.5rem;
+  padding-left: 1.6rem;
+}*/
+
+li {
+  list-style: none;
+}
+
+.box_img_txt {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-direction: ltr;
+}
+.box_img_txt_inv {
+  justify-content: flex-end;
+}
+  @media only screen and (max-width: 800px) {
+    .box_img_txt {
+      display: block;
+    }
+    .box_img_txt .box_img {
+      float: left;
+    }
+    .box_img_txt ~ * {
+      clear: both;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .box_img_txt {
+      display: flex;
+    }
+    .box_img_txt .box_img {
+      float: none;
+    }
+  }
+  .box_img_txt_inv .box_img {
+    order: 3;
+  }
+.box_img_txt .box_img {
+  order: 1;
+  max-width: 300px;
+  padding: 10px;
+}
+.box_img_txt .box_img img {
+  padding: 0;
+  padding-right: 2.0rem;
+}
+.box_img_txt .box_txt {
+  order: 2;
+  align-self: flex-start;
+  text-align: left;
+  flex: 1;
+  min-width: 30%;
+  padding-left: 2.0rem;
+}
+
+
+
+</style>
+
+        
+
+        <link rel="stylesheet" type="text/css" 
+         href="style.css" />
+     <link rel="icon" 
+      href="static/pictures/logo/logo.png">
+ </head>
+ <body>
+  <header class="root">
+ <a class="logo" href="">
+  <img class="logo nopadding" 
+    src="static//pictures/logo/logo.png"
+    alt="Logo: Tensor networks and deep learning for applications in data mining"
+    width="161px" height="122px">
+ </a>
+ <p id="p_logo" class="logo">
+  Tensor networks and deep learning for applications in data mining
+ </p> 
+ <a class="langbox" href="rus/podoprikhin_dmitrii.html">
+  ru
+ </a>
+ 
+
+<ul class='nav'>
+    
+        <li>
+         <a
+                href="index.html" 
+                
+                
+            >
+                Home
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="team.html" 
+                
+                class="active_parent_link"
+            >
+                Team
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="research.html" 
+                
+                
+            >
+                Research
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="news.html" 
+                
+                
+            >
+                Events
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="papers.html" 
+                
+                
+            >
+                Publications
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="contacts.html" 
+                
+                
+            >
+                Contacts
+            </a>
+        </li>
+    
+</ul>
+
+
+
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+     
+ <main class="root">
+  <div id='content_main' class="pages_podoprikhin_dmitrii">
+      
+    
+    <div id="man" class="box_img_txt">
+        <div class="box_img">
+        <img src="static/pictures/team/podoprikhin_dmitrii.jpg" width="300px">
+        </div>
+        <div class="box_txt">
+         <h1>
+                Dmitrii
+                
+                
+                Podoprikhin
+            </h1>
+            <p>
+                National Research University Higher School of Economics</br>
+                Ph.D. student.
+            </p><br>
+            <p><a href="static/pdf/cv/CV_Podoprikhin_Dmitrii.pdf" target="_blank"
+                  class="
+                    link_pdf_inner">
+                Download CV
+            </a></p>
+            
+            <h2 class="pad_top_2x pad_left_1x">
+                Scientific interests
+            </h2>
+            <p class="pad_left_1x">
+                Is not completed.
+            </p>
+            <br>
+        </div>
+    </div>
+    <div class="publist">
+ 
+ 
+
+ <h1>
+     
+         Main publications since 2011
+     
+ </h1>
+ <br>
+ <ul>
+  
+   
+
+    <div id="dropdownbox174088953238">
+        <input type="checkbox" id="dropdownbox174088953238_checkbox"/>
+        <label for="dropdownbox174088953238_checkbox" id="dropdownbox174088953238_title">2016</label> 
+        <div id="dropdownbox174088953238_content">
+    <ul>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox70167271483">
+        <input type="checkbox" id="dropdownbox70167271483_checkbox"/>
+        <label for="dropdownbox70167271483_checkbox" id="dropdownbox70167271483_title">2015</label> 
+        <div id="dropdownbox70167271483_content">
+    <ul>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox597126898421">
+        <input type="checkbox" id="dropdownbox597126898421_checkbox"/>
+        <label for="dropdownbox597126898421_checkbox" id="dropdownbox597126898421_title">2014</label> 
+        <div id="dropdownbox597126898421_content">
+    <ul>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox425367517022">
+        <input type="checkbox" id="dropdownbox425367517022_checkbox"/>
+        <label for="dropdownbox425367517022_checkbox" id="dropdownbox425367517022_title">2013</label> 
+        <div id="dropdownbox425367517022_content">
+    <ul>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox742080183879">
+        <input type="checkbox" id="dropdownbox742080183879_checkbox"/>
+        <label for="dropdownbox742080183879_checkbox" id="dropdownbox742080183879_title">2012</label> 
+        <div id="dropdownbox742080183879_content">
+    <ul>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+   
+
+    <div id="dropdownbox356294894172">
+        <input type="checkbox" id="dropdownbox356294894172_checkbox"/>
+        <label for="dropdownbox356294894172_checkbox" id="dropdownbox356294894172_title">2011</label> 
+        <div id="dropdownbox356294894172_content">
+    <ul>
+     
+    </ul>
+   </div>
+    </div>
+
+    
+
+  
+ </ul>
+</div>
+
+
+
+
+
+
+    
+
+    
+    
+
+
+  </div>
+  
+      
+
+<div class='widgetname_navsub'>
+    <ul>
+             
+            <li>
+             <a href="cichocki_andrzej.html"  >
+                    A. Cichocki
+                </a>
+            </li>
+             
+            <li>
+             <a href="oseledets_ivan.html"  >
+                    I. Oseledets
+                </a>
+            </li>
+             
+            <li>
+             <a href="lempitsky_victor.html"  >
+                    V. Lempitsky
+                </a>
+            </li>
+             
+            <li>
+             <a href="vetrov_dmitry.html"  >
+                    D. Vetrov
+                </a>
+            </li>
+             
+            <li>
+             <a href="rakhuba_maxim.html"  >
+                    M. Rakhuba
+                </a>
+            </li>
+             
+            <li>
+             <a href="chertkov_andrei.html"  >
+                    A. Chertkov
+                </a>
+            </li>
+             
+            <li>
+             <a href="frolov_evgeny.html"  >
+                    E. Frolov
+                </a>
+            </li>
+             
+            <li>
+             <a href="kolesnikov_denis.html"  >
+                    D. Kolesnikov
+                </a>
+            </li>
+             
+            <li>
+             <a href="lebedev_vadim.html"  >
+                    V. Lebedev
+                </a>
+            </li>
+             
+            <li>
+             <a href="ulyanov_dmitry.html"  >
+                    D. Ulyanov
+                </a>
+            </li>
+             
+            <li>
+             <a href="ustinova_evgeniya.html"  >
+                    E. Ustinova
+                </a>
+            </li>
+             
+            <li>
+             <a href="novikov_alexander.html"  >
+                    A. Novikov
+                </a>
+            </li>
+             
+            <li>
+             <a href="podoprikhin_dmitrii.html"  class="active_link">
+                    D. Podoprikhin
+                </a>
+            </li>
+             
+            <li>
+             <a href="figurnov_michael.html"  >
+                    M. Figurnov
+                </a>
+            </li>
+             
+            <li>
+             <a href="anikin_aleksandr.html"  >
+                    A. Anikin
+                </a>
+            </li>
+             
+            <li>
+             <a href="ekimov_leonid.html"  >
+                    L. Ekimov
+                </a>
+            </li>
+             
+            <li>
+             <a href="klokov_roman.html"  >
+                    R. Klokov
+                </a>
+            </li>
+             
+            <li>
+             <a href="rykov_andrey.html"  >
+                    A. Rykov
+                </a>
+            </li>
+             
+            <li>
+             <a href="shvets_mikhail.html"  >
+                    M. Shvets
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+
+
+  
+ </main>
+
+ 
+
+
+  <footer class="root">
+ <h3 class="footer_info">
+  © 2017. "Tensor networks and deep learning for applications in data mining".
+  
+   All rights reserved.
+  
+ </h3>
+ <figure class="footer_links_imgs">
+  <a target="_blank" href="http://минобрнауки.рф/lang/en">
+   <img class="nopadding"  src="static//pictures/logo/min_edu.png" 
+     width="130"
+     height="112">
+  </a>
+  <a target="_blank" href="http://www.skoltech.ru/en/">
+   <img class="nopadding"  src="static//pictures/logo/skoltech.png"
+     width="400"
+     height="147">
+  </a>
+ </figure>
+</footer>
+
+
+
+ </body>
+</html>
+
+
+
+
+

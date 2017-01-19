@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta http-equiv="content-type" 
+   content="text/html; charset=utf-8" />
+        <meta name="viewport" 
+         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="keywords" 
+   content="Tensor networks" />
+  <meta name="description" 
+   content="Laboratory tensor networks" />
+     <title>
+      Work plan
+     </title>
+        
+<style type="text/css">
+
+   @import url('https://fonts.googleapis.com/css?family=Bad+Script|Jura:300,400,600|Open+Sans+Condensed:300,300i,700|Pattaya|Play:400,700|Ruslan+Display|Russo+One');
+  
+
+    .nav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background: #6B7E51;
+    }
+    .nav li {
+
+    }
+    .nav a {
+        display: inline-block;
+        margin: 0;
+        padding: 1.0rem;
+        text-decoration: none;
+        font-family: 'Jura', sans-serif;
+        font-weight: 600; /*For Jura: 300 400 600*/
+        font-size: 0.9rem;
+        color: white;
+    }
+    .nav a:hover {
+        text-decoration: underline;
+        background-color: #003A56;
+    }
+    .nav a.active_link {
+        cursor: default;
+    }
+    .nav a.active_link, .nav a.active_parent_link {
+        text-decoration: none;
+        text-decoration: underline;
+        background-color: #6B7E51;
+        color: #003A56;
+    }
+
+ @media all and (max-width: 1000px) {
+    .nav li {
+        flex: 1 0 30%;
+        color: red;
+    }
+}
+ @media all and (max-width: 10px) {
+    .nav {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .nav li:first-of-type a, .nav a { 
+        text-align: center; 
+        padding: 10px;
+        border-left: 1px solid deepskyblue;
+        border-right: 1px solid deepskyblue;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .nav li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+ header.root {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #003A56;
+ }
+ header.root a.logo {
+  margin-left: -9px;
+  flex 0;
+ }
+ header.root p.logo {
+  flex: 1000;
+  align-self: center;
+  margin: 0 auto;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5rem;
+  color: rgb(201, 201, 201);
+  padding-left: 1.0rem;
+ }
+ header.root a.langbox {
+  background-image: url("static//pictures/icons/rus.gif" );
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 1.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.8rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px hidden white;
+  color: white;
+ }
+ header.root a.langbox:hover {
+  border-style: solid;
+  color: #BA0000;
+  box-shadow: 3px 3px 5px 6px white;
+  } 
+
+ @media all and (max-width: 800px) {
+  #p_logo {
+   font-size: 0.8rem;
+
+  }
+}
+
+        #dropdownbox24183555427 {
+            padding: 0;
+        }
+        #dropdownbox24183555427_checkbox {
+            display: none;
+        }
+        #dropdownbox24183555427_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox24183555427_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox24183555427_checkbox:checked ~ #dropdownbox24183555427_title {
+            background: url(static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox24183555427_content {
+            display: none;
+        }
+        #dropdownbox24183555427_checkbox:checked ~ #dropdownbox24183555427_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox782311941676 {
+            padding: 0;
+        }
+        #dropdownbox782311941676_checkbox {
+            display: none;
+        }
+        #dropdownbox782311941676_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox782311941676_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox782311941676_checkbox:checked ~ #dropdownbox782311941676_title {
+            background: url(static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox782311941676_content {
+            display: none;
+        }
+        #dropdownbox782311941676_checkbox:checked ~ #dropdownbox782311941676_content {
+            display: block; 
+        }
+    
+
+        #dropdownbox5856906352 {
+            padding: 0;
+        }
+        #dropdownbox5856906352_checkbox {
+            display: none;
+        }
+        #dropdownbox5856906352_title {
+            cursor: pointer;
+            display: inline-block; 
+            padding-left: 1.5rem; 
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            background: url(static/pictures/icons/plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            color: #BA0000;
+            border-bottom: 0.2rem solid #BA0000; 
+        }
+        #dropdownbox5856906352_title:hover {
+            border-bottom: 0.2rem dashed #BA0000;  
+        }
+        #dropdownbox5856906352_checkbox:checked ~ #dropdownbox5856906352_title {
+            background: url(static/pictures/icons/minus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+        }
+        #dropdownbox5856906352_content {
+            display: none;
+        }
+        #dropdownbox5856906352_checkbox:checked ~ #dropdownbox5856906352_content {
+            display: block; 
+        }
+    
+
+
+ 
+
+    .widgetname_navsub {
+        width: 12.0rem;
+        margin: 1.5rem 0 2.0rem 0;
+    }
+    .widgetname_navsub ul { 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        background: #003A56;
+        background: linear-gradient(0deg, rgb(0, 105, 152), #003A56);
+    }
+    .widgetname_navsub a {
+        width: 10.0rem;
+        padding: 1.0rem;
+        display: block;
+        text-decoration: none;
+        font-family: 'Jura', sans-serif;
+        font-weight: 600; /*For Jura: 300 400 600*/
+        font-size: 0.8rem;
+        color: white;
+        border-left: 2.0rem hidden white;
+    }
+    .widgetname_navsub a:hover, .widgetname_navsub a.active_link {
+        background-color: rgb(201, 201, 201);
+        color: #003A56;
+    }
+    .widgetname_navsub a:hover {
+        text-decoration: underline;
+        border: 1px hidden #003A56;
+        box-shadow: 3px 3px 5px 6px #003A56;
+    }
+    .widgetname_navsub a.widgetname_navsub {
+        cursor: default;
+        text-decoration: none;
+        box-shadow: none;
+        border-left: 2.0rem solid #6B7E51;
+    }
+
+
+  main.root {
+   flex-grow: 1;
+   display: flex;
+   flex-flow: row wrap-reverse;
+   justify-content: space-between;
+   background-color: white;
+  }
+  #content_main {
+   padding: 1.0rem;
+   margin: 0;
+   flex: 1 1 330px;
+  }
+ 
+
+ footer.root {
+  background-image: url("static//pictures/background/blue_net2.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ footer.root, footer.root figure.footer_links_imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+ }
+ footer.root > * {
+  flex: 1 0 auto;
+ }
+ footer.root .footer_info {
+  flex: 1000 0 15.0rem;  
+  padding: 0.9rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: rgb(201, 201, 201);
+ }
+ footer.root .footer_links_imgs img {
+  height: 3.0rem;
+  width: auto;
+ }
+ footer.root .footer_links_imgs img:first-of-type {
+  padding-right: 1.5rem;
+ }
+ @media only screen and (max-width: 400px) {
+  footer.root .footer_info {
+   max-width: 250px;
+  }
+  footer.root .footer_links_imgs img {
+   height: 2.0rem;
+  }
+    }
+
+
+ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,label,textarea,select,p,blockquote,th,td,header,footer,section,ul,li,fugure {
+   margin: 0;
+   padding: 0;
+   border: 0;
+ }
+ .nopadding { padding: 0; }
+ .nomargin { margin: 0; }
+
+ html {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  color: black;
+ }
+ @media all and (max-width:9999px) { html { font-size: 24px; } }
+ @media all and (max-width: 700px) { html { font-size: 20px; } }
+ @media all and (max-width: 500px) { html { font-size: 18px; } }
+
+ body {
+  padding: 0 15px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(201, 201, 201);
+ }
+ .root {
+  margin: 0 auto;
+  width: 100%;
+  min-width:  300px;
+  max-width: 1400px;
+  box-sizing: border-box;
+ }
+ img {
+  padding: 30px;
+ }
+
+/*----- LOADED FONTS (SOURCE: GOOGLE)
+Regular       Open+Sans+Condensed     300,300i,700
+Headers       Play                    400,700
+Nav           Jura                    300,400,600
+Logo(old)     Pattaya
+Logo(old)     Ruslan+Display
+Logo          Russo+One
+Funny text    Bad+Script
+------- */
+
+
+
+
+
+
+p, i, b {
+  font-size: 1.0rem;
+}
+i {
+  font-style: italic;
+}
+b {
+  font-weight: 700;
+}
+
+h1, h1>a, h2, h2>a, h3, h3>a {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  color: #004566;
+}
+h1, h1>a {
+  font-size: 1.4rem;
+}
+h2, h2>a {
+  font-size: 1.2rem;
+}
+h3, h3>a {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.txt_funny {
+  font-family: 'Bad Script', cursive;
+  font-size: 0.8rem;
+}
+.txt_center {
+  text-align: center;
+}
+.pad_left_1x {
+  padding-left: 1.5rem;
+}
+.pad_left_2x {
+  padding-left: 3.0rem;
+}
+.pad_top_1x {
+  padding-top: 1.5rem;
+}
+.pad_top_2x {
+  padding-top: 3.0rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  /*font-family: 'Jura', sans-serif;
+  font-weight: 400;*/
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link_none, .link_broken {
+  pointer-events: none;
+  cursor: default;
+}
+.link_broken {
+  background: url(static/pictures/icons/cross.png) no-repeat;
+}
+.link_pdf_inner, .link_pdf_outer {
+  background: url(static/pictures/icons/pdf.png) no-repeat;
+}
+.link_www_inner, .link_www_outer {
+  background: url(static/pictures/icons/www.png) no-repeat;
+}
+.link_pdf_inner, .link_pdf_outer,
+.link_www_inner, .link_www_outer, .link_none, .link_broken {
+  display: inline-block;
+  background-size: 1.0rem, 1.0rem;
+  padding-left: 1.2rem;
+  background-position: left center;
+}
+.link_pdf_inner:hover, .link_pdf_outer:hover,
+.link_www_inner:hover, .link_www_outer:hover {
+  text-decoration: none;
+  background-size: 1.2rem 1.2rem;
+  background-position: left top;
+}
+/*
+a[href$=".pdf"] {
+  background: url(./../pictures/icons/pdf.png) no-repeat;
+  background-size: 1.5rem, 1.5rem;
+  padding-left: 1.6rem;
+}*/
+
+li {
+  list-style: none;
+}
+
+.box_img_txt {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-direction: ltr;
+}
+.box_img_txt_inv {
+  justify-content: flex-end;
+}
+  @media only screen and (max-width: 800px) {
+    .box_img_txt {
+      display: block;
+    }
+    .box_img_txt .box_img {
+      float: left;
+    }
+    .box_img_txt ~ * {
+      clear: both;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .box_img_txt {
+      display: flex;
+    }
+    .box_img_txt .box_img {
+      float: none;
+    }
+  }
+  .box_img_txt_inv .box_img {
+    order: 3;
+  }
+.box_img_txt .box_img {
+  order: 1;
+  max-width: 300px;
+  padding: 10px;
+}
+.box_img_txt .box_img img {
+  padding: 0;
+  padding-right: 2.0rem;
+}
+.box_img_txt .box_txt {
+  order: 2;
+  align-self: flex-start;
+  text-align: left;
+  flex: 1;
+  min-width: 30%;
+  padding-left: 2.0rem;
+}
+
+
+
+</style>
+
+        
+
+        <link rel="stylesheet" type="text/css" 
+         href="style.css" />
+     <link rel="icon" 
+      href="static/pictures/logo/logo.png">
+ </head>
+ <body>
+  <header class="root">
+ <a class="logo" href="">
+  <img class="logo nopadding" 
+    src="static//pictures/logo/logo.png"
+    alt="Logo: Tensor networks and deep learning for applications in data mining"
+    width="161px" height="122px">
+ </a>
+ <p id="p_logo" class="logo">
+  Tensor networks and deep learning for applications in data mining
+ </p> 
+ <a class="langbox" href="rus/plan.html">
+  ru
+ </a>
+ 
+
+<ul class='nav'>
+    
+        <li>
+         <a
+                href="index.html" 
+                
+                
+            >
+                Home
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="team.html" 
+                
+                
+            >
+                Team
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="research.html" 
+                
+                class="active_parent_link"
+            >
+                Research
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="news.html" 
+                
+                
+            >
+                Events
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="papers.html" 
+                
+                
+            >
+                Publications
+            </a>
+        </li>
+    
+        <li>
+         <a
+                href="contacts.html" 
+                
+                
+            >
+                Contacts
+            </a>
+        </li>
+    
+</ul>
+
+
+
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+     
+ <main class="root">
+  <div id='content_main' class="pages_plan">
+      
+ 
+ 
+
+ <h1>
+
+    
+        The list of the main goals
+    </h1><br>
+ 
+  
+
+    <div id="dropdownbox24183555427">
+        <input type="checkbox" id="dropdownbox24183555427_checkbox"/>
+        <label for="dropdownbox24183555427_checkbox" id="dropdownbox24183555427_title">2016</label> 
+        <div id="dropdownbox24183555427_content">
+   <ol class="numerated_base">
+    
+    
+     <li class="numerated_item">
+      Investigation of possibilities and prospects of using various tensor networks for low-rank (compressed) data representation and development of new algorithms for tensor decompositions including tensor train and quantized tensor train decomposition.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="oseledets_ivan.html" target="_blank" class="link_www_inner">
+          I. Oseledets
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Investigation of optimization methods for functionals in the low-rank tensor format on tensor manifolds for effective low rank representation of tensor networks.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="oseledets_ivan.html" target="_blank" class="link_www_inner">
+          I. Oseledets
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Development of a new method for learning deep Bayesian generative models using generalized K samples importance lower bound to marginal likelihood.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="vetrov_dmitry.html" target="_blank" class="link_www_inner">
+          D. Vetrov
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Development of a new second-order stochastic optimization method applicable to non-convex setting.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="vetrov_dmitry.html" target="_blank" class="link_www_inner">
+          D. Vetrov
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Formation of a new database of images for experiments with deep neural networks.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Synthesis of deep learning and classical methods of computer vision (including cascade based detection, Hough transform, and the use of integral images) for fast image filtering.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Purchase of computer equipment and components for scientific research.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Participation of the team members in international conferences and workshops on the subject of tensor methods, machine learning and data mining (no less than five events).
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Business trips of the team members to the world's leading research centers for internships and/or collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Development and validation of new methods for two-dimensional image synthesis using deep neural networks.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Purchase of materials and components for scientific research.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      The organizational and technical support of the project, preparation of facilities and placing of computer equipment and components, purchased under the grant agreement for scientific research.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Preparing and conducting new or upgraded lecture courses, seminars and other educational activities on the field of research  for Master and PhD students at Skoltech (no less than four courses).
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Business trips of the team members to the world's leading research centers to share experiences and/or for collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+      
+      
+     </li>
+    
+   </ol>
+  </div>
+    </div>
+
+    
+
+  <br>
+ 
+  
+
+    <div id="dropdownbox782311941676">
+        <input type="checkbox" id="dropdownbox782311941676_checkbox"/>
+        <label for="dropdownbox782311941676_checkbox" id="dropdownbox782311941676_title">2017</label> 
+        <div id="dropdownbox782311941676_content">
+   <ol class="numerated_base">
+    
+    
+     <li class="numerated_item">
+      Analysis of modern deep neural networks architectures (convolutional and recurrent neural networks, restricted Boltzmann machines, auto-encoders, etc) and identification of their connection with tensor networks. Application of tensor factorizations and new optimization methods on tensor manifolds developed in the Laboratory  for compression and training of deep neural networks.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="oseledets_ivan.html" target="_blank" class="link_www_inner">
+          I. Oseledets
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Construction of new types of layers for deep neural networks based on tensor decompositions.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="oseledets_ivan.html" target="_blank" class="link_www_inner">
+          I. Oseledets
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Developing a method of obtaining a single posterior approximation from the collection of K proposed distributions, aimed for the current model.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="vetrov_dmitry.html" target="_blank" class="link_www_inner">
+          D. Vetrov
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Effective software implementation of the proposed inference and learning algorithms for parallel processing on GPUs. Development of new deep learning methods for image deblurring.
+      
+      
+       
+       
+       
+        <br>[
+        
+         Executives in charge
+        
+        :
+       
+       
+        
+         
+         
+         <a href="oseledets_ivan.html" target="_blank" class="link_www_inner">
+          I. Oseledets,
+         </a>
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky,
+         </a>
+        
+         
+         
+         <a href="vetrov_dmitry.html" target="_blank" class="link_www_inner">
+          D. Vetrov
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Developing a new method for object detection that utilizes by involving sided information (for example, depth distribution) and/or using new neural architectures.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Holding an international conference on the subject of tensor methods, machine learning and data mining at Skoltech.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Purchase of accessories for scientific equipment.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Participation of the team members in international conferences and workshops on the subject of tensor methods, machine learning and data mining (no less than six events).
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Business trips of the team members to the world's leading research centers for internships and/or collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Development and validation of new methods for three-dimensional data synthesis using deep neural networks.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Purchase of materials and components for scientific research.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      The organizational and technical support of the project.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Preparation of patent application for the invention in the direction of scientific research.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Preparing and conducting new or upgraded lecture courses, seminars and other educational activities on the field of research  for Master and PhD students at Skoltech (no less than four courses).
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Business trips of the team members to the world's leading research centers to share experiences and/or for collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+      
+      
+     </li>
+    
+   </ol>
+  </div>
+    </div>
+
+    
+
+  <br>
+ 
+  
+
+    <div id="dropdownbox5856906352">
+        <input type="checkbox" id="dropdownbox5856906352_checkbox"/>
+        <label for="dropdownbox5856906352_checkbox" id="dropdownbox5856906352_title">2018</label> 
+        <div id="dropdownbox5856906352_content">
+   <ol class="numerated_base">
+    
+    
+     <li class="numerated_item">
+      The theoretical analysis of tensor methods for deep neural networks that were developed at the previous phase of the project.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="oseledets_ivan.html" target="_blank" class="link_www_inner">
+          I. Oseledets
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Theoretical study of the proposed K-samples importance lower bound, it’s connection to the variance of marginal likelihood estimation.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="vetrov_dmitry.html" target="_blank" class="link_www_inner">
+          D. Vetrov
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Development of effective implementation of adversarial networks. Comparison of the quality of the proposed model with state-of-the-art methods.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Improving the proposed deep architecture "with attention" and developing methods of combining depth fusion and attention mechanisms. Achieving highest speed-up for high resolution images.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="vetrov_dmitry.html" target="_blank" class="link_www_inner">
+          D. Vetrov
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Synthesis of different research directions and building systems that combine approaches developed during the project. Development of combined architectures, including tensorized deep neural networks, probabilistic graphical models, stochastic optimization and Bayesian inference.
+      
+      
+       
+       
+       
+        <br>[
+        
+         Executives in charge
+        
+        :
+       
+       
+        
+         
+         
+         <a href="oseledets_ivan.html" target="_blank" class="link_www_inner">
+          I. Oseledets,
+         </a>
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky,
+         </a>
+        
+         
+         
+         <a href="vetrov_dmitry.html" target="_blank" class="link_www_inner">
+          D. Vetrov
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Development of the application for image quality improvement, object detection and localization, two-dimensional image synthesis and three-dimensional data synthesis based on new methods developed during the project, including tensorized deep neural networks.
+      
+      
+       
+       
+       
+        <br>[
+        
+         Executives in charge
+        
+        :
+       
+       
+        
+         
+         
+         <a href="oseledets_ivan.html" target="_blank" class="link_www_inner">
+          I. Oseledets,
+         </a>
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky,
+         </a>
+        
+         
+         
+         <a href="vetrov_dmitry.html" target="_blank" class="link_www_inner">
+          D. Vetrov
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Holding an international conference on the subject of tensor methods, machine learning and data mining.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Purchase of accessories for scientific equipment.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Participation of the team members in international conferences and workshops on the subject of tensor methods, machine learning and data mining (no less than six events).
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Business trips of the team members to the world's leading research centers for internships and/or collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Development and validation of new methods for video synthesis using deep neural networks.
+      
+      
+       
+       
+        <br>[
+        
+         Executive in charge
+        
+        :
+       
+       
+       
+        
+         
+         
+         <a href="lempitsky_victor.html" target="_blank" class="link_www_inner">
+          V. Lempitsky
+         </a>
+        
+
+        ].
+       
+      
+     </li>
+    
+     <li class="numerated_item">
+      Purchase of materials and components for scientific research.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      The organizational and technical support of the project.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Preparation of patent application for the invention in the direction of scientific research.
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Preparing and conducting new or upgraded lecture courses, seminars and other educational activities on the field of research  for Master and PhD students at Skoltech (no less than four courses).
+      
+      
+     </li>
+    
+     <li class="numerated_item">
+      Business trips of the team members to the world's leading research centers to share experiences and/or for collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+      
+      
+     </li>
+    
+   </ol>
+  </div>
+    </div>
+
+    
+
+  
+ 
+
+ 
+
+
+  </div>
+  
+      
+
+<div class='widgetname_navsub'>
+    <ul>
+             
+            <li>
+             <a href="plan.html"  class="active_link">
+                    Work plan
+                </a>
+            </li>
+             
+            <li>
+             <a href="tensor_network.html"  >
+                    Tensor networks
+                </a>
+            </li>
+             
+            <li>
+             <a href="neural_network.html"  >
+                    Neural networks
+                </a>
+            </li>
+             
+            <li>
+             <a href="software.html"  >
+                    Software
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+
+
+
+  
+ </main>
+
+ 
+
+
+  <footer class="root">
+ <h3 class="footer_info">
+  © 2017. "Tensor networks and deep learning for applications in data mining".
+  
+   All rights reserved.
+  
+ </h3>
+ <figure class="footer_links_imgs">
+  <a target="_blank" href="http://минобрнауки.рф/lang/en">
+   <img class="nopadding"  src="static//pictures/logo/min_edu.png" 
+     width="130"
+     height="112">
+  </a>
+  <a target="_blank" href="http://www.skoltech.ru/en/">
+   <img class="nopadding"  src="static//pictures/logo/skoltech.png"
+     width="400"
+     height="147">
+  </a>
+ </figure>
+</footer>
+
+
+
+ </body>
+</html>
+
+
+
+
+
