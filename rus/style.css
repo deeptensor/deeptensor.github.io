@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Jura:300,400,600|Fira+Sans+Extra+Condensed:400,400i,700|Play:400,700|Russo+One');
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset {
+	border:0;
+}
+address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var {
+	font:inherit;
+}
+del,ins {
+	text-decoration:none;
+}
+caption,th {
+	text-align:left;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym {
+	border:0;
+	font-variant:normal;
+}
+sup {
+	vertical-align:baseline;
+}
+sub {
+	vertical-align:baseline;
+}
+legend {
+	color:#000;
+}/*----- LOADED FONTS (SOURCE: GOOGLE)
+Regular       Fira Sans Extra Condensed 	300,400,700
+Headers old   Play                    		400,700
+Nav           Jura                    		300,400,600
+Logo          Russo+One
+Funny text    Bad+Script
+------- */
+html { font-family: 'Fira Sans Extra Condensed', sans-serif; }
+
+html 													{ font-weight: 400; font-size: 24px; }
+@media all and (max-width: 700px ) 	{ html 	{ font-weight: 400; font-size: 20px; } }
+@media all and (max-width: 500px ) 	{ html 	{ font-weight: 400; font-size: 17px; } }
+
+p, i, b 												{ font-weight: 400; font-size: 1.0rem; }
+i 														{ font-weight: 400; }
+b 														{ font-weight: 700; }
+
+h1,h2,h3,h4,h5,h6,h1>a,h2>a,h3>a,h4>a,h5>a,h6>a 		{ font-weight: 400; font-size: 1.0rem; }
+h1, h1>a 												{ font-weight: 700; font-size: 1.4rem; }
+h2, h2>a 												{ font-weight: 700; font-size: 1.2rem; }
+h3, h3>a 												{ font-weight: 700; font-size: 1.1rem; }
+/*font-family: 'Play', sans-serif;*/
+
+
+.txt_long, .txt_long > * {
+	text-align: justify;
+}
+
+.txt_center { text-align: center; }
+.txt_funny { font-family: 'Bad Script', cursive; font-size: 0.8rem; }html { color: black; }
+body { background-color: rgb(201, 201, 201); }
+
+
+h1,h2,h3,h4,h5,h6,h1>a,h2>a,h3>a,h4>a,h5>a,h6>a { color: #004566; }  a {
+    text-decoration: underline;
+    color: black;
+  }
+  a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  @media all and (max-width: 1000px ) { 
+    a { text-decoration: underline; }
+  } 
+  .link_nav {
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .link_navsub {
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+  .link_none, .link_broken,
+  .link_none:hover, .link_broken:hover {
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+  }
+  .link_broken {
+    background: url(./../static/pictures/icons/cross.png) no-repeat;
+  }
+  .link_pdf_inner, .link_pdf_outer {
+    background: url(./../static/pictures/icons/pdf.png) no-repeat;
+  }
+  .link_www_inner, .link_www_outer {
+    background: url(./../static/pictures/icons/www.png) no-repeat;
+  }
+  .link_pdf_inner, .link_pdf_outer,
+  .link_www_inner, .link_www_outer, .link_none, .link_broken {
+    display: inline-block;
+    background-size: 1.0rem, 1.0rem;
+    padding-left: 1.2rem;
+    background-position: left center;
+  }
+  .link_pdf_inner:hover, .link_pdf_outer:hover,
+  .link_www_inner:hover, .link_www_outer:hover {
+    text-decoration: none;
+    background-size: 1.2rem 1.2rem;
+    background-position: left top;
+  }  li {
+    list-style: none;
+  }
+  .numerated_base {
+    counter-reset: my-counter;
+  }
+  .numerated_item {
+    position: relative;
+    padding-left: 1.8rem;
+  }
+  .numerated_item:before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    position: absolute;
+    left: 0.25rem;
+    top: 0.1rem;
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: 1.0rem;
+    color: #BA0000;
+  }.box_img_txt {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.box_img_txt .box_img {
+  order: 1;
+  margin: 0 1.0rem 1.0rem 0;
+}
+.box_img_txt .box_txt {
+  order: 2;
+  flex: 1;
+  align-self: center;
+  text-align: left;
+  min-width: 45%;
+  margin: 1.0rem 0;
+}
+@media only screen and (max-width: 800px) {
+  .box_img_txt {
+    display: block;
+  }
+  .box_img_txt .box_img {
+    float: left;
+  }
+  .box_img_txt ~ * {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .box_img_txt {
+    display: flex;
+    justify-content: space-around;
+  }
+  .box_img_txt .box_img {
+    order: 5;
+    float: none;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .box_img_txt .box_img img {
+    width: 200px;
+    height: auto;
+  }
+}
