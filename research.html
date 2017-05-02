@@ -1,1 +1,1193 @@
-<!DOCTYPE html> <html lang="en">  <head>   <meta http-equiv="content-type"     content="text/html; charset=utf-8" />     <meta name="viewport"       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />   <meta name="keywords"     content="Tensor networks" />   <meta name="description"     content="Laboratory tensor networks" />     <title>Research</title>     <link rel="stylesheet" type="text/css" href="style.css" />      <style type="text/css">          .macro_nav969088 {             width: 100%;         }         .macro_nav969088 ul {             margin: 0;             padding: 0;             width: 100%;             display: flex;             flex-flow: row wrap;             justify-content: space-around;             background: #6B7E51;         }         .macro_nav969088 ul li a {             display: inline-block;             margin: 0;             padding: 1.0rem;             text-decoration: none;             color: white;         }         .macro_nav969088 ul li a:hover {             text-decoration: underline;             background-color: #003A56;         }         .macro_nav969088 ul li a.link_active {             cursor: default;         }         .macro_nav969088 ul li a.link_active,         .macro_nav969088 ul li a.link_active_parent {             text-decoration: underline;             background-color: #6B7E51;             color: #003A56;         }       @media all and (max-width: 1000px) {         .macro_nav969088 ul li a {             padding: 0.5rem;             font-size: 0.6rem;         }     }  @media all and (max-width: 530px) {         .macro_nav969088 ul {             flex-flow: column wrap;             align-items: stretch;             padding: 0;         }         .macro_nav969088 ul li {             display: flex;             justify-content: space-around;             padding: 0;             text-align: center;              /*border-left: 1px solid deepskyblue;             border-right: 1px solid deepskyblue;*/             border-top: 1px solid rgba(255,255,255,0.3);              border-bottom: 1px solid rgba(0,0,0,0.1);         }         .macro_nav969088 ul li:last-of-type {             /*border-bottom: none;*/         }         .macro_nav969088 ul li a {               padding: 3px;             width: 100%;         }         .macro_nav969088 ul li:last-of-type a {               padding-bottom: 6px;         }         .macro_nav969088 ul li a.link_active,         .macro_nav969088 ul li a.link_active_parent {             text-decoration: none;             color: rgb(201, 201, 201);             background-color: #003A56;         }     }          .macro_navsub921319 {             /*position: absolute;             right: 0px;             top: 100%;*/             position: fixed;             right: 10px;             top: 30%;             z-index: 100;                  }         .macro_navsub921319 ul {             margin: 1.0rem 0 2.0rem 0;             display: flex;             flex-flow: column nowrap;             justify-content: flex-start;             background: #003A56;             background: linear-gradient(0deg, rgb(0, 105, 152), #003A56);          }         .macro_navsub921319.active ul {             width: auto;         }          .macro_navsub921319 ul li a {             display: none;             padding: 0.9rem 1.5rem;             cursor: pointer;             -webkit-transition: all 0.25s ease;             -moz-transition: all 0.25s ease;             color: white;             border-left: 5px hidden #003A56;         }         .macro_navsub921319.active ul li a, .macro_navsub921319.active ul li a.link_active {             display: block;             cursor: pointer;         }         .macro_navsub921319.active ul li a:hover {             background-color: #256f6f;             color: #003A56;         }         .macro_navsub921319 ul li a.link_active,         .macro_navsub921319.active ul li a.link_active:hover {             background-color: rgb(201, 201, 201);             color: #003A56;                    box-shadow: 3px 3px 5px 6px #003A56;             cursor: default;             text-decoration: none;         }          .macro_navsub921319 button {             /*position: absolute;             top: calc(50% - 50px);*/             margin-left: -30px;             width: 30px;             height: 50px;             background-color: #38a6a6;             color: #fff;             border: none;             line-height: 30px;             vertical-align: middle;             outline: none;             cursor: pointer;             border-top-left-radius: 10px;             border-bottom-left-radius: 10px;             -webkit-transition: all 0.5s ease;             -moz-transition: all 0.5s ease;             transition: all 0.5s ease;         }         .macro_navsub921319 button:hover {             margin-left: -50px;             width: 50px;         }       @media only screen and (max-width: 500px) {         .macro_navsub921319 button {             margin-left: -15px;             width: 15px;         }         .macro_navsub921319 button:hover {             margin-left: -20px;             width: 20px;         }       }          .macro_navsub921319.active button {             background-color: #256f6f;         }          .macro_navsub921319 button span {             display: block;             -webkit-transition: all 2.0s ease;             -moz-transition: all 2.0s ease;             transition: all 2.0s ease;         }         .macro_navsub921319.active button span {             -webkit-transform: rotate(180deg);             -moz-transform: rotate(180deg);             transform: rotate(180deg);         }        header.root {   position: relative;   display: flex;   flex-flow: row wrap;   justify-content: space-between;   align-items: flex-start;   border-top-right-radius: 0.8rem;   background-color: #003A56;  }  header.root a.logo {   flex: 0 1 auto;   margin-left: -9px;  }  header.root p.logo {   flex: 10 1;   padding-top: 0.2rem;   align-self: center;   font-family: 'Russo One', sans-serif;   font-size: 1.5rem;   color: rgb(201, 201, 201);   padding-left: 1.0rem;  }  header.root a.langbox {   flex: 0 1 auto;   background-image: url("static//pictures/icons/rus.gif" );   background-position: left center;   background-repeat: no-repeat;   background-size: auto 1.0rem;   padding: 0.5rem 0.5rem 0.5rem 2.0rem;   margin-left: 0.8rem;   font-size: 1.0rem;   text-decoration: none;   border-radius: 0.8rem;   border: 0.2rem hidden rgb(201, 201, 201);   color: white;  }  header.root a.langbox:hover {   border-style: solid;   color: #BA0000;   box-shadow: 3px 3px 5px 6px rgb(201, 201, 201);   box-shadow: 0.2rem 0.2rem 0.37rem 0.3rem rgb(201, 201, 201);   }   header.root div.header_nav_conn {   display: none;   width: 100%;   height: 10px;   background: #003A56;   background: linear-gradient(0deg, #6B7E51, #003A56);   }   @media all and (max-width: 1080px) {   #p_logo {    font-size: 1.2rem;   } }  @media all and (max-width: 930px) {   #p_logo {    font-size: 1.0rem;   }   header.root div.header_nav_conn {    display: block;   } }  @media all and (max-width: 820px) {   #p_logo {    font-size: 1.0rem;   }   header.root a.logo {     margin-left: -5px;    }   header.root a.logo img {    width: calc(0.7*161px);    height: auto;   } }  @media all and (max-width: 770px) {   #p_logo {    font-size: 0.8rem;   }   header.root a.logo {     margin-left: -3px;    }   header.root a.logo img {    width: calc(0.5*161px);    height: auto;   } }  @media all and (max-width: 700px) {   #p_logo {    font-size: 0.7rem;   }   header.root a.logo {     margin-left: -3px;    }   header.root a.logo img {    width: calc(0.4*161px);    height: auto;   } }  @media all and (max-width: 500px) {   #p_logo {    font-size: 0.65rem;   }   header.root a.logo {     margin-left: -2px;    }   header.root a.logo img {    width: calc(0.25*161px);    height: auto;   } }  @media all and (max-width: 400px) {  #p_logo {   font-size: 0.6rem;   padding-left: 0.5rem;  }  header.root a.logo {    margin-left: -2px;   }  header.root a.logo img {   width: calc(0.2*161px);   height: auto;  }  header.root a.langbox {   background-size: auto 0.4rem;   padding: 0.5rem 0.5rem 0.5rem 0.9rem;   margin-left: 0.4rem;   font-size: 0.6rem;  } }    #content_main h3 {    margin-top: 1.0rem;   }   #content_main ol {    margin-right: 50px;   }   #content_main ol li:first-of-type {    margin-top: 1.0rem;   }        @media only screen and (max-width: 500px) {   #content_main ol {    margin-right: 10px;   }       }      main.root {    flex-grow: 1;    display: flex;    flex-flow: row wrap-reverse;    justify-content: space-between;    background-color: white;   }   #content_main {    padding: 1.0rem;    margin: 0;    flex: 1 1 330px;   }     footer.root {   background-image: url("static//pictures/background/blue_net2.jpg");   background-position: left bottom;   background-repeat: no-repeat;   background-size: 100% 100%;  }  footer.root, footer.root figure.footer_links_imgs {   display: flex;   flex-flow: row wrap;   justify-content: space-between;   align-items: center;  }  footer.root > * {   flex: 1 0 auto;  }  footer.root .footer_info {   flex: 1000 0 10.0rem;     padding: 0.9rem;   text-align: left;   font-size: 0.9rem;   color: rgb(201, 201, 201);  }  footer.root .footer_links_imgs img {   height: 3.0rem;   width: auto;  }  footer.root .footer_links_imgs img:first-of-type {   padding-right: 1.5rem;  }  @media only screen and (max-width: 400px) {   footer.root .footer_info {    max-width: 250px;   }   footer.root .footer_links_imgs img {    height: 2.0rem;   }     }     html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,label,textarea,select,p,blockquote,th,td,header,footer,section,ul,li,img,figure {     margin: 0;    padding: 0;    border: 0;  }  .nopadding { padding: 0; }   .pad_left_1x { padding-left: 1.5rem;}   .pad_left_2x { padding-left: 3.0rem; }   .pad_top_1x { padding-top: 1.5rem; }   .pad_top_2x { padding-top: 3.0rem; }   .nomargin { margin: 0; }    @media only screen and (max-width: 400px) {     .pad_left_1x { padding-left: 0.5rem;}     .pad_left_2x { padding-left: 1.0rem; }     .pad_top_1x { padding-top: 0.5rem; }     .pad_top_2x { padding-top: 1.0rem; }   }   html {   min-height: 100%;   display: flex;   flex-flow: column nowrap;  }   body {   padding: 0 10px;   flex: 1 1 auto;   display: flex;   flex-flow: column nowrap;  }   .root {   margin: 0 auto;   width: 100%;   min-width:  300px;   max-width: 1400px;   box-sizing: border-box;  }    img { padding: 0; }   </style>     <link rel="icon" href="static//pictures/logo/logo.png">     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  </head>  <body>   <header class="root">  <a class="logo" href="index.html">   <img class="logo nopadding"      src="static//pictures/logo/logo.png"     alt="Logo:  Tensor networks and deep learning for applications in data mining"     width="161px" height="122px">  </a>  <p id="p_logo" class="logo">    Tensor networks and deep learning<br> for applications in data mining  </p>   <a class="langbox" href="rus/research.html">   ru  </a>   <div class="header_nav_conn"></div>                      <div class="macro_nav969088">         <ul>                              <li>                     <a href="index.html" class="link_nav                                                                        ">                         Home                     </a>                 </li>                              <li>                     <a href="team.html" class="link_nav                                                                        ">                         Team                     </a>                 </li>                              <li>                     <a href="research.html" class="link_nav                                                       link_active                                                                       ">                         Research                     </a>                 </li>                              <li>                     <a href="news.html" class="link_nav                                                                        ">                         Events                     </a>                 </li>                              <li>                     <a href="publications.html" class="link_nav                                                                        ">                         Papers                     </a>                 </li>                              <li>                     <a href="contacts.html" class="link_nav                                                                        ">                         Contacts                     </a>                 </li>                      </ul>     </div>                                             <script type="text/javascript">         function toggle() {             var nav = $('.macro_navsub921319');             nav.toggleClass('active');         }         function toggle_add() {             var nav = $('.macro_navsub921319');             if ( nav.hasClass('active') )                 nav.toggleClass('active');         }         function toggle_reg() {             var nav = $('.macro_navsub921319');             var btn = $('button.nav_toggle');             btn.on('click', function(){nav.toggleClass('active');});         }         $(document).ready(toggle_reg);         $(window).load(setTimeout(toggle_add, 3000));     </script>      <div class="macro_navsub921319 active">            <ul>             <li>                 <button class="nav_toggle"><span><</span></button>                              </li>                              <li>                     <a href="plan.html" class="link_navsub                                                                        ">                                                      Work plan                                              </a>                 </li>                              <li>                     <a href="tensor_network.html" class="link_navsub                                                                        ">                                                      Tensor networks                                              </a>                 </li>                              <li>                     <a href="neural_network.html" class="link_navsub                                                                        ">                                                      Neural networks                                              </a>                 </li>                              <li>                     <a href="software.html" class="link_navsub                                                                        ">                                                      Software                                              </a>                 </li>                      </ul>     </div>           </header>                             <main class="root">   <div id='content_main' class="pages_name">         <h1>The main goals and tasks of our research are the following    </h1>  <h3 class="txt_long">Development of new fundamental approaches for training, testing and storing parameters of deep neural networks. These approaches allow to reduce by orders of magnitude computational complexity and required memory for the operation of the network, while maintaining a high quality of prediction.    </h3>  <ol class="numerated_base txt_long">   <li class="numerated_item"><p>Analysis of modern deep neural networks architectures (convolutional and recurrent neural networks, restricted Boltzmann machines, auto-encoders, etc) and identification of their connection with tensor networks.     </p></li>   <li class="numerated_item"><p>Investigation of possibilities and prospects of using various tensor networks methods for low-rank (compressed) representation of data. Development of new algorithms for tensor decompositions, including tensor train decomposition (TT-decomposition).     </p></li>   <li class="numerated_item"><p>Application of low-rank tensor approximations, in particular, tensor train decomposition (TT-decomposition) and quantized tensor train decomposition (QTT-decomposition) to deep neural networks for compressed (low-rank) representation of arrays associated with the network weights and formulation of new learning algorithms adapted to the selected low-rank approximation.     </p></li>   <li class="numerated_item"><p>Development of improved variational lower bound allowing for more accurate variational Bayesian inference. Development of stochastic optimization methods tailored to this new variational bound and study of its properties. Acceleration of constructed algorithms by low-rank tensor approximations.     </p></li>  </ol>   <h3 class="txt_long">Application of the developed approaches to a number of problems related to data mining and machine learning.    </h3>  <ol class="numerated_base txt_long">   <li class="numerated_item"><p>New deep-learning methods for fast image deblurring.    </p></li>   <li class="numerated_item"><p>New deep-learning methods for fast object detection and positioning.    </p></li>   <li class="numerated_item"><p>New methods for image and video generation using machine learning and neural networks techniques.    </p></li>   <li class="numerated_item"><p>Development of mobile applications (capable of operating at low power devices such as tablets, cell phones and cameras) that utilize developed algorithms for fast image deblurring, image and video generation, object detection and positioning, etc.    </p></li>  </ol>         </div>  </main>        <footer class="root">  <h3 class="footer_info">   © 2017.  Tensor networks and deep learning for applications in data mining.       All rights reserved.     </h3>  <figure class="footer_links_imgs">   <a target="_blank" href="http://минобрнауки.рф/lang/en">    <img class="nopadding"  src="static//pictures/logo/min_edu.png"       width="130"      height="112">   </a>   <a target="_blank" href="http://www.skoltech.ru/en/">    <img class="nopadding"  src="static//pictures/logo/skoltech.png"      width="400"      height="147">   </a>  </figure> </footer>     </body> </html>
+<!DOCTYPE html>
+<html class="html" lang="en"><head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+		<meta content="Tensor networks" name="keywords"/>
+		<meta content="Laboratory tensor networks" name="description"/>
+		<title>Research</title>
+		<link href="./static/pictures/favicon.png" rel="icon"/>
+		
+    	<!--STYLEPLACEHOLDER-->
+	</head>
+	<body class="body">
+		
+		<div class="body__wrapper">
+		<header class="header body__item">
+	<a class="header__logo" href="index.html">
+		<img alt="Laboratory Tensor networks and deep learning for applications in data mining" class="logo nopadding" height="122" src="./static/pictures/logo_medium.png" width="161"/>
+	</a>
+	<p class="header__title">
+		Tensor networks and deep learning<br/>for applications in data mining
+	</p>	
+	<a class="header__langbox" href="rus/research.html">
+		ru
+	</a>
+	<div class="header_nav_conn">
+	</div>
+</header>
+		<ul class="nav body__item">
+    
+    <li class="nav__item">
+        <a class="nav__link " href="index.html">
+            Home
+        </a>
+    </li>
+    
+    <li class="nav__item">
+        <a class="nav__link " href="team.html">
+            Team
+        </a>
+    </li>
+    
+    <li class="nav__item">
+        <a class="nav__link nav__link_active " href="research.html">
+            Research
+        </a>
+    </li>
+    
+    <li class="nav__item">
+        <a class="nav__link " href="news.html">
+            News
+        </a>
+    </li>
+    
+    <li class="nav__item">
+        <a class="nav__link " href="contacts.html">
+            Contacts
+        </a>
+    </li>
+    
+</ul>
+		
+		<main class="body__item body__item_main">
+			
+
+	
+
+    <div id="macro_txt71131">
+        
+		<h2>
+			The main goals and tasks of our research are the following 
+			</h2>
+	
+    </div>
+
+    <style type="text/css">
+        #macro_txt71131 > * {
+            text-align: justify;
+            padding-bottom: 1.0rem;
+        }
+    </style>
+
+	
+
+    <div id="macro_txt61625">
+        
+		<h4>
+			Development of new fundamental approaches for training, testing and storing parameters of deep neural networks. These approaches allow to reduce by orders of magnitude computational complexity and required memory for the operation of the network, while maintaining a high quality of prediction. 
+			</h4>
+	
+    </div>
+
+    <style type="text/css">
+        #macro_txt61625 > * {
+            text-align: justify;
+            padding-bottom: 1.0rem;
+        }
+    </style>
+
+	
+
+    <ol id="macro_ol82681">
+        
+		<li>
+			Analysis of modern deep neural networks architectures (convolutional and recurrent neural networks, restricted Boltzmann machines, auto-encoders, etc) and identification of their connection with tensor networks. 
+			</li>
+		<li>
+			Investigation of possibilities and prospects of using various tensor networks methods for low-rank (compressed) representation of data. Development of new algorithms for tensor decompositions, including tensor train decomposition (TT-decomposition). 
+			</li>
+		<li>
+			Application of low-rank tensor approximations, in particular, tensor train decomposition (TT-decomposition) and quantized tensor train decomposition (QTT-decomposition) to deep neural networks for compressed (low-rank) representation of arrays associated with the network weights and formulation of new learning algorithms adapted to the selected low-rank approximation. 
+			</li>
+		<li>
+			Development of improved variational lower bound allowing for more accurate variational Bayesian inference. Development of stochastic optimization methods tailored to this new variational bound and study of its properties. Acceleration of constructed algorithms by low-rank tensor approximations. 
+			</li>
+	
+    </ol>
+
+    <style type="text/css">
+        #macro_ol82681 {
+            counter-reset: countermacro_ol82681;
+            list-style: none;
+        }
+        #macro_ol82681 > * {
+            text-align: left;
+            position: relative;
+            padding-left: 1.8rem;
+            padding-bottom: 0.5rem;
+        }
+        #macro_ol82681 > *:before {
+            content: counter(countermacro_ol82681);
+            counter-increment: countermacro_ol82681;
+            position: absolute;
+            left: 0.25rem;
+            top: 0.1rem;
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.0rem;
+            color: rgb(186, 0, 0);
+        }
+    </style>
+
+	
+
+    <div id="macro_txt41836">
+        
+		<h4>
+			Application of the developed approaches to a number of problems related to data mining and machine learning. 
+			</h4>
+	
+    </div>
+
+    <style type="text/css">
+        #macro_txt41836 > * {
+            text-align: justify;
+            padding-bottom: 1.0rem;
+        }
+    </style>
+
+	
+
+    <ol id="macro_ol50660">
+        
+		<li>
+			New deep-learning methods for fast image deblurring.
+			</li>
+		<li>
+			New deep-learning methods for fast object detection and positioning.
+			</li>
+		<li>
+			New methods for image and video generation using machine learning and neural networks techniques.
+			</li>
+		<li>
+			Development of mobile applications (capable of operating at low power devices such as tablets, cell phones and cameras) that utilize developed algorithms for fast image deblurring, image and video generation, object detection and positioning, etc.
+			</li>
+	
+    </ol>
+
+    <style type="text/css">
+        #macro_ol50660 {
+            counter-reset: countermacro_ol50660;
+            list-style: none;
+        }
+        #macro_ol50660 > * {
+            text-align: left;
+            position: relative;
+            padding-left: 1.8rem;
+            padding-bottom: 0.5rem;
+        }
+        #macro_ol50660 > *:before {
+            content: counter(countermacro_ol50660);
+            counter-increment: countermacro_ol50660;
+            position: absolute;
+            left: 0.25rem;
+            top: 0.1rem;
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.0rem;
+            color: rgb(186, 0, 0);
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<br/><br/><br/>
+	<h2>
+		The work plan for the next three years </h2>
+	<br/>
+	
+
+    <div id="macro_dropdown22111">
+        
+            <input checked="" class="macro_dropdown22111_checkbox" id="macro_dropdown22111_checkbox_1" type="checkbox"/>
+            <label class="macro_dropdown22111_title" for="macro_dropdown22111_checkbox_1" id="macro_dropdown22111_title_1">
+                <h2>2017</h2>
+            </label>
+            
+            <input class="macro_dropdown22111_checkbox" id="macro_dropdown22111_checkbox_2" type="checkbox"/>
+            <label class="macro_dropdown22111_title" for="macro_dropdown22111_checkbox_2" id="macro_dropdown22111_title_2">
+                <h2>2018</h2>
+            </label>
+            
+            <input class="macro_dropdown22111_checkbox" id="macro_dropdown22111_checkbox_3" type="checkbox"/>
+            <label class="macro_dropdown22111_title" for="macro_dropdown22111_checkbox_3" id="macro_dropdown22111_title_3">
+                <h2>2019</h2>
+            </label>
+            
+        
+            
+		
+
+    <ol id="macro_dropdown221111">
+        
+			
+			<li>
+				Investigation of possibilities and prospects of using various tensor networks for low-rank (compressed) data representation and development of new algorithms for tensor decompositions including tensor train and quantized tensor train decomposition.
+				<br/>
+				[ 2017.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="ivan_oseledets.html" target="_blank">Ivan Oseledets</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Investigation of optimization methods for functionals in the low-rank tensor format on tensor manifolds for effective low rank representation of tensor networks.
+				<br/>
+				[ 2017.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="ivan_oseledets.html" target="_blank">Ivan Oseledets</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Development of a new method for learning deep Bayesian generative models using generalized K samples importance lower bound to marginal likelihood.
+				<br/>
+				[ 2017.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="dmitry _vetrov.html" target="_blank">Dmitry  Vetrov</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Development of a new second-order stochastic optimization method applicable to non-convex setting.
+				<br/>
+				[ 2017.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="dmitry _vetrov.html" target="_blank">Dmitry  Vetrov</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Formation of a new database of images for experiments with deep neural networks.
+				<br/>
+				[ 2017.
+				
+				
+				
+				
+				
+				<span>Executives in charge: </span>
+				
+				
+				
+				
+				
+				<a class="link" href="ivan_oseledets.html" target="_blank">Ivan Oseledets</a>
+				,
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				,
+				
+				
+				
+				<a class="link" href="dmitry _vetrov.html" target="_blank">Dmitry  Vetrov</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Synthesis of deep learning and classical methods of computer vision (including cascade based detection, Hough transform, and the use of integral images) for fast image filtering.
+				<br/>
+				[ 2017.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Purchase of computer equipment and components for scientific research.
+				<br/>
+				[ 2017.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Participation of the team members in international conferences and workshops on the subject of tensor methods, machine learning and data mining (no less than five events).
+				<br/>
+				[ 2017.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Business trips of the team members to the world's leading research centers for internships and/or collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+				<br/>
+				[ 2017.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Development and validation of new methods for two-dimensional image synthesis using deep neural networks.
+				<br/>
+				[ 2017.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Purchase of materials and components for scientific research.
+				<br/>
+				[ 2017.
+				
+				
+				]
+			</li>
+			
+			<li>
+				The organizational and technical support of the project, preparation of facilities and placing of computer equipment and components, purchased under the grant agreement for scientific research.
+				<br/>
+				[ 2017.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Preparing and conducting new or upgraded lecture courses, seminars and other educational activities on the field of research  for Master and PhD students at Skoltech (no less than four courses).
+				<br/>
+				[ 2017.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Business trips of the team members to the world's leading research centers to share experiences and/or for collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+				<br/>
+				[ 2017.
+				
+				
+				]
+			</li>
+			
+		
+    </ol>
+
+    <style type="text/css">
+        #macro_dropdown221111 {
+            counter-reset: countermacro_dropdown221111;
+            list-style: none;
+        }
+        #macro_dropdown221111 > * {
+            text-align: justify;
+            position: relative;
+            padding-left: 1.8rem;
+            padding-bottom: 0.5rem;
+        }
+        #macro_dropdown221111 > *:before {
+            content: counter(countermacro_dropdown221111);
+            counter-increment: countermacro_dropdown221111;
+            position: absolute;
+            left: 0.25rem;
+            top: 0.1rem;
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.0rem;
+            color: rgb(186, 0, 0);
+        }
+    </style>
+	
+        
+            
+		
+
+    <ol id="macro_dropdown221112">
+        
+			
+			<li>
+				Analysis of modern deep neural networks architectures (convolutional and recurrent neural networks, restricted Boltzmann machines, auto-encoders, etc) and identification of their connection with tensor networks. Application of tensor factorizations and new optimization methods on tensor manifolds developed in the Laboratory  for compression and training of deep neural networks.
+				<br/>
+				[ 2018.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="ivan_oseledets.html" target="_blank">Ivan Oseledets</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Construction of new types of layers for deep neural networks based on tensor decompositions.
+				<br/>
+				[ 2018.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="ivan_oseledets.html" target="_blank">Ivan Oseledets</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Developing a method of obtaining a single posterior approximation from the collection of K proposed distributions, aimed for the current model.
+				<br/>
+				[ 2018.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="dmitry _vetrov.html" target="_blank">Dmitry  Vetrov</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Effective software implementation of the proposed inference and learning algorithms for parallel processing on GPUs. Development of new deep learning methods for image deblurring.
+				<br/>
+				[ 2018.
+				
+				
+				
+				
+				
+				<span>Executives in charge: </span>
+				
+				
+				
+				
+				
+				<a class="link" href="ivan_oseledets.html" target="_blank">Ivan Oseledets</a>
+				,
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				,
+				
+				
+				
+				<a class="link" href="dmitry _vetrov.html" target="_blank">Dmitry  Vetrov</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Developing a new method for object detection that utilizes by involving sided information (for example, depth distribution) and/or using new neural architectures.
+				<br/>
+				[ 2018.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Holding an international conference on the subject of tensor methods, machine learning and data mining at Skoltech.
+				<br/>
+				[ 2018.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Purchase of accessories for scientific equipment.
+				<br/>
+				[ 2018.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Participation of the team members in international conferences and workshops on the subject of tensor methods, machine learning and data mining (no less than six events).
+				<br/>
+				[ 2018.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Business trips of the team members to the world's leading research centers for internships and/or collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+				<br/>
+				[ 2018.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Development and validation of new methods for three-dimensional data synthesis using deep neural networks.
+				<br/>
+				[ 2018.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Purchase of materials and components for scientific research.
+				<br/>
+				[ 2018.
+				
+				
+				]
+			</li>
+			
+			<li>
+				The organizational and technical support of the project.
+				<br/>
+				[ 2018.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Preparation of patent application for the invention in the direction of scientific research.
+				<br/>
+				[ 2018.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Preparing and conducting new or upgraded lecture courses, seminars and other educational activities on the field of research  for Master and PhD students at Skoltech (no less than four courses).
+				<br/>
+				[ 2018.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Business trips of the team members to the world's leading research centers to share experiences and/or for collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+				<br/>
+				[ 2018.
+				
+				
+				]
+			</li>
+			
+		
+    </ol>
+
+    <style type="text/css">
+        #macro_dropdown221112 {
+            counter-reset: countermacro_dropdown221112;
+            list-style: none;
+        }
+        #macro_dropdown221112 > * {
+            text-align: justify;
+            position: relative;
+            padding-left: 1.8rem;
+            padding-bottom: 0.5rem;
+        }
+        #macro_dropdown221112 > *:before {
+            content: counter(countermacro_dropdown221112);
+            counter-increment: countermacro_dropdown221112;
+            position: absolute;
+            left: 0.25rem;
+            top: 0.1rem;
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.0rem;
+            color: rgb(186, 0, 0);
+        }
+    </style>
+	
+        
+            
+		
+
+    <ol id="macro_dropdown221113">
+        
+			
+			<li>
+				The theoretical analysis of tensor methods for deep neural networks that were developed at the previous phase of the project.
+				<br/>
+				[ 2019.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="ivan_oseledets.html" target="_blank">Ivan Oseledets</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Theoretical study of the proposed K-samples importance lower bound, it’s connection to the variance of marginal likelihood estimation.
+				<br/>
+				[ 2019.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="dmitry _vetrov.html" target="_blank">Dmitry  Vetrov</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Development of effective implementation of adversarial networks. Comparison of the quality of the proposed model with state-of-the-art methods.
+				<br/>
+				[ 2019.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Improving the proposed deep architecture "with attention" and developing methods of combining depth fusion and attention mechanisms. Achieving highest speed-up for high resolution images.
+				<br/>
+				[ 2019.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="dmitry _vetrov.html" target="_blank">Dmitry  Vetrov</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Synthesis of different research directions and building systems that combine approaches developed during the project. Development of combined architectures, including tensorized deep neural networks, probabilistic graphical models, stochastic optimization and Bayesian inference.
+				<br/>
+				[ 2019.
+				
+				
+				
+				
+				
+				<span>Executives in charge: </span>
+				
+				
+				
+				
+				
+				<a class="link" href="ivan_oseledets.html" target="_blank">Ivan Oseledets</a>
+				,
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				,
+				
+				
+				
+				<a class="link" href="dmitry _vetrov.html" target="_blank">Dmitry  Vetrov</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Development of the application for image quality improvement, object detection and localization, two-dimensional image synthesis and three-dimensional data synthesis based on new methods developed during the project, including tensorized deep neural networks.
+				<br/>
+				[ 2019.
+				
+				
+				
+				
+				
+				<span>Executives in charge: </span>
+				
+				
+				
+				
+				
+				<a class="link" href="ivan_oseledets.html" target="_blank">Ivan Oseledets</a>
+				,
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				,
+				
+				
+				
+				<a class="link" href="dmitry _vetrov.html" target="_blank">Dmitry  Vetrov</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Holding an international conference on the subject of tensor methods, machine learning and data mining.
+				<br/>
+				[ 2019.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Purchase of accessories for scientific equipment.
+				<br/>
+				[ 2019.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Participation of the team members in international conferences and workshops on the subject of tensor methods, machine learning and data mining (no less than six events).
+				<br/>
+				[ 2019.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Business trips of the team members to the world's leading research centers for internships and/or collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+				<br/>
+				[ 2019.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Development and validation of new methods for video synthesis using deep neural networks.
+				<br/>
+				[ 2019.
+				
+				
+				
+				
+				<span>Executive in charge: </span>
+				
+				
+				
+				
+				
+				
+				<a class="link" href="victor_lempitsky.html" target="_blank">Victor Lempitsky</a>
+				
+				
+				
+				
+				]
+			</li>
+			
+			<li>
+				Purchase of materials and components for scientific research.
+				<br/>
+				[ 2019.
+				
+				
+				]
+			</li>
+			
+			<li>
+				The organizational and technical support of the project.
+				<br/>
+				[ 2019.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Preparation of patent application for the invention in the direction of scientific research.
+				<br/>
+				[ 2019.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Preparing and conducting new or upgraded lecture courses, seminars and other educational activities on the field of research  for Master and PhD students at Skoltech (no less than four courses).
+				<br/>
+				[ 2019.
+				
+				
+				]
+			</li>
+			
+			<li>
+				Business trips of the team members to the world's leading research centers to share experiences and/or for collaborative research on tensor methods, machine learning and data mining (no less than one trip).
+				<br/>
+				[ 2019.
+				
+				
+				]
+			</li>
+			
+		
+    </ol>
+
+    <style type="text/css">
+        #macro_dropdown221113 {
+            counter-reset: countermacro_dropdown221113;
+            list-style: none;
+        }
+        #macro_dropdown221113 > * {
+            text-align: justify;
+            position: relative;
+            padding-left: 1.8rem;
+            padding-bottom: 0.5rem;
+        }
+        #macro_dropdown221113 > *:before {
+            content: counter(countermacro_dropdown221113);
+            counter-increment: countermacro_dropdown221113;
+            position: absolute;
+            left: 0.25rem;
+            top: 0.1rem;
+            font-family: 'Play', sans-serif;
+            font-weight: 400;
+            font-size: 1.0rem;
+            color: rgb(186, 0, 0);
+        }
+    </style>
+	
+        
+    </div>
+
+    <style type="text/css">
+        #macro_dropdown22111 {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+        .macro_dropdown22111_checkbox {
+            display: none;
+        }
+        .macro_dropdown22111_title {
+            cursor: pointer;
+            padding: 0 0.7rem 0 1.5rem;
+            margin: 0;
+            max-width: 20%;
+            background: url(./static/pictures/icon_plus.png) no-repeat;
+            background-size: 1.2rem, 1.2rem;
+            background-position: left center;
+            border-bottom-style: solid;
+            border-bottom-width: 0.2rem;
+            border-bottom-color: rgb(0, 58, 86);
+        }
+        .macro_dropdown22111_title:hover {
+            border-bottom-style: dashed;  
+        }
+
+        
+            #macro_dropdown221111 {
+                width: 100%;
+                display: none;
+            }
+            #macro_dropdown22111_checkbox_1:checked ~ #macro_dropdown22111_title_1 {
+                background: url(./static/pictures/icon_minus.png) no-repeat;
+                background-size: 1.2rem, 1.2rem;
+                background-position: left center;
+            }
+            #macro_dropdown22111_checkbox_1:checked ~ #macro_dropdown221111 {
+                display: block; 
+            }
+        
+            #macro_dropdown221112 {
+                width: 100%;
+                display: none;
+            }
+            #macro_dropdown22111_checkbox_2:checked ~ #macro_dropdown22111_title_2 {
+                background: url(./static/pictures/icon_minus.png) no-repeat;
+                background-size: 1.2rem, 1.2rem;
+                background-position: left center;
+            }
+            #macro_dropdown22111_checkbox_2:checked ~ #macro_dropdown221112 {
+                display: block; 
+            }
+        
+            #macro_dropdown221113 {
+                width: 100%;
+                display: none;
+            }
+            #macro_dropdown22111_checkbox_3:checked ~ #macro_dropdown22111_title_3 {
+                background: url(./static/pictures/icon_minus.png) no-repeat;
+                background-size: 1.2rem, 1.2rem;
+                background-position: left center;
+            }
+            #macro_dropdown22111_checkbox_3:checked ~ #macro_dropdown221113 {
+                display: block; 
+            }
+        
+    </style>
+
+	<style type="text/css">
+		#content_main ol {
+			margin-right: 50px;
+		}
+		#content_main ol li:first-of-type {
+			margin-top: 1.0rem;
+		}
+	      @media only screen and (max-width: 500px) {
+		#content_main ol {
+			margin-right: 10px;
+		}
+      }
+	</style>
+
+	<style type="text/css">
+		#content_main h4 {
+			margin-top: 1.0rem;
+		}
+		#content_main ol {
+			margin-right: 50px;
+		}
+		#content_main ol li:first-of-type {
+			margin-top: 1.0rem;
+		}
+	    @media only screen and (max-width: 500px) {
+			#content_main ol {
+				margin-right: 10px;
+		}
+      }
+	</style>
+
+		</main>
+		<footer class="footer body__item">
+	<h3 class="footer__text">
+		© 2017. Tensor networks and deep learning for applications in data mining. <br/>All rights reserved.
+		</h3>
+	<figure class="footer__image-bar">
+    	
+    	<div class="link-image link-image_noborder">
+	        <a class="link link-image__link" href="http://минобрнауки.рф/lang/en" target="_blank">
+	        	<img alt="Minestry of education" class="image link-image__image" height="100" src="./static/pictures/logo_minedu_eng.png" width="116"/>
+	        </a>
+		</div>
+    	
+    	<div class="link-image link-image_noborder">
+	        <a class="link link-image__link" href="http://www.skoltech.ru/en/" target="_blank">
+	        	<img alt="Skoltech" class="image link-image__image" height="100" src="./static/pictures/logo_skoltech_eng.png" width="272"/>
+	        </a>
+		</div>
+    	
+	</figure>
+</footer>
+		</div>
+		
+	
+</body></html>
