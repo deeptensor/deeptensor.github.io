@@ -132,9 +132,9 @@ li {
 	justify-content: space-between;
 	align-items: center;
 	background-image: url("./static/pictures/bg_footer.jpg");
-	background-position: left bottom;
+	background-position: right bottom;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 }
 .footer__image-bar {	
 	display: flex;
@@ -226,7 +226,7 @@ li {
 	flex: 1 0 300px;
 	font-family: 'Russo One', sans-serif;
 	font-size: 1.5rem;
-	color: rgb(201, 201, 201);
+	color: rgb(255, 255, 255);
 	align-self: center;
 	padding: 0.2rem 1.0rem;
 	margin: 0 auto;
