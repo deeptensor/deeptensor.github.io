@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "dikobraz -> ferret [Web/Stranger]",
+  "description": "This extension provide ferret web/stranger with info about current page content",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_title": "FERRET",
+    "default_icon": "static/pictures/favicon.png",
+    "default_popup": "plugin.html"
+  },
+  "permissions": [
+    "tabs", "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "browser.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+
+}

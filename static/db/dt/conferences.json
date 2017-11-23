@@ -1,0 +1,200 @@
+{
+    "name": "conferences",
+    "pknm": "name",
+    "opts": {
+        "withCols": true,
+        "withRows": true
+    },
+    "cols": [
+        {
+            "name": "name",
+            "type": "VARCHAR",
+            "sub1": "50",
+            "deft": null,
+            "comm": "",
+            "isPk": true,
+            "isUnsigned": false,
+            "isNotNull": true,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "name_full",
+            "type": "VARCHAR",
+            "sub1": "200",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "country",
+            "type": "VARCHAR",
+            "sub1": "100",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "city",
+            "type": "VARCHAR",
+            "sub1": "100",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "start",
+            "type": "DATE",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "end",
+            "type": "DATE",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "rating",
+            "type": "VARCHAR",
+            "sub1": "45",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "note",
+            "type": "VARCHAR",
+            "sub1": "2000",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "site",
+            "type": "VARCHAR",
+            "sub1": "500",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "wos",
+            "type": "VARCHAR",
+            "sub1": "400",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "scopus",
+            "type": "VARCHAR",
+            "sub1": "400",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        }
+    ],
+    "rows": [
+        {
+            "name": "ACL-2017",
+            "name_full": "The 55th annual meeting of the Association for Computational Linguistics",
+            "country": "Canada",
+            "city": "Vancouver",
+            "start": "2017-07-29T21:00:00.000Z",
+            "end": "2017-08-03T21:00:00.000Z",
+            "site": "http://acl2017.org/"
+        },
+        {
+            "name": "CVPR-2017",
+            "name_full": "IEEE Conference on Computer Vision and Pattern Recognition",
+            "country": "USA",
+            "city": "Hawaii",
+            "start": "2017-10-20T21:00:00.000Z",
+            "end": "2017-10-25T21:00:00.000Z",
+            "site": "http://cvpr2017.thecvf.com"
+        },
+        {
+            "name": "ICCV-2017",
+            "name_full": "",
+            "country": "Italy",
+            "city": "Venice",
+            "start": "2017-10-23T21:00:00.000Z",
+            "end": "2017-10-26T21:00:00.000Z",
+            "site": "http://iccv2017.thecvf.com"
+        },
+        {
+            "name": "ICML-2017",
+            "name_full": "Thirty-fourth International Conference on Machine Learning",
+            "country": "Australia",
+            "city": "Sydney",
+            "start": "2017-08-05T21:00:00.000Z",
+            "end": "2017-08-10T21:00:00.000Z",
+            "site": "https://2017.icml.cc/"
+        },
+        {
+            "name": "ICMV-2016",
+            "name_full": "Ninth International Conference on Machine Vision (ICMV 2016)",
+            "country": "France",
+            "city": "Nice",
+            "start": "2016-11-17T21:00:00.000Z",
+            "end": "2016-11-19T21:00:00.000Z",
+            "site": "http://icmv.org/",
+            "wos": "YES",
+            "scopus": "YES"
+        }
+    ]
+}

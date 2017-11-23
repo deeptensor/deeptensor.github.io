@@ -1,0 +1,670 @@
+{
+    "name": "imgs",
+    "pknm": "name",
+    "opts": {
+        "withCols": true,
+        "withRows": true
+    },
+    "cols": [
+        {
+            "name": "name",
+            "type": "VARCHAR",
+            "sub1": "50",
+            "deft": null,
+            "comm": "",
+            "isPk": true,
+            "isUnsigned": false,
+            "isNotNull": true,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "width",
+            "type": "SMALLINT",
+            "sub1": "6",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": true,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "height",
+            "type": "SMALLINT",
+            "sub1": "6",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": true,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "path",
+            "type": "VARCHAR",
+            "sub1": "100",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "path_rus",
+            "type": "VARCHAR",
+            "sub1": "100",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "href",
+            "type": "VARCHAR",
+            "sub1": "200",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "href_rus",
+            "type": "VARCHAR",
+            "sub1": "200",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "caption",
+            "type": "VARCHAR",
+            "sub1": "150",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "caption_rus",
+            "type": "VARCHAR",
+            "sub1": "150",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "position_x",
+            "type": "SMALLINT",
+            "sub1": "6",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "position_y",
+            "type": "SMALLINT",
+            "sub1": "6",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "bg_size",
+            "type": "VARCHAR",
+            "sub1": "20",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "repeat_x",
+            "type": "TINYINT",
+            "sub1": "1",
+            "deft": "0",
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": true,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "repeat_y",
+            "type": "TINYINT",
+            "sub1": "1",
+            "deft": "0",
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": true,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        }
+    ],
+    "rows": [
+        {
+            "name": "abstractnet",
+            "width": 1600,
+            "height": 190,
+            "path": "bg/abstractnet.jpg",
+            "position_x": 100,
+            "position_y": 100,
+            "bg_size": "cover",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "agreement",
+            "width": 300,
+            "height": 233,
+            "path": "events/agreement.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "book",
+            "width": 400,
+            "height": 276,
+            "path": "events/book.png",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "burkov",
+            "width": 350,
+            "height": 419,
+            "path": "team/team_burkov_egor.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "burkov_thumb",
+            "width": 175,
+            "height": 175,
+            "path": "team/team_burkov_egor_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "chertkov",
+            "width": 350,
+            "height": 567,
+            "path": "team/team_chertkov_andrei.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "chertkov_thumb",
+            "width": 200,
+            "height": 200,
+            "path": "team/team_chertkov_andrei_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "cichocki",
+            "width": 300,
+            "height": 375,
+            "path": "team/team_cichocki_andrzej.jpg",
+            "caption": "Photo: Head of the Laboratory Andrzej Cichocki",
+            "caption_rus": "Фото: Руководитель Лаборатории Анджей Чихоцкий",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "cichocki_thumb",
+            "width": 300,
+            "height": 375,
+            "path": "team/team_cichocki_andrzej.jpg",
+            "caption": "Photo: Head of the Laboratory Andrzej Cichocki",
+            "caption_rus": "Фото: Руководитель Лаборатории Анджей Чихоцкий",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "conf1",
+            "width": 300,
+            "height": 300,
+            "path": "events/conf1.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "conf1_original",
+            "width": 2048,
+            "height": 2048,
+            "path": "events/conf1_original.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "favicon",
+            "width": 646,
+            "height": 489,
+            "path": "logo/favicon.png",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "frolov",
+            "width": 350,
+            "height": 350,
+            "path": "team/team_frolov_evgeny.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "frolov_thumb",
+            "width": 200,
+            "height": 200,
+            "path": "team/team_frolov_evgeny_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "grinchuk",
+            "width": 350,
+            "height": 350,
+            "path": "team/team_grinchuk_aleksey.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "grinchuk_thumb",
+            "width": 225,
+            "height": 225,
+            "path": "team/team_grinchuk_aleksey_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "kolesnikov",
+            "width": 350,
+            "height": 462,
+            "path": "team/team_kolesnikov_denis.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "kolesnikov_thumb",
+            "width": 200,
+            "height": 200,
+            "path": "team/team_kolesnikov_denis_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "lempitsky",
+            "width": 350,
+            "height": 350,
+            "path": "team/team_lempitsky_victor.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "lempitsky_thumb",
+            "width": 250,
+            "height": 250,
+            "path": "team/team_lempitsky_victor_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "lines",
+            "width": 1300,
+            "height": 1300,
+            "path": "bg/lines.jpg",
+            "position_x": 0,
+            "position_y": 0,
+            "bg_size": "cover",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "logominedu",
+            "width": 116,
+            "height": 100,
+            "path": "logo/logo_minedu_eng.png",
+            "path_rus": "logo/logo_minedu_rus.png",
+            "href": "http://минобрнауки.рф/lang/en",
+            "href_rus": "http://минобрнауки.рф/",
+            "caption": "Minestry of education",
+            "caption_rus": "Минобр",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "logoskoltech",
+            "width": 272,
+            "height": 100,
+            "path": "logo/logo_skoltech_eng.png",
+            "path_rus": "logo/logo_skoltech_rus.png",
+            "href": "http://www.skoltech.ru/en/",
+            "href_rus": "http://www.skoltech.ru/?lang=ru",
+            "caption": "Skoltech",
+            "caption_rus": "Сколтех",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "man_default",
+            "width": 350,
+            "height": 350,
+            "path": "team/team_default.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "man_default_thumb",
+            "width": 200,
+            "height": 200,
+            "path": "team/team_default_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "megagrant",
+            "width": 300,
+            "height": 259,
+            "path": "events/p220.png",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "merkulov",
+            "width": 350,
+            "height": 350,
+            "path": "team/team_merkulov_daniil.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "merkulov_thumb",
+            "width": 225,
+            "height": 225,
+            "path": "team/team_merkulov_daniil_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "molchanov",
+            "width": 350,
+            "height": 450,
+            "path": "team/team_molchanov_dmitry.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "molchanov_thumb",
+            "width": 175,
+            "height": 175,
+            "path": "team/team_molchanov_dmitry_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "novikov",
+            "width": 350,
+            "height": 527,
+            "path": "team/team_novikov_alexander.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "novikov_thumb",
+            "width": 200,
+            "height": 200,
+            "path": "team/team_novikov_alexander_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "oseledets",
+            "width": 350,
+            "height": 515,
+            "path": "team/team_oseledets_ivan.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "oseledets_thumb",
+            "width": 250,
+            "height": 250,
+            "path": "team/team_oseledets_ivan_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "paper",
+            "width": 100,
+            "height": 100,
+            "path": "events/paper.png",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "paper0",
+            "width": 320,
+            "height": 439,
+            "path": "events/book2.png",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "ponomarev",
+            "width": 350,
+            "height": 448,
+            "path": "team/team_ponomarev_evgeny.png",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "ponomarev_thumb",
+            "width": 225,
+            "height": 225,
+            "path": "team/team_ponomarev_evgeny_thumb.png",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "rakhuba",
+            "width": 350,
+            "height": 451,
+            "path": "team/team_rakhuba_maxim.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "rakhuba_thumb",
+            "width": 225,
+            "height": 225,
+            "path": "team/team_rakhuba_maxim_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "skoltech",
+            "width": 300,
+            "height": 111,
+            "path": "skoltech.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "skoltech_buildings",
+            "width": 300,
+            "height": 111,
+            "path": "events/skoltech_buildings.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "struminskii",
+            "width": 350,
+            "height": 467,
+            "path": "team/team_struminskii_kirill.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "struminskii_thumb",
+            "width": 200,
+            "height": 200,
+            "path": "team/team_struminskii_kirill_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "sungatullina",
+            "width": 225,
+            "height": 225,
+            "path": "team/team_sungatullina_diana_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "sungatullina_thumb",
+            "width": 225,
+            "height": 225,
+            "path": "team/team_sungatullina_diana_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "team_all",
+            "width": 800,
+            "height": 600,
+            "path": "team/team_all.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "tensor_direction",
+            "width": 300,
+            "height": 280,
+            "path": "events/tensor_direction.png",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "train",
+            "width": 300,
+            "height": 227,
+            "path": "events/train.png",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "trusov",
+            "width": 350,
+            "height": 504,
+            "path": "team/team_trusov_roman.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "trusov_thumb",
+            "width": 175,
+            "height": 175,
+            "path": "team/team_trusov_roman_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "vetrov",
+            "width": 350,
+            "height": 525,
+            "path": "team/team_vetrov_dmitry.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "vetrov_thumb",
+            "width": 250,
+            "height": 250,
+            "path": "team/team_vetrov_dmitry_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "yanush",
+            "width": 350,
+            "height": 467,
+            "path": "team/team_yanush_viktor.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "yanush_thumb",
+            "width": 175,
+            "height": 175,
+            "path": "team/team_yanush_viktor_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "zakharov",
+            "width": 350,
+            "height": 350,
+            "path": "team/team_zakharov_egor.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        },
+        {
+            "name": "zakharov_thumb",
+            "width": 175,
+            "height": 175,
+            "path": "team/team_zakharov_egor_thumb.jpg",
+            "repeat_x": 0,
+            "repeat_y": 0
+        }
+    ]
+}

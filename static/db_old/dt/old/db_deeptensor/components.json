@@ -1,0 +1,195 @@
+{
+    "name": "components",
+    "pknm": "name",
+    "opts": {
+        "withCols": true,
+        "withRows": true
+    },
+    "cols": [
+        {
+            "name": "name",
+            "type": "VARCHAR",
+            "sub1": "52",
+            "deft": null,
+            "comm": "",
+            "isPk": true,
+            "isUnsigned": false,
+            "isNotNull": true,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "component",
+            "type": "VARCHAR",
+            "sub1": "30",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": true,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "element",
+            "type": "VARCHAR",
+            "sub1": "20",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "str",
+            "type": "VARCHAR",
+            "sub1": "200",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "str_rus",
+            "type": "VARCHAR",
+            "sub1": "200",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "txt",
+            "type": "MEDIUMTEXT",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "txt_rus",
+            "type": "MEDIUMTEXT",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "img",
+            "type": "VARCHAR",
+            "sub1": "100",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "img_rus",
+            "type": "VARCHAR",
+            "sub1": "100",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "url",
+            "type": "VARCHAR",
+            "sub1": "100",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        },
+        {
+            "name": "url_rus",
+            "type": "VARCHAR",
+            "sub1": "100",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
+        }
+    ],
+    "rows": [
+        {
+            "name": "contacts__institute",
+            "component": "contacts",
+            "element": "institute",
+            "str": "Skolkovo Institute of Science and Technology",
+            "str_rus": "Сколковский институт науки и технологий"
+        },
+        {
+            "name": "contacts__laboratory",
+            "component": "contacts",
+            "element": "laboratory",
+            "str": "Laboratory Tensor networks and deep learning<br>for applications in data mining",
+            "str_rus": "Лаборатория Тензорные сети и глубинное обучение<br>для интеллектуального анализа данных"
+        },
+        {
+            "name": "header__title",
+            "component": "header",
+            "element": "title",
+            "str": "Tensor networks and deep learning for applications in data mining",
+            "str_rus": "Тензорные сети и глубинное обучение для интеллектуального анализа данных"
+        },
+        {
+            "name": "index__labCommand",
+            "component": "index",
+            "element": "labCommand",
+            "txt": "The Laboratory brings together several professors and young researchers in the fields of machine learning, computer vision, artificial intelligence, robotics, large scale data analysis, mathematics as well as computational neuroscience and bioinformatics.",
+            "txt_rus": "Наш коллектив объединяет профессоров и молодых исследователей, являющихся специалистами мирового уровня в области машинного обучения, компьютерного зрения, искусственного интеллекта, робототехники, анализа больших объемов данных, а также вычислительной математики, нейробиологии и биоинформатики."
+        },
+        {
+            "name": "index__labGeneral",
+            "component": "index",
+            "element": "labGeneral",
+            "txt": "Laboratory Tensor networks and deep learning for applications in data mining under the guidance of Prof. Andrzej Cichocki on the basis of the <a class=\"link\" href=\"http://www.skoltech.ru/en/\" target=\"_blank\">Skolkovo Institute of Science and Technology</a> develops new fundamental approaches for training, testing and storing parameters of deep neural networks based on tensor decomposition techniques. These approaches allow to reduce by orders of magnitude computational complexity and required memory for the operation of the network, while maintaining a high quality of prediction.",
+            "txt_rus": "Лаборатория Тензорные сети и глубинное обучение для интеллектуального анализа данных под руководством Проф. Анджея Чихоцкого на базе  <a class=\"link\" href=\"http://www.skoltech.ru/?lang=ru\" target=\"_blank\">Сколковского института науки и технологий</a> занимается разработкой новых подходов, основанных на тензорных разложениях, для построения, обучения, использования и хранения параметров глубинных нейронных сетей, позволяющих на порядки снизить вычислительную сложность и объемы памяти, требуемые для работы с сетью, при высоком качестве предсказания."
+        },
+        {
+            "name": "index__labMission",
+            "component": "index",
+            "element": "labMission",
+            "txt": "The Laboratory mission is to pursue cutting-edge research in the design and analysis of deep neural networks, tensor decompositions, tensor networks and multiway analysis with many potential practical applications.",
+            "txt_rus": "Основная задача Лаборатории - проведение передовых исследований в области разработки и анализа глубинных нейронных сетей, тензорных разложений, тензорных сетей и многофакторного анализа с большим количеством потенциальных практических применений."
+        }
+    ]
+}
