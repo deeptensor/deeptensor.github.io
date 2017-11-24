@@ -83,7 +83,7 @@
             "isIncrem": false
         },
         {
-            "name": "rating",
+            "name": "rank",
             "type": "VARCHAR",
             "sub1": "45",
             "deft": null,
@@ -146,55 +146,78 @@
             "isNull": false,
             "isUnique": false,
             "isIncrem": false
+        },
+        {
+            "name": "field",
+            "type": "VARCHAR",
+            "sub1": "200",
+            "deft": null,
+            "comm": "",
+            "isPk": false,
+            "isUnsigned": false,
+            "isNotNull": false,
+            "isNull": false,
+            "isUnique": false,
+            "isIncrem": false
         }
     ],
     "rows": [
         {
             "name": "ACL-2017",
-            "name_full": "The 55th annual meeting of the Association for Computational Linguistics",
+            "name_full": "Association of Computational Linguistics",
             "country": "Canada",
             "city": "Vancouver",
             "start": "2017-07-29T21:00:00.000Z",
             "end": "2017-08-03T21:00:00.000Z",
-            "site": "http://acl2017.org/"
+            "rank": "A*",
+            "site": "http://acl2017.org/",
+            "field": "0801 - Artificial Intelligence and Image Processing"
         },
         {
             "name": "CVPR-2017",
             "name_full": "IEEE Conference on Computer Vision and Pattern Recognition",
             "country": "USA",
             "city": "Hawaii",
-            "start": "2017-10-20T21:00:00.000Z",
-            "end": "2017-10-25T21:00:00.000Z",
-            "site": "http://cvpr2017.thecvf.com"
+            "start": "2017-07-20T21:00:00.000Z",
+            "end": "2017-07-24T21:00:00.000Z",
+            "rank": "A",
+            "site": "http://cvpr2017.thecvf.com",
+            "field": "0801 - Artificial Intelligence and Image Processing"
         },
         {
             "name": "ICCV-2017",
-            "name_full": "",
+            "name_full": "IEEE International Conference on Computer Vision",
             "country": "Italy",
             "city": "Venice",
-            "start": "2017-10-23T21:00:00.000Z",
-            "end": "2017-10-26T21:00:00.000Z",
-            "site": "http://iccv2017.thecvf.com"
+            "start": "2017-10-21T21:00:00.000Z",
+            "end": "2017-10-28T21:00:00.000Z",
+            "rank": "A*",
+            "site": "http://iccv2017.thecvf.com",
+            "field": "0801 - Artificial Intelligence and Image Processing"
         },
         {
             "name": "ICML-2017",
-            "name_full": "Thirty-fourth International Conference on Machine Learning",
+            "name_full": "International Conference on Machine Learning",
             "country": "Australia",
             "city": "Sydney",
             "start": "2017-08-05T21:00:00.000Z",
             "end": "2017-08-10T21:00:00.000Z",
-            "site": "https://2017.icml.cc/"
+            "rank": "A*",
+            "site": "https://2017.icml.cc/",
+            "field": "0801 - Artificial Intelligence and Image Processing"
         },
         {
             "name": "ICMV-2016",
-            "name_full": "Ninth International Conference on Machine Vision (ICMV 2016)",
+            "name_full": "International Conference on Machine Vision",
             "country": "France",
             "city": "Nice",
             "start": "2016-11-17T21:00:00.000Z",
             "end": "2016-11-19T21:00:00.000Z",
+            "rank": "C",
             "site": "http://icmv.org/",
             "wos": "YES",
-            "scopus": "YES"
+            "scopus": "YES",
+            "field": "0801 - Artificial Intelligence and Image Processing"
         }
     ]
 }

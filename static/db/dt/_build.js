@@ -34,18 +34,25 @@ const filters = {
 }
 const sorters = {
     papers: rs => {rs.sort((r1, r2) => { // r1 , r2 if < 0
-        //console.log('date ', r1.date,  r2.date, r1.date > r2.date)
-        if(r1.date)
-            return r2.date ? r1.date < r2.date : 1
-        if(r2.date)
-            return r1.date ? r1.date < r2.date : -1
         if(r1.year > r2.year)
             return -1
         if(r1.year < r2.year)
             return 1
+        if(!r1.date && r2.date)
+            return 1
+        if(!r2.date && r1.date)
+            return -1
+        if(r1.date && r2.date)
+            return r1.date > r2.date ? -1 : 1
+        return 0
     })},
     team: rs => {rs.sort((r1, r2) => {
         if(r1.order < r2.order)
+            return -1
+        return 1
+    })},
+    events: rs => {rs.sort((r1, r2) => {
+        if(r1.date.getTime() > r2.date.getTime())
             return -1
         return 1
     })},
