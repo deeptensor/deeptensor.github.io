@@ -724,6 +724,22 @@
             "supervisor": "vetrov"
         },
         {
+            "id": "khrulkov",
+            "active": 1,
+            "name": "Valentin",
+            "surname": "Khrulkov",
+            "name_rus": "Валентин",
+            "surname_rus": "Крулков",
+            "degree": "Ph.D. student",
+            "degree_rus": "Аспирант",
+            "institution": "Skolkovo Institute of Science and Technology",
+            "institution_rus": "Сколковский институт науки и технологий",
+            "role": "phdstudent",
+            "order": 35,
+            "interests": "Low-rank tensor approximations, algebraic geometry",
+            "interests_rus": "Малоранговые тензорные аппроксимации, алгебраическая геометрия"
+        },
+        {
             "id": "molchanov",
             "active": 1,
             "name": "Dmitry",

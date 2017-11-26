@@ -1,13 +1,13 @@
 {
     "name": "papers",
-    "pknm": "tag",
+    "pknm": "id",
     "opts": {
         "withCols": true,
         "withRows": true
     },
     "cols": [
         {
-            "name": "tag",
+            "name": "id",
             "type": "VARCHAR",
             "sub1": "100",
             "deft": null,
@@ -41,32 +41,6 @@
             "isPk": false,
             "isUnsigned": false,
             "isNotNull": true,
-            "isNull": false,
-            "isUnique": false,
-            "isIncrem": false
-        },
-        {
-            "name": "month",
-            "type": "TINYINT",
-            "sub1": "2",
-            "deft": null,
-            "comm": "",
-            "isPk": false,
-            "isUnsigned": false,
-            "isNotNull": false,
-            "isNull": false,
-            "isUnique": false,
-            "isIncrem": false
-        },
-        {
-            "name": "day",
-            "type": "TINYINT",
-            "sub1": "2",
-            "deft": null,
-            "comm": "",
-            "isPk": false,
-            "isUnsigned": false,
-            "isNotNull": false,
             "isNull": false,
             "isUnique": false,
             "isIncrem": false
@@ -336,7 +310,7 @@
     ],
     "rows": [
         {
-            "tag": "cichocki2018tensor",
+            "id": "cichocki2018tensor",
             "title": "Tensor Networks for Dimensionality Reduction, Big Data and Deep Learning",
             "year": 2018,
             "authors_detected": "cichocki/",
@@ -354,11 +328,9 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "khrulkov2017art",
+            "id": "khrulkov2017art",
             "title": "Art of singular vectors and universal adversarial perturbations",
             "year": 2017,
-            "month": 9,
-            "day": 11,
             "date": "2017-11-19T21:00:00.000Z",
             "journal": "ArXiv preprint",
             "authors_detected": "oseledets/",
@@ -373,11 +345,9 @@
             "abstract": "Vulnerability of state-of-the-art deep neural networks to adversarial attacks has been attracting a lot of attention recently. In this work we propose a new algorithm for constructing universal adversarial perturbations. Our approach is based on computing the so called (p, q)-singular vectors of the Jacobian matrices of hidden layers of a network. Resulting perturbations present interesting visual patterns and by using a batch of just 64 images we can construct adversarial perturbations with relatively high fooling rate. We also investigate a correlation between the singular values of the Jacobian matrices and the fooling rate of a corresponding singular vector."
         },
         {
-            "tag": "katrutsa2017deep",
+            "id": "katrutsa2017deep",
             "title": "Deep Multigrid: learning prolongation and restriction matrices",
             "year": 2017,
-            "month": 11,
-            "day": 10,
             "date": "2017-11-09T21:00:00.000Z",
             "journal": "ArXiv preprint",
             "authors_detected": "oseledets/daulbaev",
@@ -390,11 +360,9 @@
             "abstract": "This paper proposes the method to optimize restriction and prolongation operators in the two-grid method. The proposed method is straightforwardly extended to the geometric multigrid method (GMM). GMM is used in solving discretized partial differential equation (PDE) and based on the restriction and prolongation operators. The operators are crucial for fast convergence of GMM, but they are unknown. To find them we propose a reformulation of the two-grid method in terms of a deep neural network with a specific architecture. This architecture is based on the idea that every operation in the two-grid method can be considered as a layer of a deep neural network. The parameters of layers correspond to the restriction and prolongation operators. Therefore, we state an optimization problem with respect to these operators and get optimal ones through backpropagation approach. To illustrate the performance of the proposed approach, we carry out experiments on the discretized Laplace equation, Helmholtz equation and singularly perturbed convection-diffusion equation and demonstrate that proposed approach gives operators, which lead to faster convergence."
         },
         {
-            "tag": "kostyukevich2017thermal",
+            "id": "kostyukevich2017thermal",
             "title": "Thermal dissociation and H/D exchange of streptavidin tetramers at atmospheric pressure",
             "year": 2017,
-            "month": 11,
-            "day": 6,
             "date": "2017-11-05T21:00:00.000Z",
             "journal": "International Journal of Mass Spectrometry",
             "authors_detected": "oseledets/",
@@ -408,11 +376,9 @@
             "abstract": "We present an investigation of the thermal dissociation of the gas phase, non-covalent streptavidin tetramer ion. Using an extended desolvating capillary, it was observed that this complex fragments at an activation energy around 75 kJ/mole. The fragmentation occurs via charge migration and the ejection of a single monomer that carries half the total charge. Temperature increases result in intensive supermetallization by sodium ions and, eventually, in thermal dissociation. Using the in-ESI source H/D exchange approach, we observed that deuterium scrambling during the dissociation is relatively low. To better understand the charged droplets dynamics, we performed accurate computer simulations of airflow inside the desolvating capillary, including calculating the gas velocity, temperature and pressure distributions."
         },
         {
-            "tag": "khrulkov2017expressive",
+            "id": "khrulkov2017expressive",
             "title": "Expressive power of recurrent neural networks",
             "year": 2017,
-            "month": 11,
-            "day": 2,
             "date": "2017-11-01T21:00:00.000Z",
             "journal": "ArXiv preprint",
             "authors_detected": "oseledets/novikov",
@@ -424,11 +390,9 @@
             "abstract": "Deep neural networks are surprisingly efficient at solving practical tasks, but the theory behind this phenomenon is only starting to catch up with the practice. Numerous works show that depth is the key to this efficiency. A certain class of deep convolutional networks – namely those that correspond to the Hierarchical Tucker (HT) tensor decomposition – has been proven to have exponentially higher expressive power than shallow networks. I.e. a shallow network of exponential width is required to realize the same score function as computed by the deep architecture. In this paper, we prove the expressive power theorem (an exponential lower bound on the width of the equivalent shallow network) for a class of recurrent neural networks – ones that correspond to the Tensor Train (TT) decomposition. This means that even processing an image patch by patch with an RNN can be exponentially more efficient than a (shallow) convolutional network with one hidden layer. Using theoretical results on the relation between the tensor decompositions we compare expressive powers of the HT- and TT-Networks. We also implement the recurrent TT-Networks and provide numerical evidence of their expressivity."
         },
         {
-            "tag": "babenko2017annarbor",
+            "id": "babenko2017annarbor",
             "title": "AnnArbor: Approximate Nearest Neighbors Using Arborescence Coding",
             "year": 2017,
-            "month": 10,
-            "day": 29,
             "date": "2017-10-28T21:00:00.000Z",
             "conference": "ICCV-2017",
             "authors_detected": "lempitsky/",
@@ -444,11 +408,9 @@
             "abstract": "To compress large datasets of high-dimensional descriptors, modern quantization schemes learn multiple codebooks and then represent individual descriptors as combinations of codewords. Once the codebooks are learned, these schemes encode descriptors independently. In contrast to that, we present a new coding scheme that arranges dataset descriptors into a set of arborescence graphs, and then encodes non-root descriptors by quantizing their displacements with respect to their parent nodes. By optimizing the structure of arborescences, our coding scheme can decrease the quantization error considerably, while incurring only minimal overhead on the memory footprint and the speed of nearest neighbor search in the compressed dataset compared to the independent quantization. The avantage of the proposed scheme is demonstrated in a series of experiments with datasets of SIFT and deep descriptors."
         },
         {
-            "tag": "klokov2017escape",
+            "id": "klokov2017escape",
             "title": "Escape from Cells: Deep Kd-Networks for The Recognition of 3D Point Cloud Models",
             "year": 2017,
-            "month": 10,
-            "day": 26,
             "date": "2017-10-25T21:00:00.000Z",
             "journal": "ArXiv preprint",
             "authors_detected": "lempitsky/",
@@ -462,11 +424,9 @@
             "abstract": "We present a new deep learning architecture (called Kd- network) that is designed for 3D model recognition tasks and works with unstructured point clouds. The new architecture performs multiplicative transformations and shares parameters of these transformations according to the subdivisions of the point clouds imposed onto them by kd-trees. Unlike the currently dominant convolutional architectures that usually require rasterization on uniform two-dimensional or three-dimensional grids, Kd-networks do not rely on such grids in any way and therefore avoid poor scaling behavior. In a series of experiments with popular shape recognition benchmarks, Kd-networks demonstrate competitive performance in a number of shape recognition tasks such as shape classification, shape retrieval and shape part segmentation."
         },
         {
-            "tag": "arteta2017htx",
+            "id": "arteta2017htx",
             "title": "HTX: a tool for the exploration and visualization of high-throughput image assays",
             "year": 2017,
-            "month": 10,
-            "day": 16,
             "date": "2017-10-15T21:00:00.000Z",
             "authors_detected": "lempitsky/",
             "author": "Arteta, Carlos and Lempitsky, Victor and Zak, Jaroslav and Lu, Xin and Noble, Alison and Zisserman, Andrew",
@@ -478,11 +438,9 @@
             "abstract": "High-throughput screening (HTS) techniques have enabled large scale image-based studies, but extracting biological insights from the imaging data in an exploratory setting remains a challenge. Existing packages for this task either require expert annotations, which can bias the outcome of the study, or are completely unsupervised, failing to leverage the information present in the assay design. We present HTX, an interactive tool to aid in the exploration of large microscopy data sets by allowing the visualization of entire image-based assays according to visual similarities between the samples in an intuitive and navigable manner. Underlying HTX are a collection of novel algorithmic techniques for deep texture descriptor learning, 2D data visualization, adversarial suppression of batch effects, and backprop-based image saliency estimation.\nWe demonstrate that HTX can exploit the screen metadata in order to learn screen-specific image descriptors, which are then used to quantify the visual similarity between samples in the assay. Given these similarities and the different visualization resources of HTX, it is shown that screens of small-molecule libraries on cell data can be easily explored, reproducing the results of previous studies where highly-specific domain knowledge was required."
         },
         {
-            "tag": "li2017effects",
+            "id": "li2017effects",
             "title": "The Effects of Audiovisual Inputs on Solving the Cocktail Party Problem in the Human Brain: An fMRI Study",
             "year": 2017,
-            "month": 9,
-            "day": 25,
             "date": "2017-09-24T21:00:00.000Z",
             "journal": "Cerebral Cortex",
             "authors_detected": "cichocki/",
@@ -499,14 +457,12 @@
             "abstract": "At cocktail parties, our brains often simultaneously receive visual and auditory information. Although the cocktail party problem has been widely investigated under auditory-only settings, the effects of audiovisual inputs have not. This study explored the effects of audiovisual inputs in a simulated cocktail party. In our fMRI experiment, each congruent audiovisual stimulus was a synthesis of 2 facial movie clips, each of which could be classified into 1 of 2 emotion categories (crying and laughing). Visual-only (faces) and auditory-only stimuli (voices) were created by extracting the visual and auditory contents from the synthesized audiovisual stimuli. Subjects were instructed to selectively attend to 1 of the 2 objects contained in each stimulus and to judge its emotion category in the visual-only, auditory-only, and audiovisual conditions. The neural representations of the emotion features were assessed by calculating decoding accuracy and brain pattern-related reproducibility index based on the fMRI data. We compared the audiovisual condition with the visual-only and auditory-only conditions and found that audiovisual inputs enhanced the neural representations of emotion features of the attended objects instead of the unattended objects. This enhancement might partially explain the benefits of audiovisual inputs for the brain to solve the cocktail party problem."
         },
         {
-            "tag": "ganin2017domain",
+            "id": "ganin2017domain",
             "title": "Domain-Adversarial Training of Neural Networks",
             "year": 2017,
-            "month": 9,
-            "day": 13,
             "date": "2017-09-12T21:00:00.000Z",
             "authors_detected": "lempitsky/",
-            "author": "Ganin, Yaroslav and Ustinova, Evgeniya and Ajakan, Hana and Germain, Pascal and Larochelle, Hugo and Laviolette, Fran{\\c{c}}ois and Marchand, Mario and Lempitsky, Victor",
+            "author": "Ganin, Yaroslav and Ustinova, Evgeniya and Ajakan, Hana and Germain, Pascal and Larochelle, Hugo and Laviolette, Franccois and Marchand, Mario and Lempitsky, Victor",
             "scopus": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85029580147&origin=resultslist&sort=plf-f&src=s&sid=da1b2a7e408787941d3090d217bad5d3&sot=autdocs&sdt=autdocs&sl=18&s=AU-ID%2822234735100%29&relpos=61&citeCnt=0&searchTerm=",
             "affiliation": "Skoltech",
             "kind": "article",
@@ -519,11 +475,9 @@
             "abstract": "We introduce a representation learning approach for domain adaptation, in which data at training and test time come from similar but different distributions. Our approach is directly inspired by the theory on domain adaptation suggesting that, for effective domain transfer to be achieved, predictions must be made based on features that cannot discriminate between the training (source) and test (target) domains. The approach implements this idea in the context of neural network architectures that are trained on labeled data from the source domain and unlabeled data from the target domain (no labeled target-domain data is necessary). As the training progresses, the approach promotes the emergence of features that are (i) discriminative for the main learning task on the source domain and (ii) indiscriminate with respect to the shift between the domains. We show that this adaptation behavior can be achieved in almost any feed-forward model by augmenting it with few standard layers and a new Gradient Reversal Layer. The resulting augmented architecture can be trained using standard backpropagation, and can thus be implemented with little effort using any of the deep learning packages. We demonstrate the success of our approach for image classification, where state-of-the-art domain adaptation performance on standard benchmarks is achieved. We also validate the approach for descriptor learning task in the context of person re-identification application."
         },
         {
-            "tag": "drozdov2017time",
+            "id": "drozdov2017time",
             "title": "Time-and memory-efficient representation of complex mesoscale potentials",
             "year": 2017,
-            "month": 8,
-            "day": 15,
             "date": "2017-08-14T21:00:00.000Z",
             "journal": "Journal of Computational Physics",
             "authors_detected": "oseledets/",
@@ -541,11 +495,9 @@
             "abstract": "We apply the modern technique of approximation of multivariate functions – tensor train cross approximation – to the problem of the description of physical interactions between complex-shaped bodies in a context of computational nanomechanics. In this note we showcase one particular example – van der Waals interactions between two cylindrical bodies – relevant to modeling of carbon nanotube systems. The potential is viewed as a tensor (multidimensional table) which is represented in compact form with the help of tensor train decomposition. The described approach offers a universal solution for the description of van der Waals interactions between complex-shaped nanostructures and can be used within the framework of such systems of mesoscale modeling as recently emerged mesoscopic distinct element method (MDEM)."
         },
         {
-            "tag": "kononenko2017photorealistic",
+            "id": "kononenko2017photorealistic",
             "title": "Photorealistic Monocular Gaze Redirection Using Machine Learning",
             "year": 2017,
-            "month": 8,
-            "day": 14,
             "date": "2017-08-13T21:00:00.000Z",
             "authors_detected": "lempitsky/sungatullina/",
             "author": "Kononenko, Daniil and Ganin, Yaroslav and Sungatullina, Diana and Lempitsky, Victor",
@@ -560,11 +512,9 @@
             "abstract": "We propose a general approach to the gaze redirection problem in images that utilizes machine learning. The idea is to learn to re-synthesize images by training on pairs of images with known disparities between gaze directions. We show that such learning-based re-synthesis can achieve convincing gaze redirection based on monocular input, and that the learned systems generalize well to people and imaging conditions unseen during training.\nWe describe and compare three instantiations of our idea. The first system is based on efficient decision forest predictors and redirects the gaze by a fixed angle in real-time (on a single CPU), being particularly suitable for the videoconferencing gaze correction. The second system is based on a deep architecture and allows gaze redirection by a range of angles. The second system achieves higher photorealism, while being several times slower. The third system is based on real-time decision forests at test time, while using the supervision from a “teacher” deep network during training. The third system approaches the quality of a teacher network in our experiments, and thus provides a highly realistic real-time monocular solution to the gaze correction problem. We present in-depth assessment and comparisons of the proposed systems based on quantitative measurements and a user study."
         },
         {
-            "tag": "molchanov2017variational",
+            "id": "molchanov2017variational",
             "title": "Variational Dropout Sparsifies Deep Neural Networks",
             "year": 2017,
-            "month": 8,
-            "day": 11,
             "date": "2017-08-10T21:00:00.000Z",
             "conference": "ICML-2017",
             "authors_detected": "molchanov/vetrov/",
@@ -579,11 +529,9 @@
             "abstract": "We explore a recently proposed Variational Dropout technique that provided an elegant Bayesian interpretation to Gaussian Dropout. We extend Variational Dropout to the case when dropout rates are unbounded, propose a way to reduce the variance of the gradient estimator and report first experimental results with individual dropout rates per weight. Interestingly, it leads to extremely sparse solutions both in fully-connected and convolutional layers. This effect is similar to automatic relevance determination effect in empirical Bayes but has a number of advantages. We reduce the number of parameters up to 280 times on LeNet architectures and up to 68 times on VGG-like networks with a negligible decrease of accuracy."
         },
         {
-            "tag": "fonarev2017riemannian",
+            "id": "fonarev2017riemannian",
             "title": "Riemannian Optimization for Skip-Gram Negative Sampling",
             "year": 2017,
-            "month": 8,
-            "day": 4,
             "date": "2017-08-03T21:00:00.000Z",
             "conference": "ACL-2017",
             "authors_detected": "oseledets/grinchuk/",
@@ -597,11 +545,9 @@
             "abstract": "Skip-Gram Negative Sampling (SGNS) word embedding model, well known by its implementation in “word2vec” software, is usually optimized by stochastic gradient descent. However, the optimization of SGNS objective can be viewed as a problem of searching for a good matrix with the low-rank constraint. The most standard way to solve this type of problems is to apply Riemannian optimization framework to optimize the SGNS objective over the manifold of required low-rank matrices. In this paper, we propose an algorithm that optimizes SGNS objective using Riemannian optimization and demonstrates its superiority over popular competitors, such as the original method to train SGNS and SVD over SPPMI matrix."
         },
         {
-            "tag": "babenko2017product",
+            "id": "babenko2017product",
             "title": "Product Split Trees",
             "year": 2017,
-            "month": 7,
-            "day": 26,
             "date": "2017-07-25T21:00:00.000Z",
             "conference": "CVPR-2017",
             "authors_detected": "lempitsky/",
@@ -616,11 +562,9 @@
             "abstract": "In this work, we introduce a new kind of spatial partition trees for efficient nearest-neighbor search. Our approach first identifies a set of useful data splitting directions, and then learns a codebook that can be used to encode such directions. We use the product-quantization idea in order to make the effective codebook large, the evaluation of scalar products between the query and the encoded splitting direction very fast, and the encoding itself compact. As a result, the proposed data srtucture (Product Split tree) achieves compact clustering of data points, while keeping the traversal very efficient. In the nearest-neighbor search experiments on high-dimensional data, product split trees achieved state-of-the-art performance, demonstrating better speed-accuracy tradeoff than other spatial partition trees."
         },
         {
-            "tag": "ulyanov2017improved",
+            "id": "ulyanov2017improved",
             "title": "Improved Texture Networks: Maximizing Quality and Diversity in Feed-forward Stylization and Texture Synthesis",
             "year": 2017,
-            "month": 10,
-            "day": 26,
             "date": "2017-07-24T21:00:00.000Z",
             "conference": "CVPR-2017",
             "authors_detected": "lempitsky/",
@@ -634,11 +578,9 @@
             "abstract": "The recent work of Gatys et al., who characterized the style of an image by the statistics of convolutional neural network filters, ignited a renewed interest in the texture generation and image stylization problems. While their image generation technique uses a slow optimization process, recently several authors have proposed to learn generator neural networks that can produce similar outputs in one quick forward pass. While generator networks are promising, they are still inferior in visual quality and diversity compared to generation-by-optimization. In this work, we advance them in two significant ways. First, we introduce an instance normalization module to replace batch normalization with significant improvements to the quality of image stylization. Second, we improve diversity by introducing a new learning formulation that encourages generators to sample unbiasedly from the Julesz texture ensemble, which is the equivalence class of all images characterized by certain filter responses. Together, these two improvements take feed forward texture synthesis and image stylization much closer to the quality of generation-via-optimization, while retaining the speed advantage."
         },
         {
-            "tag": "deshpande2017new",
+            "id": "deshpande2017new",
             "title": "A New Generation of Brain-Computer Interfaces Driven by Discovery of Latent EEG-fMRI Linkages Using Tensor Decomposition",
             "year": 2017,
-            "month": 6,
-            "day": 7,
             "date": "2017-06-06T21:00:00.000Z",
             "journal": "Frontiers in neuroscience",
             "authors_detected": "cichocki/",
@@ -659,11 +601,9 @@
             "abstract": "A Brain-Computer Interface (BCI) is a setup permitting the control of external devices by decoding brain activity. Electroencephalography (EEG) has been extensively used for decoding brain activity since it is non-invasive, cheap, portable, and has high temporal resolution to allow real-time operation. Due to its poor spatial specificity, BCIs based on EEG can require extensive training and multiple trials to decode brain activity (consequently slowing down the operation of the BCI). On the other hand, BCIs based on functional magnetic resonance imaging (fMRI) are more accurate owing to its superior spatial resolution and sensitivity to underlying neuronal processes which are functionally localized. However, due to its relatively low temporal resolution, high cost, and lack of portability, fMRI is unlikely to be used for routine BCI. We propose a new approach for transferring the capabilities of fMRI to EEG, which includes simultaneous EEG/fMRI sessions for finding a mapping from EEG to fMRI, followed by a BCI run from only EEG data, but driven by fMRI-like features obtained from the mapping identified previously. Our novel data-driven method is likely to discover latent linkages between electrical and hemodynamic signatures of neural activity hitherto unexplored using model-driven methods, and is likely to serve as a template for a novel multi-modal strategy wherein cross-modal EEG-fMRI interactions are exploited for the operation of a unimodal EEG system, leading to a new generation of EEG-based BCIs."
         },
         {
-            "tag": "cichocki2017tensor",
+            "id": "cichocki2017tensor",
             "title": "Tensor Networks for Dimensionality Reduction and Large-scale Optimization: Part 2 Applications and Future Perspectives",
             "year": 2017,
-            "month": 5,
-            "day": 30,
             "date": "2017-05-29T21:00:00.000Z",
             "journal": "Foundations and Trends in Machine Learning",
             "authors_detected": "cichocki/oseledets/",
@@ -684,11 +624,9 @@
             "abstract": "Part 2 of this monograph builds on the introduction to tensor networks and their operations presented in Part 1. It focuses on tensor network models for super-compressed higher-order representation of data/parameters and related cost functions, while providing an outline of their applications in machine learning and data analytics.\nA particular emphasis is on the tensor train (TT) and Hierarchical Tucker (HT) decompositions, and their physically meaningful interpretations which reflect the scalability of the tensor network approach. Through a graphical approach, we also elucidate how, by virtue of the underlying low-rank tensor approximations and sophisticated contractions of core tensors, tensor networks have the ability to perform distributed computations on otherwise prohibitively large volumes of data/parameters, thereby alleviating or even eliminating the curse of dimensionality.\nThe usefulness of this concept is illustrated over a number of applied areas, including generalized regression and classification (support tensor machines, canonical correlation analysis, higher order partial least squares), generalized eigenvalue decomposition, Riemannian optimization, and in the optimization of deep neural networks.\nPart 1 and Part 2 of this work can be used either as stand-alone separate texts, or indeed as a conjoint comprehensive review of the exciting field of low-rank tensor networks and tensor decompositions."
         },
         {
-            "tag": "che2017neural",
+            "id": "che2017neural",
             "title": "Neural Networks for Computing Best Rank-One Approximations of Tensors and its Applications",
             "year": 2017,
-            "month": 4,
-            "day": 23,
             "date": "2017-04-22T21:00:00.000Z",
             "journal": "Neurocomputing",
             "authors_detected": "cichocki/",
@@ -707,11 +645,9 @@
             "abstract": "This paper presents the neural dynamical network to compute a best rank-one approximation of a real-valued tensor. We implement the neural network model by the ordinary differential equations (ODE), which is a class of continuous-time recurrent neural network. Several properties of solutions for the neural network are established. We prove that the locally asymptotic stability of solutions for ODE by establishing an appropriate Lyapunov function under mild conditions. Furthermore, we also consider how to use the proposed neural networks for solving the tensor eigenvalue problem including the tensor H-eigenvalue problem, the tensor Z-eigenvalue problem, and the generalized eigenvalue problem with symmetric-definite tensor pairs. Finally, we generalize the proposed neural networks to the computation of the restricted singular values and the associated restricted singular vectors of real-valued tensors. We illustrate and validate theoretical results via numerical simulations."
         },
         {
-            "tag": "khrulkov2017vico",
+            "id": "khrulkov2017vico",
             "title": "Vico-Greengard-Ferrando quadratures in the tensor solver for integral equations",
             "year": 2017,
-            "month": 4,
-            "day": 5,
             "date": "2017-04-04T21:00:00.000Z",
             "journal": "ArXiv preprint",
             "authors_detected": "rakhuba/oseledets/",
@@ -726,11 +662,9 @@
             "abstract": "Convolution with Green’s function of a differential operator appears in a lot of applications e.g. Lippmann-Schwinger integral equation. Algorithms for computing such are usually non-trivial and require non-uniform mesh. However, recently Vico, Greengard and Ferrando developed method for computing convolution with smooth functions with compact support with spectral accuracy, requiring nothing more than Fast Fourier Transform (FFT). Their approach is very suitable for the low-rank tensor implementation which we develop using Quantized Tensor Train (QTT) decomposition."
         },
         {
-            "tag": "kazeev2017qtt",
+            "id": "kazeev2017qtt",
             "title": "QTT-finite-element approximation for multiscale problems I: model problems in one dimension",
             "year": 2017,
-            "month": 4,
-            "day": 1,
             "date": "2017-03-31T21:00:00.000Z",
             "journal": "Advances in Computational Mathematics",
             "authors_detected": "oseledets/rakhuba/",
@@ -750,11 +684,9 @@
             "abstract": "Tensor-compressed numerical solution of elliptic multiscale-diffusion and high frequency scattering problems is considered. For either problem class, solutions exhibit multiple length scales governed by the corresponding scale parameter: the scale of oscillations of the diffusion coefficient or smallest wavelength, respectively. As is well-known, this imposes a scale-resolution requirement on the number of degrees of freedom required to accurately represent the solutions in standard finite-element (FE) discretizations.\nLow-order FE methods are by now generally perceived unsuitable for high-frequency coefficients in diffusion problems and high wavenumbers in scattering problems. Accordingly, special techniques have been proposed instead (such as numerical homogenization, heterogeneous multiscale method, oversampling, etc.) which require, in some form, a-priori information on the microstructure of the solution.\nWe analyze the approximation properties of tensor-formatted, conforming first-order FE methods for scale resolution in multiscale problems without a-priori information. The FE methods are based on the dynamic extraction of principal components from stiffness matrices, load and solution vectors by the quantized tensor train (QTT) decomposition. For prototypical model problems, we prove that this approach, by means of the QTT reparametrization of the FE space, allows to identify effective degrees of freedom to replace the degrees of freedom of a uniform “virtual” (i.e. never directly accessed) mesh, whose number may be prohibitively large to realize computationally. \nPrecisely, solutions of model elliptic homogenization and high-frequency acoustic scattering problems are proved to admit QTT-structured approximations whose number of effective degrees of freedom required to reach a prescribed approximation error scales polylogarithmically with respect to the reciprocal of the target Sobolev-norm accuracy ε with only a mild dependence on the scale parameter. No a-priori information on the nature of the problems and intrinsic length scales of the solution is required in the numerical realization of the presently proposed QTT-structured approach. Although only univariate model multiscale problems are analyzed in the present paper, QTT structured algorithms are applicable also in several variables. Detailed numerical experiments confirm the theoretical bounds. As a corollary of our analysis, we prove that for the mentioned model problems, the Kolmogorov n-widths of solution sets are exponentially small for analytic data, independently of the problems’ scale parameters. That implies, in particular, the exponential convergence of reduced basis techniques which is scale-robust, i.e., independent of the scale parameter in the problem."
         },
         {
-            "tag": "rakhuba2017jacobi",
+            "id": "rakhuba2017jacobi",
             "title": "Jacobi-Davidson method on low-rank matrix manifolds",
             "year": 2017,
-            "month": 3,
-            "day": 27,
             "date": "2017-03-26T21:00:00.000Z",
             "journal": "ArXiv preprint",
             "authors_detected": "rakhuba/oseledets/",
@@ -769,11 +701,9 @@
             "abstract": "In this work we generalize the Jacobi-Davidson method to the case when eigenvector can be reshaped into a low-rank matrix. In this setting the proposed method inherits advantages of the original Jacobi-Davidson method, has lower complexity and requires less storage. We also introduce low-rank version of the Rayleigh quotient iteration which naturally arises in the Jacobi-Davidson method."
         },
         {
-            "tag": "gui2017video",
+            "id": "gui2017video",
             "title": "Video Denoising Using Low Rank Tensor Decomposition",
             "year": 2017,
-            "month": 3,
-            "day": 17,
             "date": "2017-03-16T21:00:00.000Z",
             "conference": "ICMV-2016",
             "authors_detected": "cichocki/",
@@ -790,11 +720,9 @@
             "abstract": "Reducing noise in a video sequence is of vital important in many real-world applications. One popular method is block matching collaborative filtering. However, the main drawback of this method is that noise standard deviation for the whole video sequence is known in advance. In this paper, we present a tensor based denoising framework that considers 3D patches instead of 2D patches. By collecting the similar 3D patches non-locally, we employ the low-rank tensor decomposition for collaborative filtering. Since we specify the non-informative prior over the noise precision parameter, the noise variance can be inferred automatically from observed video data. Therefore, our method is more practical, which does not require knowing the noise variance. The experimental on video denoising demonstrates the effectiveness of our proposed method."
         },
         {
-            "tag": "jin2017improved",
+            "id": "jin2017improved",
             "title": "An improved P300 pattern in BCI to catch user’s attention",
             "year": 2017,
-            "month": 3,
-            "day": 14,
             "date": "2017-03-13T21:00:00.000Z",
             "journal": "Journal of Neural Engineering",
             "authors_detected": "cichocki/",
@@ -814,11 +742,9 @@
             "abstract": "Objective. Brain-computer interfaces (BCIs) can help patients who have lost control over most muscles but are still conscious and able to communicate or interact with the environment. One of the most popular types of BCI is the P300-based BCI. With this BCI, users are asked to count the number of appearances of target stimuli in an experiment. To date, the majority of visual P300-based BCI systems developed have used the same character or picture as the target for every stimulus presentation, which can bore users. Consequently, users attention may decrease or be negatively affected by adjacent stimuli.\nApproach. In this study, a new stimulus is presented to increase user concentration. Honeycomb-shaped  gures with 1–3 red dots were used as stimuli. The number and the positions of the red dots in the honeycomb- shaped  gure were randomly changed during BCI control. The user was asked to count the number of the dots presented in each  ash instead of the number of times they  ashed. To assess the performance of this new stimulus, another honeycomb-shaped stimulus, without red dots, was used as a control condition. \nMain results. The results showed that the honeycomb-shaped stimuli with red dots obtained signi cantly higher classi cation accuracies and information transfer rates (p < 0.05) compared to the honeycomb-shaped stimulus without red dots.\nSignificance. The results indicate that this proposed method can be a promising approach to improve the performance of the BCI system and can be an efficient method in daily application."
         },
         {
-            "tag": "lee2017fundamental",
+            "id": "lee2017fundamental",
             "title": "Fundamental tensor operations for large-scale data analysis using tensor network formats",
             "year": 2017,
-            "month": 3,
-            "day": 9,
             "date": "2017-03-08T21:00:00.000Z",
             "journal": "Multidimensional Systems and Signal Processing",
             "authors_detected": "cichocki/",
@@ -835,11 +761,9 @@
             "abstract": "We discuss extended definitions of linear and multilinear operations such as Kronecker, Hadamard, and contracted products, and establish links between them for tensor calculus. Then we introduce effective low-rank tensor approximation techniques including Candecomp/Parafac, Tucker, and tensor train (TT) decompositions with a number of mathematical and graphical representations. We also provide a brief review of mathematical properties of the TT decomposition as a low-rank approximation technique. With the aim of breaking the curse-of-dimensionality in large-scale numerical analysis, we describe basic operations on large-scale vectors, matrices, and high-order tensors represented by TT decomposition. The proposed representations can be used for describing numerical methods based on TT decomposition for solving large-scale optimization problems such as systems of linear equations and symmetric eigenvalue problems."
         },
         {
-            "tag": "frolov2017tensor",
+            "id": "frolov2017tensor",
             "title": "Tensor methods and recommender systems",
             "year": 2017,
-            "month": 1,
-            "day": 27,
             "date": "2017-01-26T21:00:00.000Z",
             "authors_detected": "oseledets/",
             "author": "Frolov, Evgeny and Oseledets, Ivan",
@@ -858,7 +782,7 @@
             "abstract": "A substantial progress in development of new and efficient tensor factorization techniques has led to an extensive research of their applicability in recommender systems field. Tensor-based recommender models push the boundaries of traditional collaborative filtering techniques by taking into account a multifaceted nature of real environments, which allows to produce more accurate, situational (e.g., context-aware and criteria-driven) recommendations. Despite the promising results, tensor-based methods are poorly covered in existing recommender systems surveys. This survey aims to complement previous works and provide a comprehensive overview on the subject. To the best of our knowledge, this is the first attempt to consolidate studies from various application domains, which helps to get a notion of the current state of the field. We also provide a high level discussion of the future perspectives and directions for further improvement of tensor-based recommendation systems."
         },
         {
-            "tag": "vetrov2017spatially",
+            "id": "vetrov2017spatially",
             "title": "Spatially Adaptive Computation Time for Residual Networks",
             "year": 2017,
             "authors_detected": "vetrov/",
@@ -870,12 +794,12 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "tichavsky2017non",
+            "id": "tichavsky2017non",
             "title": "Non-orthogonal tensor diagonalization",
             "year": 2017,
             "journal": "Signal Processing",
             "authors_detected": "cichocki/",
-            "author": "Tichavsk{\\`y}, Petr and Phan, Anh-Huy and Cichocki, Andrzej",
+            "author": "Tichavsky, Petr and Phan, Anh-Huy and Cichocki, Andrzej",
             "wos": "https://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=126&SID=P23xdzTRgRwl3DBaLzO&page=1&doc=10&cacheurlFromRightClick=no",
             "affiliation": "Skoltech",
             "kind": "article",
@@ -887,7 +811,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "thiyam2017optimization",
+            "id": "thiyam2017optimization",
             "title": "Optimization of Alpha-Beta Log-Det Divergences and their Application in the Spatial Filtering of Two Class Motor Imagery Movements",
             "year": 2017,
             "journal": "Entropy",
@@ -907,7 +831,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "yi2017large",
+            "id": "yi2017large",
             "title": "Large-Scale 3D Shape Reconstruction and Segmentation from ShapeNet Core55",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -921,7 +845,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "pavlov2017aa",
+            "id": "pavlov2017aa",
             "title": "AA-ICP: Iterative Closest Point with Anderson Acceleration",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -935,7 +859,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "ovchinnikov2017robust",
+            "id": "ovchinnikov2017robust",
             "title": "Robust regularization of topology optimization problems with a posteriori error estimators",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -949,7 +873,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "ostanin2017scalable",
+            "id": "ostanin2017scalable",
             "title": "Scalable topology optimization with the kernel-independent fast multipole method",
             "year": 2017,
             "journal": "Engineering Analysis with Boundary Elements",
@@ -968,7 +892,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "ostanin2017parallel",
+            "id": "ostanin2017parallel",
             "title": "Parallel Optimization With Boundary Elements And Kernel Independent Fast Multipole Method",
             "year": 2017,
             "journal": "International Journal of Computational Methods and Experimental Measurements",
@@ -985,7 +909,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "sushnikova2017simple",
+            "id": "sushnikova2017simple",
             "title": "Simple non-extensive sparsification of the hierarchical matrices",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -999,7 +923,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "sosnovik2017neural",
+            "id": "sosnovik2017neural",
             "title": "Neural networks for topology optimization",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -1009,7 +933,7 @@
             "url": "https://arxiv.org/pdf/1709.09578.pdf"
         },
         {
-            "tag": "ostanin2017fast",
+            "id": "ostanin2017fast",
             "title": "Fast topological-shape optimization with boundary elements in two dimensions",
             "year": 2017,
             "journal": "Russian Journal of Numerical Analysis and Mathematical Modelling",
@@ -1028,7 +952,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "oseledets2017fast",
+            "id": "oseledets2017fast",
             "title": "Fast, memory efficient low-rank approximation of SimRank",
             "year": 2017,
             "journal": "Journal of Complex Networks",
@@ -1047,7 +971,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "ustinova2017multi",
+            "id": "ustinova2017multi",
             "title": "Multi-Region bilinear convolutional neural networks for person re-identification",
             "year": 2017,
             "authors_detected": "lempitsky/",
@@ -1062,7 +986,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "oseledets2017alternating",
+            "id": "oseledets2017alternating",
             "title": "Alternating least squares as moving subspace correction",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -1076,7 +1000,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "neklyudov2017structured",
+            "id": "neklyudov2017structured",
             "title": "Structured Bayesian Pruning via Log-Normal Multiplicative Noise",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -1089,7 +1013,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "qiu2017optimized",
+            "id": "qiu2017optimized",
             "title": "Optimized motor imagery paradigm based on imagining Chinese characters writing movement\r\n",
             "year": 2017,
             "journal": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
@@ -1106,7 +1030,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "yokota2017robust",
+            "id": "yokota2017robust",
             "title": "Robust multilinear tensor rank estimation using higher order singular value decomposition and information criteria",
             "year": 2017,
             "journal": "IEEE Transactions on Signal Processing",
@@ -1125,7 +1049,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "ulyanov2017adversarial",
+            "id": "ulyanov2017adversarial",
             "title": "Adversarial Generator-Encoder Networks",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -1139,7 +1063,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "mikhalev2017rectangular",
+            "id": "mikhalev2017rectangular",
             "title": "Rectangular maximum-volume submatrices and their applications",
             "year": 2017,
             "journal": "Linear Algebra and its Applications",
@@ -1153,7 +1077,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "zhang2017sparse",
+            "id": "zhang2017sparse",
             "title": "Sparse Bayesian multiway canonical correlation analysis for EEG pattern recognition",
             "year": 2017,
             "journal": "Neurocomputing",
@@ -1171,7 +1095,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "pimanov2017regularization",
+            "id": "pimanov2017regularization",
             "title": "Regularization of topology optimization problem by the FEM a posteriori error estimator",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -1185,7 +1109,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "lobacheva2017bayesian",
+            "id": "lobacheva2017bayesian",
             "title": "Bayesian Sparsification of Recurrent Neural Networks",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -1198,7 +1122,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "li2017new",
+            "id": "li2017new",
             "title": "A new perspective of noise removal from EEG",
             "year": 2017,
             "authors_detected": "cichocki/",
@@ -1213,7 +1137,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "zhao2017learning",
+            "id": "zhao2017learning",
             "title": "Learning Efficient Tensor Representations with Ring Structure Networks",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -1226,7 +1150,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "phan2017partitioned",
+            "id": "phan2017partitioned",
             "title": "Partitioned Hierarchical alternating least squares algorithm for CP tensor decomposition",
             "year": 2017,
             "authors_detected": "cichocki/",
@@ -1241,7 +1165,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "phan2017numerical",
+            "id": "phan2017numerical",
             "title": "Numerical CP decomposition of some difficult tensors",
             "year": 2017,
             "journal": "Journal of Computational and Applied Mathematics",
@@ -1258,7 +1182,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "ustinova2017deep",
+            "id": "ustinova2017deep",
             "title": "Deep multi-frame face hallucination for face identification",
             "year": 2017,
             "journal": "ArXiv preprint",
@@ -1272,7 +1196,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "vakhitov2017set2model",
+            "id": "vakhitov2017set2model",
             "title": "Set2Model networks: Learning discriminatively to learn generative models",
             "year": 2017,
             "journal": "Computer Vision and Image Understanding",
@@ -1287,12 +1211,12 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "phan2017error",
+            "id": "phan2017error",
             "title": "Error preserving correction for CPD and bounded-norm CPD",
             "year": 2017,
             "journal": "ArXiv preprint",
             "authors_detected": "cichocki/",
-            "author": "Phan, Anh-Huy and Tichavsk{\\`y}, Petr and Cichocki, Andrzej",
+            "author": "Phan, Anh-Huy and Tichavsky, Petr and Cichocki, Andrzej",
             "affiliation": "Skoltech",
             "kind": "article",
             "publisher": "arXiv",
@@ -1301,7 +1225,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "phan2017blind",
+            "id": "phan2017blind",
             "title": "Blind source separation of single channel mixture using tensorization and tensor diagonalization",
             "year": 2017,
             "authors_detected": "cichocki/",
@@ -1317,7 +1241,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "li2017canonical",
+            "id": "li2017canonical",
             "title": "Canonical Polyadic Decomposition With Auxiliary Information for Brain-Computer Interface",
             "year": 2017,
             "journal": "IEEE journal of biomedical and health informatics",
@@ -1338,7 +1262,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "lehky2017coding",
+            "id": "lehky2017coding",
             "title": "Coding of faces by tensor components",
             "year": 2017,
             "journal": "Journal of Vision",
@@ -1354,12 +1278,12 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "phan2017best",
+            "id": "phan2017best",
             "title": "Best Rank-One Tensor Approximation and Parallel Update Algorithm for CPD",
             "year": 2017,
             "journal": "ArXiv preprint",
             "authors_detected": "cichocki/",
-            "author": "Phan, Anh-Huy and Tichavsk{\\`y}, Petr and Cichocki, Andrzej",
+            "author": "Phan, Anh-Huy and Tichavsky, Petr and Cichocki, Andrzej",
             "affiliation": "Skoltech",
             "kind": "article",
             "publisher": "arXiv",
@@ -1368,7 +1292,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "phan2017augmented",
+            "id": "phan2017augmented",
             "title": "An augmented Lagrangian algorithm for decomposition of symmetric tensors of order-4",
             "year": 2017,
             "authors_detected": "cichocki/",
@@ -1383,7 +1307,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "xie2017rate",
+            "id": "xie2017rate",
             "title": "Rate of Convergence of the FOCUSS Algorithm",
             "year": 2017,
             "journal": "IEEE transactions on neural networks and learning systems",
@@ -1402,7 +1326,7 @@
             "check_date": "2017-10-31T21:00:00.000Z"
         },
         {
-            "tag": "elgendi2016six",
+            "id": "elgendi2016six",
             "title": "A Six-Step Framework on Biomedical Signal Analysis for Tackling Noncommunicable Diseases: Current and Future Perspectives",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1416,7 +1340,7 @@
             "url": "http://biomedeng.jmir.org/2016/1/e1/"
         },
         {
-            "tag": "kuzmin2016end",
+            "id": "kuzmin2016end",
             "title": "End-to-end Learning of Cost-Volume Aggregation for Real-time Dense Stereo",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1428,7 +1352,7 @@
             "url": "https://arxiv.org/abs/1611.05689"
         },
         {
-            "tag": "lebedev2016fast",
+            "id": "lebedev2016fast",
             "title": "Fast convnets using group-wise brain damage",
             "year": 2016,
             "authors_detected": "lempitsky/",
@@ -1438,7 +1362,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Lebedev_Fast_ConvNets_Using_CVPR_2016_paper.html"
         },
         {
-            "tag": "lee2016nonnegative",
+            "id": "lee2016nonnegative",
             "title": "Nonnegative Tensor Train Decompositions for Multi-domain Feature Extraction and Clustering",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1448,7 +1372,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-46675-0_10"
         },
         {
-            "tag": "lee2016regularized",
+            "id": "lee2016regularized",
             "title": "Regularized computation of approximate pseudoinverse of large matrices using low-rank tensor train decompositions",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1462,7 +1386,7 @@
             "url": "http://epubs.siam.org/doi/abs/10.1137/15M1028479"
         },
         {
-            "tag": "zhang2016fast",
+            "id": "zhang2016fast",
             "title": "Fast nonnegative tensor factorization based on accelerated proximal gradient and low-rank approximation",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1475,7 +1399,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0925231216003222"
         },
         {
-            "tag": "ko-linconv-2016pre",
+            "id": "ko-linconv-2016pre",
             "title": "Convergence analysis of projected fixed-point iteration on a low-rank matrix manifold",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1488,7 +1412,7 @@
             "notes": " [[UPD of tag. Old: \"kolesnikov2016convergence\".]] [[UPD of kind. Old: \"article\".]] [[UPD of url. Old: \"https://arxiv.org/abs/1604.02111\".]]"
         },
         {
-            "tag": "zhou2016optimizing",
+            "id": "zhou2016optimizing",
             "title": "Optimizing the Face Paradigm of BCI System by Modified Mismatch Negative Paradigm",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1500,7 +1424,7 @@
             "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5054457/"
         },
         {
-            "tag": "ko-desing-2016pre",
+            "id": "ko-desing-2016pre",
             "title": "Desingularization of bounded-rank matrix sets",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1513,7 +1437,7 @@
             "notes": " [[UPD of tag. Old: \"khrulkov2016desingularization\".]] [[UPD of kind. Old: \"article\".]] [[UPD of url. Old: \"https://arxiv.org/abs/1612.03973\".]]"
         },
         {
-            "tag": "kirillov2016deep",
+            "id": "kirillov2016deep",
             "title": "Deep Part-Based Generative Shape Model with Latent Variables",
             "year": 2016,
             "authors_detected": "vetrov/",
@@ -1522,7 +1446,7 @@
             "url": "https://hal.archives-ouvertes.fr/hal-01404071/"
         },
         {
-            "tag": "zhang2016removal",
+            "id": "zhang2016removal",
             "title": "Removal of EEG artifacts for BCI applications using fully Bayesian tensor completion",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1532,7 +1456,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7471789/"
         },
         {
-            "tag": "litsarev2016low",
+            "id": "litsarev2016low",
             "title": "A low-rank approach to the computation of path integrals",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -1545,7 +1469,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0021999115007494"
         },
         {
-            "tag": "lo-pathint-2016",
+            "id": "lo-pathint-2016",
             "title": "Low-rank approach to the computation of path integrals",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -1559,7 +1483,7 @@
             "notes": " [[PLG: small dist (3) to: \"A low-rank approach to the computation of path integrals\"]]"
         },
         {
-            "tag": "zhang2016sparse",
+            "id": "zhang2016sparse",
             "title": "Sparse bayesian classification of EEG for brain--computer interface",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1573,7 +1497,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7274734/"
         },
         {
-            "tag": "zeng2016guest",
+            "id": "zeng2016guest",
             "title": "Guest editorial special issue on neurodynamic systems for optimization and applications",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1587,7 +1511,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7384894/"
         },
         {
-            "tag": "huang2016exploration",
+            "id": "huang2016exploration",
             "title": "An exploration of spatial auditory BCI paradigms with different sounds: music notes versus beeps",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1601,7 +1525,7 @@
             "url": "http://link.springer.com/article/10.1007/s11571-016-9377-1"
         },
         {
-            "tag": "mikhos-mcbh-2015",
+            "id": "mikhos-mcbh-2015",
             "title": "Iterative representing set selection fo nested cross approximation",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -1617,7 +1541,7 @@
             "notes": " [[UPD of title. Old: \"Iterative representing set selection for nested cross approximation\".]] [[UPD of tag. Old: \"mikhalev2016iterative\".]] [[UPD of author. Old: \"Mikhalev, A Yu and Oseledets, Ivan V\".]] [[UPD of journal. Old: \"Numerical Linear Algebra with Applications\".]] [[UPD of pages. Old: \"230--248\".]] [[UPD of url. Old: \"http://onlinelibrary.wiley.com/doi/10.1002/nla.2021/full\".]]"
         },
         {
-            "tag": "yurchenko2016parsing",
+            "id": "yurchenko2016parsing",
             "title": "Parsing Images of Overlapping Organisms with Deep Singling-Out Networks",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1629,7 +1553,7 @@
             "url": "https://arxiv.org/abs/1612.06017"
         },
         {
-            "tag": "molchanov2016dropout",
+            "id": "molchanov2016dropout",
             "title": "Dropout-based Automatic Relevance Determination",
             "year": 2016,
             "authors_detected": "molchanov/vetrov/",
@@ -1638,7 +1562,7 @@
             "url": "http://bayesiandeeplearning.org/papers/BDL_18.pdf"
         },
         {
-            "tag": "hou2016common",
+            "id": "hou2016common",
             "title": "Common and Discriminative Subspace Kernel-Based Multiblock Tensor Partial Least Squares Regression.",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1648,7 +1572,7 @@
             "url": "http://www2.ift.ulaval.ca/~chaib/publications/Ming-aaai16_final.pdf"
         },
         {
-            "tag": "mouri2016usefulness",
+            "id": "mouri2016usefulness",
             "title": "Usefulness of Quasi-L1 Norm-Based Nonnegative Matrix Factorization Algorithm to Estimate Background Signal using Environmental Electromagnetic Field Measurements at ELF Band",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1660,7 +1584,7 @@
             "url": "http://adsabs.harvard.edu/abs/2016IJTFM.136..241M"
         },
         {
-            "tag": "hlobv-projectormps-2016",
+            "id": "hlobv-projectormps-2016",
             "title": "Unifying time evolution and optimization with matrix product states",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -1676,7 +1600,7 @@
             "notes": " [[UPD of tag. Old: \"haegeman2016unifying\".]] [[UPD of journal. Old: \"Physical Review B\".]] [[UPD of url. Old: \"https://journals.aps.org/prb/abstract/10.1103/PhysRevB.94.165116\".]]"
         },
         {
-            "tag": "nam2016glossokinetic",
+            "id": "nam2016glossokinetic",
             "title": "Glossokinetic Potentials for a Tongue-Machine Interface: How Can We Trace Tongue Movements with Electrodes?",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1690,7 +1614,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7487897/"
         },
         {
-            "tag": "grinchuk2016learnable",
+            "id": "grinchuk2016learnable",
             "title": "Learnable Visual Markers",
             "year": 2016,
             "authors_detected": "lempitsky/",
@@ -1700,7 +1624,7 @@
             "url": "http://papers.nips.cc/paper/6322-learnable-visual-markers.pdf"
         },
         {
-            "tag": "yokota2016tensor",
+            "id": "yokota2016tensor",
             "title": "Tensor completion via functional smooth component deflation",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1710,7 +1634,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7472130/"
         },
         {
-            "tag": "nkors-chemfin-2016",
+            "id": "nkors-chemfin-2016",
             "title": "Machine learning for LC-MS medicinal plants identification",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -1725,7 +1649,7 @@
             "notes": " [[UPD of title. Old: \"Machine learning for LC--MS medicinal plants identification\".]] [[UPD of tag. Old: \"nazarenko2016machine\".]] [[UPD of author. Old: \"Nazarenko, DV and Kharyuk, PV and Oseledets, IV and Rodin, IA and Shpigun, OA\".]] [[UPD of pages. Old: \"174--180\".]]"
         },
         {
-            "tag": "novikov2016exponential",
+            "id": "novikov2016exponential",
             "title": "Exponential machines",
             "year": 2016,
             "authors_detected": "novikov/oseledets/",
@@ -1734,7 +1658,7 @@
             "url": "http://arxiv.org/abs/1605.03795"
         },
         {
-            "tag": "novikov2016tensor",
+            "id": "novikov2016tensor",
             "title": "Tensor Train polynomial models via Riemannian optimization",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1747,7 +1671,7 @@
             "notes": " [[UPD of title. Old: \"Tensor train polynomial models via Riemannian optimization\".]] [[UPD of tag. Old: \"novikov2016tensor\".]] [[UPD of kind. Old: \"article\".]] [[UPD of url. Old: \"http://adsabs.harvard.edu/abs/2016arXiv160503795N\".]]"
         },
         {
-            "tag": "oseledets2016tensor",
+            "id": "oseledets2016tensor",
             "title": "Tensor Train Methods for Quantum Molecular Dynamics",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -1757,7 +1681,7 @@
             "url": "https://open.library.ubc.ca/cIRcle/collections/birs/items/1.0307276"
         },
         {
-            "tag": "garipov2016ultimate",
+            "id": "garipov2016ultimate",
             "title": "Ultimate tensorization: compressing convolutional and FC layers alike",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1769,7 +1693,7 @@
             "url": "https://arxiv.org/abs/1611.03214"
         },
         {
-            "tag": "ganin2016domain",
+            "id": "ganin2016domain",
             "title": "Domain-adversarial training of neural networks",
             "year": 2016,
             "author": "Ganin, Yaroslav and Ustinova, Evgeniya and Ajakan, Hana and Germain, Pascal and Larochelle, Hugo and Laviolette, Francc",
@@ -1781,7 +1705,7 @@
             "url": "http://www.jmlr.org/papers/volume17/15-239/source/15-239.pdf"
         },
         {
-            "tag": "ganin2016deepwarp",
+            "id": "ganin2016deepwarp",
             "title": "DeepWarp: Photorealistic image resynthesis for gaze manipulation",
             "year": 2016,
             "authors_detected": "sungatullina/lempitsky/",
@@ -1791,7 +1715,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-46475-6_20"
         },
         {
-            "tag": "fo-shades-2106",
+            "id": "fo-shades-2106",
             "title": "Fifty Shades of Ratings: How to Benefit from a Negative Feedback in Top-N Recommendations Tasks",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -1803,7 +1727,7 @@
             "notes": " [[PARSE: unknown name \"series\" with value \"RecSys '16\"]] [[PARSE: unknown name \"numpages\" with value \"8\"]] [[PARSE: unknown name \"keywords\" with value \"cold-start, collaborative filtering, explicit feedback, recommender systems, tensor factorization\"]]"
         },
         {
-            "tag": "fmsgo-rectmaxvol-2016pre",
+            "id": "fmsgo-rectmaxvol-2016pre",
             "title": "Efficient Rectangular Maximal-Volume Algorithm for Rating Elicitation in Collaborative Filtering",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -1817,7 +1741,7 @@
             "notes": "Proceedings - IEEE International Conference on Data Mining, ICDM"
         },
         {
-            "tag": "otloz-partopopt-2016pre",
+            "id": "otloz-partopopt-2016pre",
             "title": "What Lies Beneath the Surface: Topological-Shape Optimization With the Kernel-Independent Fast Multipole Method",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1830,7 +1754,7 @@
             "notes": " [[UPD of tag. Old: \"ostanin2016lies\".]] [[UPD of kind. Old: \"article\".]] [[UPD of url. Old: \"https://arxiv.org/abs/1612.04082\".]]"
         },
         {
-            "tag": "figurnov2016robust",
+            "id": "figurnov2016robust",
             "title": "Robust Variational Inference",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1842,7 +1766,7 @@
             "url": "https://arxiv.org/abs/1611.09226"
         },
         {
-            "tag": "figurnov2016perforatedcnns",
+            "id": "figurnov2016perforatedcnns",
             "title": "PerforatedCNNs: Acceleration through elimination of redundant convolutions",
             "year": 2016,
             "authors_detected": "vetrov/",
@@ -1852,7 +1776,7 @@
             "url": "http://papers.nips.cc/paper/6462-perforatedcnns-acceleration-through-elimination-of-redundant-convolutions.pdf"
         },
         {
-            "tag": "kuzmin2016fast",
+            "id": "kuzmin2016fast",
             "title": "Fast low-cost single element ultrasound reflectivity tomography using angular distribution analysis",
             "year": 2016,
             "authors_detected": "lempitsky/",
@@ -1862,7 +1786,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7493439/"
         },
         {
-            "tag": "cui2016bayesian",
+            "id": "cui2016bayesian",
             "title": "Bayesian CP factorization of incomplete tensor for EEG signal application",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1872,7 +1796,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7737961/"
         },
         {
-            "tag": "phan2016rank",
+            "id": "phan2016rank",
             "title": "Rank-one tensor injection: A novel method for canonical polyadic tensor decomposition",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1882,7 +1806,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7472137/"
         },
         {
-            "tag": "phan2016tensor",
+            "id": "phan2016tensor",
             "title": "Tensor networks for latent variable analysis. Part I: Algorithms for tensor train decomposition",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1894,7 +1818,7 @@
             "url": "https://arxiv.org/abs/1609.09230"
         },
         {
-            "tag": "cor-robqtt-2016pre",
+            "id": "cor-robqtt-2016pre",
             "title": "Robust discretization in quantized tensor train format for elliptic problems in two dimensions",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1907,7 +1831,7 @@
             "notes": " [[UPD of tag. Old: \"chertkov2016robust\".]] [[UPD of kind. Old: \"article\".]] [[UPD of author. Old: \"Chertkov, AV and Oseledets, IV and Rakhuba, MV\".]] [[UPD of url. Old: \"https://arxiv.org/abs/1612.01166\".]]"
         },
         {
-            "tag": "cor-eccomas-2016",
+            "id": "cor-eccomas-2016",
             "title": "Black-box solver for multiscale modelling using the QTT format",
             "year": 2016,
             "authors_detected": "oseledets/rakhuba/chertkov/",
@@ -1916,7 +1840,7 @@
             "url": "https://www.eccomas2016.org/proceedings/pdf/10906.pdf"
         },
         {
-            "tag": "zhao2016bayesian",
+            "id": "zhao2016bayesian",
             "title": "Bayesian robust tensor factorization for incomplete multiway data",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1930,7 +1854,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7120147/"
         },
         {
-            "tag": "clopzm-tnrevp1-2016pre",
+            "id": "clopzm-tnrevp1-2016pre",
             "title": "Low-Rank Tensor Networks for Dimensionality Reduction and Large-Scale Optimization Problems: Perspectives and Challenges PART 1",
             "year": 2016,
             "authors_detected": "cichocki/oseledets/",
@@ -1940,7 +1864,7 @@
             "notes": "accepted at Trends and Foundations in Machine Learning"
         },
         {
-            "tag": "cichocki2016tensor",
+            "id": "cichocki2016tensor",
             "title": "Tensor Networks for Dimensionality Reduction and Large-scale Optimization: Part 1 Low-Rank Tensor Decompositions",
             "year": 2016,
             "authors_detected": "cichocki/oseledets/",
@@ -1955,7 +1879,7 @@
             "url": "http://ftp.nowpublishers.com/article/Details/MAL-059"
         },
         {
-            "tag": "zhao2016tensor",
+            "id": "zhao2016tensor",
             "title": "Tensor ring decomposition",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -1967,7 +1891,7 @@
             "url": "https://arxiv.org/abs/1606.05535"
         },
         {
-            "tag": "chen2016exploring",
+            "id": "chen2016exploring",
             "title": "Exploring Combinations of Different Color and Facial Expression Stimuli for Gaze-Independent BCIs",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1979,7 +1903,7 @@
             "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731496/"
         },
         {
-            "tag": "qiu2016improved",
+            "id": "qiu2016improved",
             "title": "Improved SFFS method for channel selection in motor imagery based BCI",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -1992,7 +1916,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0925231216303745"
         },
         {
-            "tag": "cao2016total",
+            "id": "cao2016total",
             "title": "Total Variation Regularized Tensor RPCA for Background Subtraction From Compressive Measurements",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -2006,7 +1930,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7488247/"
         },
         {
-            "tag": "zhou2016effects",
+            "id": "zhou2016effects",
             "title": "Effects of Background Music on Objective and Subjective Performance Measures in an Auditory BCI",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -2018,7 +1942,7 @@
             "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5061745/"
         },
         {
-            "tag": "ro-hf-2016",
+            "id": "ro-hf-2016",
             "title": "Grid-based electronic structure calculations: the tensor decomposition approach",
             "year": 2016,
             "journal": "Journal of Computational Physics",
@@ -2035,7 +1959,7 @@
             "notes": " [[UPD of title. Old: \"Grid-based electronic structure calculations: The tensor decomposition approach\".]] [[UPD of tag. Old: \"rakhuba2016grid\".]] [[UPD of author. Old: \"Rakhuba, MV and Oseledets, Ivan V\".]] [[UPD of journal. Old: \"Journal of Computational Physics\".]] [[UPD of url. Old: \"http://www.sciencedirect.com/science/article/pii/S0021999116000772\".]]"
         },
         {
-            "tag": "ro-mp-2016",
+            "id": "ro-mp-2016",
             "title": "Calculating vibrational spectra of molecules using tensor train decomposition",
             "year": 2016,
             "journal": "Journal of Chemical Physics",
@@ -2052,7 +1976,7 @@
             "notes": " [[UPD of tag. Old: \"rakhuba2016calculating\".]] [[UPD of journal. Old: \"The Journal of Chemical Physics\".]]"
         },
         {
-            "tag": "xie2016rate",
+            "id": "xie2016rate",
             "title": "Rate of Convergence of the FOCUSS Algorithm",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -2063,7 +1987,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7423792/"
         },
         {
-            "tag": "so-ce-2016pre",
+            "id": "so-ce-2016pre",
             "title": "Compress and eliminate solver for symmetric positive definite sparse matrices",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -2073,7 +1997,7 @@
             "notes": " [[PLG: small dist (3) to: \"\" Compress and eliminate\" solver for symmetric positive definite sparse matrices\"]]"
         },
         {
-            "tag": "so-revschur-2016",
+            "id": "so-revschur-2016",
             "title": "Preconditioners for hierarchical matrices based on their extended sparse form",
             "year": 2016,
             "authors_detected": "oseledets/",
@@ -2089,7 +2013,7 @@
             "notes": " [[UPD of tag. Old: \"sushnikova2016preconditioners\".]] [[UPD of author. Old: \"Sushnikova, Darya A and Oseledets, Ivan V\".]] [[UPD of journal. Old: \"Russian Journal of Numerical Analysis and Mathematical Modelling\".]] [[UPD of pages. Old: \"29--40\".]] [[UPD of url. Old: \"https://www.degruyter.com/view/j/rnam.2016.31.issue-1/rnam-2016-0003/rnam-2016-0003.xml\".]]"
         },
         {
-            "tag": "bclts-electr-2016",
+            "id": "bclts-electr-2016",
             "title": "Multiple-electron losses in uranium ion beams in heavy ion synchrotrons",
             "year": 2016,
             "author": "Bozyk, L. and Chill, F. and Litsarev, M. S. and Tolstikhina, I. Yu. and Shevelko, V. P.",
@@ -2103,7 +2027,7 @@
             "notes": " [[UPD of tag. Old: \"bozyk2016multiple\".]] [[UPD of author. Old: \"Bozyk, L and Chill, F and Litsarev, MS and Tolstikhina, I Yu and Shevelko, VP\".]] [[UPD of journal. Old: \"Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms\".]] [[UPD of pages. Old: \"102--108\".]]"
         },
         {
-            "tag": "stewart2016motor",
+            "id": "stewart2016motor",
             "title": "Motor Priming as a Brain-Computer Interface",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -2113,7 +2037,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-46672-9_60"
         },
         {
-            "tag": "struminsky2016new",
+            "id": "struminsky2016new",
             "title": "A new approach for sparse Bayesian channel estimation in SCMA uplink systems",
             "year": 2016,
             "authors_detected": "vetrov/oseledets/",
@@ -2123,7 +2047,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7752678/"
         },
         {
-            "tag": "sushnikova2016compress",
+            "id": "sushnikova2016compress",
             "title": "\" Compress and eliminate\" solver for symmetric positive definite sparse matrices",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -2135,7 +2059,7 @@
             "url": "https://arxiv.org/abs/1603.09133"
         },
         {
-            "tag": "zhou2016group",
+            "id": "zhou2016group",
             "title": "Group component analysis for multiblock data: Common and individual feature extraction",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -2149,7 +2073,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7310871/"
         },
         {
-            "tag": "bartunov2016fast",
+            "id": "bartunov2016fast",
             "title": "Fast Adaptation in Generative Models with Generative Matching Networks",
             "year": 2016,
             "authors_detected": "vetrov/",
@@ -2160,7 +2084,7 @@
             "url": "https://arxiv.org/abs/1612.02192"
         },
         {
-            "tag": "tichavsky2016partitioned",
+            "id": "tichavsky2016partitioned",
             "title": "Partitioned Alternating Least Squares Technique for Canonical Polyadic Tensor Decomposition",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -2174,7 +2098,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7485893/"
         },
         {
-            "tag": "bartunov2016breaking",
+            "id": "bartunov2016breaking",
             "title": "Breaking sticks and ambiguities with adaptive skip-gram",
             "year": 2016,
             "authors_detected": "vetrov/",
@@ -2184,7 +2108,7 @@
             "url": "http://www.jmlr.org/proceedings/papers/v51/bartunov16.pdf"
         },
         {
-            "tag": "ulyanov2016instance",
+            "id": "ulyanov2016instance",
             "title": "Instance Normalization: The Missing Ingredient for Fast Stylization",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -2196,7 +2120,7 @@
             "url": "https://arxiv.org/abs/1607.08022"
         },
         {
-            "tag": "ulyanov2016texture",
+            "id": "ulyanov2016texture",
             "title": "Texture networks: Feed-forward synthesis of textures and stylized images",
             "year": 2016,
             "authors_detected": "lempitsky/",
@@ -2205,19 +2129,19 @@
             "url": "http://www.jmlr.org/proceedings/papers/v48/ulyanov16.pdf"
         },
         {
-            "tag": "babenko2016pairwise",
+            "id": "babenko2016pairwise",
             "title": "Pairwise Quantization",
             "year": 2016,
             "journal": "ArXiv preprint",
             "authors_detected": "lempitsky/",
-            "author": "Babenko, Artem and Arandjelovi{\\'c}, Relja and Lempitsky, Victor",
+            "author": "Babenko, Artem and Arandjelovic, Relja and Lempitsky, Victor",
             "kind": "article",
             "publisher": "arXiv",
             "journal_old": "arXiv preprint arXiv:1606.01550",
             "url": "https://arxiv.org/abs/1606.01550"
         },
         {
-            "tag": "babenko2016efficient",
+            "id": "babenko2016efficient",
             "title": "Efficient indexing of billion-scale datasets of deep descriptors",
             "year": 2016,
             "authors_detected": "lempitsky/",
@@ -2227,7 +2151,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Babenko_Efficient_Indexing_of_CVPR_2016_paper.html"
         },
         {
-            "tag": "wang2016exploiting",
+            "id": "wang2016exploiting",
             "title": "Exploiting ongoing EEG with multilinear partial least squares during free-listening to music",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -2237,7 +2161,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7738849/"
         },
         {
-            "tag": "wang2016discriminative",
+            "id": "wang2016discriminative",
             "title": "Discriminative feature extraction via multivariate linear regression for SSVEP-based BCI",
             "year": 2016,
             "authors_detected": "cichocki/",
@@ -2251,7 +2175,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7389413/"
         },
         {
-            "tag": "ustinova2016learning",
+            "id": "ustinova2016learning",
             "title": "Learning deep embeddings with histogram loss",
             "year": 2016,
             "authors_detected": "lempitsky/",
@@ -2261,7 +2185,7 @@
             "url": "http://papers.nips.cc/paper/6464-learning-deep-embeddings-with-histogram-loss"
         },
         {
-            "tag": "arteta2016detecting",
+            "id": "arteta2016detecting",
             "title": "Detecting overlapping instances in microscopy images using extremal region trees",
             "year": 2016,
             "authors_detected": "lempitsky/",
@@ -2274,7 +2198,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S1361841515000365"
         },
         {
-            "tag": "arteta2016counting",
+            "id": "arteta2016counting",
             "title": "Counting in the Wild",
             "year": 2016,
             "authors_detected": "lempitsky/",
@@ -2284,7 +2208,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-46478-7_30"
         },
         {
-            "tag": "vakhitov2016internet",
+            "id": "vakhitov2016internet",
             "title": "Internet-Based Image Retrieval Using End-to-End Trained Deep Distributions",
             "year": 2016,
             "journal": "ArXiv preprint",
@@ -2296,7 +2220,7 @@
             "url": "https://arxiv.org/abs/1612.07697"
         },
         {
-            "tag": "ahmadi2016novel",
+            "id": "ahmadi2016novel",
             "title": "Novel feature extraction, selection and fusion for effective malware family classification",
             "year": 2016,
             "author": "Ahmadi, Mansour and Ulyanov, Dmitry and Semenov, Stanislav and Trofimov, Mikhail and Giacinto, Giorgio",
@@ -2305,7 +2229,7 @@
             "url": "http://dl.acm.org/citation.cfm?id=2857713"
         },
         {
-            "tag": "kolesnikov2015low",
+            "id": "kolesnikov2015low",
             "title": "From Low-Rank Approximation to a Rational Krylov Subspace Method for the Lyapunov Equation",
             "year": 2015,
             "authors_detected": "kolesnikov/oseledets/",
@@ -2319,7 +2243,7 @@
             "url": "http://epubs.siam.org/doi/abs/10.1137/140992266"
         },
         {
-            "tag": "yokota2015smooth2",
+            "id": "yokota2015smooth2",
             "title": "Smooth PARAFAC decomposition for tensor completion",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2333,7 +2257,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7502115/"
         },
         {
-            "tag": "omzo-topfast-2015",
+            "id": "omzo-topfast-2015",
             "title": "Engineering optimization with the fast boundary element method",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2348,7 +2272,7 @@
             "notes": " [[UPD of tag. Old: \"ostanin2015engineering\".]] [[UPD of author. Old: \"Ostanin, Igor and Mikhalev, Alexander and Zorin, Denis and Oseledets, Ivan\".]] [[UPD of pages. Old: \"175--181\".]]"
         },
         {
-            "tag": "ook-diagsimrank-2015",
+            "id": "ook-diagsimrank-2015",
             "title": "Linear complexity SimRank using iterative diagonal estimation",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2357,7 +2281,7 @@
             "url": "http://arxiv.org/abs/1502.07167"
         },
         {
-            "tag": "yokota2015smooth",
+            "id": "yokota2015smooth",
             "title": "Smooth nonnegative matrix and tensor factorizations for robust multi-way data analysis",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2370,7 +2294,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0165168415000614"
         },
         {
-            "tag": "oseledets2015linear",
+            "id": "oseledets2015linear",
             "title": "Linear complexity SimRank computation based on the iterative diagonal estimation",
             "year": 2015,
             "journal": "ArXiv preprint",
@@ -2382,7 +2306,7 @@
             "url": "https://arxiv.org/abs/1502.07167"
         },
         {
-            "tag": "kononenko2015learning",
+            "id": "kononenko2015learning",
             "title": "Learning to look up: Realtime monocular gaze correction using machine learning",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -2392,7 +2316,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Kononenko_Learning_To_Look_2015_CVPR_paper.html"
         },
         {
-            "tag": "zhao2015bayesiancp",
+            "id": "zhao2015bayesiancp",
             "title": "Bayesian CP factorization of incomplete tensors with automatic rank determination",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2406,7 +2330,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7010937/"
         },
         {
-            "tag": "михалев2015прямоугольные",
+            "id": "михалев2015прямоугольные",
             "title": "ПРЯМОУГОЛЬНЫЕ ПОДМАТРИЦЫ МАКСИМАЛЬНОГО ОБЪЕМА И ИХ ВЫЧИСЛЕНИЕ",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2418,7 +2342,7 @@
             "url": "https://elibrary.ru/item.asp?id=23302629"
         },
         {
-            "tag": "osokin2015submodular",
+            "id": "osokin2015submodular",
             "title": "Submodular relaxation for inference in Markov random fields",
             "year": 2015,
             "authors_detected": "vetrov/",
@@ -2432,7 +2356,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6951467/"
         },
         {
-            "tag": "ostanin2015toward",
+            "id": "ostanin2015toward",
             "title": "Toward fast topological-shape optimization with boundary elements",
             "year": 2015,
             "journal": "ArXiv preprint",
@@ -2444,7 +2368,7 @@
             "url": "https://arxiv.org/abs/1503.02383"
         },
         {
-            "tag": "kuzmin2015multi",
+            "id": "kuzmin2015multi",
             "title": "Multi-frame elastography using a handheld force-controlled ultrasound probe",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -2458,7 +2382,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7185015/"
         },
         {
-            "tag": "chen2015epileptic",
+            "id": "chen2015epileptic",
             "title": "Epileptic EEG visualization and sonification based on linear discriminate analysis",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2468,7 +2392,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7319386/"
         },
         {
-            "tag": "hiyoshi2015eeg",
+            "id": "hiyoshi2015eeg",
             "title": "EEG correlates of voice and face emotional judgments in the human brain",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2482,7 +2406,7 @@
             "url": "http://link.springer.com/article/10.1007/s12559-013-9225-0"
         },
         {
-            "tag": "zhang2015ssvep",
+            "id": "zhang2015ssvep",
             "title": "SSVEP recognition using common feature analysis in brain--computer interface",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2495,7 +2419,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S016502701400106X"
         },
         {
-            "tag": "hiyoshi2015uncinate",
+            "id": "hiyoshi2015uncinate",
             "title": "The uncinate fasciculus as a predictor of conversion from amnestic mild cognitive impairment to Alzheimer disease",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2509,7 +2433,7 @@
             "url": "http://onlinelibrary.wiley.com/doi/10.1111/jon.12196/full"
         },
         {
-            "tag": "ozo-shapeopt-2015",
+            "id": "ozo-shapeopt-2015",
             "title": "Toward fast topological-shape optimization",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2518,7 +2442,7 @@
             "url": "http://arxiv.org/abs/1503.02383"
         },
         {
-            "tag": "lee2015estimating",
+            "id": "lee2015estimating",
             "title": "Estimating a few extreme singular values and vectors for large-scale matrices in tensor train format",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2532,7 +2456,7 @@
             "url": "http://epubs.siam.org/doi/abs/10.1137/140983410"
         },
         {
-            "tag": "peters2015valence",
+            "id": "peters2015valence",
             "title": "Valence and spectral properties of rare-earth clusters",
             "year": 2015,
             "author": "Peters, L and Di Marco, Igor and Litsarev, MS and Delin, Anna and Katsnelson, MI and Kirilyuk, A and Johansson, B\\\"orje and Sanyal, Biplab and Eriksson, Olle",
@@ -2545,7 +2469,7 @@
             "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.92.035143"
         },
         {
-            "tag": "yokota2015fast",
+            "id": "yokota2015fast",
             "title": "A fast automatic low-rank determination algorithm for noisy matrix completion",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2555,7 +2479,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7415348/"
         },
         {
-            "tag": "zhao2015bayesian",
+            "id": "zhao2015bayesian",
             "title": "Bayesian sparse Tucker models for dimension reduction and tensor completion",
             "year": 2015,
             "journal": "ArXiv preprint",
@@ -2567,7 +2491,7 @@
             "url": "https://arxiv.org/abs/1505.02343"
         },
         {
-            "tag": "chen2015survey",
+            "id": "chen2015survey",
             "title": "A survey of the dummy face and human face stimuli used in BCI paradigm",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2580,7 +2504,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0165027014003628"
         },
         {
-            "tag": "phan2015low",
+            "id": "phan2015low",
             "title": "Low rank tensor deconvolution",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2590,7 +2514,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7178355/"
         },
         {
-            "tag": "phan2015rank",
+            "id": "phan2015rank",
             "title": "Rank splitting for CANDECOMP/PARAFAC",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2600,7 +2524,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-22482-4_4"
         },
         {
-            "tag": "phan2015tensor",
+            "id": "phan2015tensor",
             "title": "Tensor deflation for CANDECOMP/PARAFAC—Part I: Alternating subspace update algorithm",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2614,7 +2538,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7163349/"
         },
         {
-            "tag": "phan2015tensor2",
+            "id": "phan2015tensor2",
             "title": "Tensor deflation for CANDECOMP/PARAFAC—Part II: Initialization and Error analysis",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2628,7 +2552,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7163358/"
         },
         {
-            "tag": "phan2015tensor3",
+            "id": "phan2015tensor3",
             "title": "Tensor deflation for CANDECOMP/PARAFAC. Part 3: Rank splitting",
             "year": 2015,
             "journal": "ArXiv preprint",
@@ -2640,7 +2564,7 @@
             "url": "https://arxiv.org/abs/1506.04971"
         },
         {
-            "tag": "zyokd-ttcircuit-2015",
+            "id": "zyokd-ttcircuit-2015",
             "title": "Enabling high-dimensional hierarchical uncertainty quantification by ANOVA and Tensor-Train decomposition",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2656,7 +2580,7 @@
             "notes": " [[UPD of title. Old: \"Enabling high-dimensional hierarchical uncertainty quantification by ANOVA and tensor-train decomposition\".]] [[UPD of tag. Old: \"zhang2015enabling\".]] [[UPD of author. Old: \"Zhang, Zheng and Yang, Xiu and Oseledets, Ivan V and Karniadakis, George E and Daniel, Luca\".]] [[UPD of journal. Old: \"IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems\".]] [[UPD of pages. Old: \"63--76\".]] [[UPD of url. Old: \"http://ieeexplore.ieee.org/abstract/document/6954398/\".]]"
         },
         {
-            "tag": "absil2015low",
+            "id": "absil2015low",
             "title": "Low-rank retractions: a survey and new results",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2670,7 +2594,7 @@
             "url": "http://link.springer.com/article/10.1007/s10589-014-9714-4"
         },
         {
-            "tag": "lempitsky2015advances",
+            "id": "lempitsky2015advances",
             "title": "Advances in fine-grained visual categorization",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -2679,7 +2603,7 @@
             "url": "http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.655128"
         },
         {
-            "tag": "zhang2015single",
+            "id": "zhang2015single",
             "title": "A single element 3D ultrasound tomography system",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -2689,7 +2613,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7319647/"
         },
         {
-            "tag": "li2015feature",
+            "id": "li2015feature",
             "title": "Feature learning from incomplete EEG with denoising autoencoder",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2702,7 +2626,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0925231215004282"
         },
         {
-            "tag": "jin2015p300",
+            "id": "jin2015p300",
             "title": "A P300 brain--computer interface based on a modification of the mismatch negativity paradigm",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2716,7 +2640,7 @@
             "url": "http://www.worldscientific.com/doi/abs/10.1142/S0129065715500112"
         },
         {
-            "tag": "bo-astt-2015",
+            "id": "bo-astt-2015",
             "title": "Fitting high-dimensional potential energy surface using active subspace and tensor train (AS+TT) method",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2732,7 +2656,7 @@
             "notes": " [[UPD of title. Old: \"Fitting high-dimensional potential energy surface using active subspace and tensor train (AS+ TT) method\".]] [[UPD of tag. Old: \"baranov2015fitting\".]] [[UPD of author. Old: \"Baranov, Vitaly and Oseledets, Ivan\".]] [[UPD of journal. Old: \"The Journal of chemical physics\".]] [[UPD of number. Old: \"17\".]] [[UPD of pages. Old: \"174107\".]]"
         },
         {
-            "tag": "cichocki2015brain",
+            "id": "cichocki2015brain",
             "title": "Brain Computer Interface (BCI) and Brain to Brain Couplings Using Multiway Component Analysis",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2745,7 +2669,7 @@
             "url": "https://www.jstage.jst.go.jp/article/jsmbe/53/Supplement/53_S288/_article/-char/ja/"
         },
         {
-            "tag": "cichocki2015log",
+            "id": "cichocki2015log",
             "title": "Log-determinant divergences revisited: Alpha-beta and gamma log-det divergences",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2759,7 +2683,7 @@
             "url": "http://www.mdpi.com/1099-4300/17/5/2988/htm"
         },
         {
-            "tag": "zhang2015optimizing",
+            "id": "zhang2015optimizing",
             "title": "Optimizing spatial patterns with sparse filter bands for motor-imagery based brain--computer interface",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2772,7 +2696,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S016502701500285X"
         },
         {
-            "tag": "jurica2015methods",
+            "id": "jurica2015methods",
             "title": "Methods for Transition Toward Computer Assisted Cognitive Examination",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2786,7 +2710,7 @@
             "url": "http://methods.schattauer.de/en/contents/archivestandard/issue/2214/manuscript/24125/download.html"
         },
         {
-            "tag": "lo-depositlr-2015",
+            "id": "lo-depositlr-2015",
             "title": "Fast low-rank approximations of multidimensional integrals in ion-atomic collisions modelling",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2803,7 +2727,7 @@
             "notes": " [[UPD of tag. Old: \"litsarev2015fast\".]] [[UPD of author. Old: \"Litsarev, Mikhail S and Oseledets, Ivan V\".]] [[UPD of journal. Old: \"Numerical Linear Algebra with Applications\".]] [[UPD of pages. Old: \"1147--1160\".]] [[UPD of url. Old: \"http://onlinelibrary.wiley.com/doi/10.1002/nla.2008/full\".]]"
         },
         {
-            "tag": "ranger2015motion",
+            "id": "ranger2015motion",
             "title": "Motion compensation in a tomographic ultrasound imaging system: Toward volumetric scans of a limb for prosthetic socket design",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -2813,7 +2737,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7320054/"
         },
         {
-            "tag": "rmso-eucap-2015",
+            "id": "rmso-eucap-2015",
             "title": "Numerical solution of diffraction problems using large matrix compression",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2824,7 +2748,7 @@
             "notes": " [[UPD of tag. Old: \"ryzhakov2015numerical\".]] [[UPD of kind. Old: \"inproceedings\".]] [[UPD of author. Old: \"Ryzhakov, GV and Mikhalev, A Yu and Sushnikova, DA and Oseledets, IV\".]] [[UPD of pages. Old: \"1--3\".]] [[UPD of url. Old: \"http://ieeexplore.ieee.org/abstract/document/7228667/\".]]"
         },
         {
-            "tag": "ro-crossconv-2015",
+            "id": "ro-crossconv-2015",
             "title": "Fast multidimensional convolution in low-rank tensor formats via cross approximation",
             "year": 2015,
             "authors_detected": "rakhuba/oseledets/",
@@ -2841,7 +2765,7 @@
             "notes": " [[UPD of tag. Old: \"rakhuba2015fast\".]] [[UPD of author. Old: \"Rakhuba, MV and Oseledets, Ivan V\".]] [[UPD of journal. Old: \"SIAM Journal on Scientific Computing\".]] [[UPD of pages. Old: \"A565--A582\".]]"
         },
         {
-            "tag": "cichocki2015tensor",
+            "id": "cichocki2015tensor",
             "title": "Tensor decompositions for signal processing applications: From two-way to multiway component analysis",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2855,7 +2779,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7038247/"
         },
         {
-            "tag": "lob-ttksl-2015",
+            "id": "lob-ttksl-2015",
             "title": "Time integration of tensor trains",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2872,7 +2796,7 @@
             "notes": " [[UPD of tag. Old: \"lubich2015time\".]] [[UPD of author. Old: \"Lubich, Christian and Oseledets, Ivan V and Vandereycken, Bart\".]] [[UPD of journal. Old: \"SIAM Journal on Numerical Analysis\".]] [[UPD of pages. Old: \"917--941\".]] [[UPD of url. Old: \"http://epubs.siam.org/doi/abs/10.1137/140976546\".]]"
         },
         {
-            "tag": "babenko2015aggregating",
+            "id": "babenko2015aggregating",
             "title": "Aggregating local deep features for image retrieval",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -2882,7 +2806,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_iccv_2015/html/Babenko_Aggregating_Local_Deep_ICCV_2015_paper.html"
         },
         {
-            "tag": "rutkowski2015brain",
+            "id": "rutkowski2015brain",
             "title": "Brain--Robot Interfaces Using Spatial Tactile BCI Paradigms",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2893,7 +2817,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-24917-9_14"
         },
         {
-            "tag": "xie2015convergence",
+            "id": "xie2015convergence",
             "title": "Convergence analysis of the FOCUSS algorithm",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2907,7 +2831,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6823752/"
         },
         {
-            "tag": "sarmiento2015contrast",
+            "id": "sarmiento2015contrast",
             "title": "A contrast function based on generalized divergences for solving the permutation problem in convolved speech mixtures",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2921,7 +2845,7 @@
             "url": "http://dl.acm.org/citation.cfm?id=2824159"
         },
         {
-            "tag": "shapovalov2015multi",
+            "id": "shapovalov2015multi",
             "title": "Multi-utility Learning: Structured-output Learning with Multiple Annotation-specific Loss Functions",
             "year": 2015,
             "authors_detected": "vetrov/",
@@ -2931,7 +2855,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-14612-6_30"
         },
         {
-            "tag": "zhou2015efficient",
+            "id": "zhou2015efficient",
             "title": "Efficient nonnegative Tucker decompositions: Algorithms and uniqueness",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2945,7 +2869,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7265046/"
         },
         {
-            "tag": "zdunek2015image",
+            "id": "zdunek2015image",
             "title": "Image Classification with Nonnegative Matrix Factorization Based on Spectral Projected Gradient",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2956,7 +2880,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-09903-3_2"
         },
         {
-            "tag": "ma2015novel",
+            "id": "ma2015novel",
             "title": "A novel EOG/EEG hybrid human--machine interface adopting eye movements and ERPs: Application to robot control",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2970,7 +2894,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6954402/"
         },
         {
-            "tag": "mikhalev2015rectangular",
+            "id": "mikhalev2015rectangular",
             "title": "Rectangular submatrices of maximum volume and their computation",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -2982,7 +2906,7 @@
             "url": "http://link.springer.com/content/pdf/10.1134/S1064562415020064.pdf"
         },
         {
-            "tag": "zhou2015common",
+            "id": "zhou2015common",
             "title": "Common components analysis via linked blind source separation",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -2992,7 +2916,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7178351/"
         },
         {
-            "tag": "gallego2015hybrid",
+            "id": "gallego2015hybrid",
             "title": "A hybrid feature selection approach for the early diagnosis of Alzheimer’s disease",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -3006,7 +2930,7 @@
             "url": "http://iopscience.iop.org/article/10.1088/1741-2560/12/1/016018/meta"
         },
         {
-            "tag": "kirillov2015inferring",
+            "id": "kirillov2015inferring",
             "title": "Inferring M-best diverse labelings in a single one",
             "year": 2015,
             "authors_detected": "vetrov/",
@@ -3016,7 +2940,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_iccv_2015/html/Kirillov_Inferring_M-Best_Diverse_ICCV_2015_paper.html"
         },
         {
-            "tag": "milyaev2015fast",
+            "id": "milyaev2015fast",
             "title": "Fast and accurate scene text understanding with image binarization and off-the-shelf OCR",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -3030,7 +2954,7 @@
             "url": "http://link.springer.com/article/10.1007/s10032-015-0240-4"
         },
         {
-            "tag": "tichavsky2015two",
+            "id": "tichavsky2015two",
             "title": "Two-sided diagonalization of order-three tensors",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -3040,7 +2964,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7362532/"
         },
         {
-            "tag": "yu2015enhanced",
+            "id": "yu2015enhanced",
             "title": "Enhanced motor imagery training using a hybrid BCI with feedback",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -3054,7 +2978,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7038194/"
         },
         {
-            "tag": "mo-rectmaxvol-2015",
+            "id": "mo-rectmaxvol-2015",
             "title": "Rectangular maximum-volume submatrices and their applications",
             "year": 2015,
             "journal": "ArXiv preprint",
@@ -3067,7 +2991,7 @@
             "notes": " [[UPD of tag. Old: \"mikhalev2015rectangular2\".]] [[UPD of kind. Old: \"article\".]] [[UPD of author. Old: \"Mikhalev, A and Oseledets, Ivan V\".]] [[UPD of url. Old: \"https://arxiv.org/abs/1502.07838\".]]"
         },
         {
-            "tag": "molchanov2015relevance",
+            "id": "molchanov2015relevance",
             "title": "Relevance tagging machine",
             "year": 2015,
             "authors_detected": "molchanov/vetrov/",
@@ -3079,7 +3003,7 @@
             "url": "http://jmlda.org/papers/doc/2015/no13/Molchanov2015RTM.pdf"
         },
         {
-            "tag": "kirillov2015m",
+            "id": "kirillov2015m",
             "title": "M-best-diverse labelings for submodular energies and beyond",
             "year": 2015,
             "authors_detected": "vetrov/",
@@ -3089,7 +3013,7 @@
             "url": "http://papers.nips.cc/paper/5977-m-best-diverse-labelings-for-submodular-energies-and-beyond"
         },
         {
-            "tag": "gallego2015theta",
+            "id": "gallego2015theta",
             "title": "A theta-band EEG based index for early diagnosis of Alzheimer's disease",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -3103,7 +3027,7 @@
             "url": "http://content.iospress.com/articles/journal-of-alzheimers-disease/jad140468"
         },
         {
-            "tag": "ganin2015unsupervised",
+            "id": "ganin2015unsupervised",
             "title": "Unsupervised domain adaptation by backpropagation",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -3113,7 +3037,7 @@
             "url": "http://machinelearning.wustl.edu/mlpapers/paper_files/icml2015_ganin15.pdf"
         },
         {
-            "tag": "uo-tensorsimrank-2015",
+            "id": "uo-tensorsimrank-2015",
             "title": "Tensor SimRank for Heterogeneous Information Networks",
             "year": 2015,
             "journal": "ArXiv preprint",
@@ -3126,7 +3050,7 @@
             "notes": " [[UPD of tag. Old: \"usman2015tensor\".]] [[UPD of kind. Old: \"article\".]] [[UPD of url. Old: \"https://arxiv.org/abs/1502.06818\".]]"
         },
         {
-            "tag": "knos-invtoeplitz-2015",
+            "id": "knos-invtoeplitz-2015",
             "title": "Fast Toeplitz linear system inversion for solving two-dimensional acoustic inverse problem",
             "year": 2015,
             "authors_detected": "oseledets/",
@@ -3141,7 +3065,7 @@
             "notes": " [[UPD of tag. Old: \"kabanikhin2015fast\".]] [[UPD of author. Old: \"Kabanikhin, Sergey I and Novikov, Nikita S and Oseledets, Ivan V and Shishlenin, Maxim A\".]] [[UPD of journal. Old: \"Journal of Inverse and Ill-posed Problems\".]] [[UPD of pages. Old: \"687--700\".]]"
         },
         {
-            "tag": "ko-alr-2015",
+            "id": "ko-alr-2015",
             "title": "From low-rank approximation to arational Krylov subspace method for the Lyapunov equation",
             "year": 2015,
             "authors_detected": "kolesnikov/oseledets/",
@@ -3156,7 +3080,7 @@
             "notes": " [[PLG: small dist (8) to: \"From Low-Rank Approximation to a Rational Krylov Subspace Method for the Lyapunov Equation\"]]"
         },
         {
-            "tag": "ustinova2015multiregion",
+            "id": "ustinova2015multiregion",
             "title": "Multiregion Bilinear Convolutional Neural Networks for Person Re-Identification",
             "year": 2015,
             "journal": "ArXiv preprint",
@@ -3168,7 +3092,7 @@
             "url": "https://arxiv.org/abs/1512.05300"
         },
         {
-            "tag": "caiafa2015stable",
+            "id": "caiafa2015stable",
             "title": "Stable, robust, and super fast reconstruction of tensors using multi-way projections",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -3182,7 +3106,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6994852/"
         },
         {
-            "tag": "concatenation2015multi",
+            "id": "concatenation2015multi",
             "title": "Multi-tensor completion with common structures",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -3191,7 +3115,7 @@
             "url": "https://pdfs.semanticscholar.org/4f6a/b1e361fd80ae3c6602f8c1ae8c0c01e116da.pdf"
         },
         {
-            "tag": "kohli2015detecting",
+            "id": "kohli2015detecting",
             "title": "Detecting and localizing multiple objects in images using probabilistic inference",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -3202,7 +3126,7 @@
             "notes": "US Patent 8,953,888"
         },
         {
-            "tag": "novikov2015tensorizing",
+            "id": "novikov2015tensorizing",
             "title": "Tensorizing neural networks",
             "year": 2015,
             "authors_detected": "novikov/vetrov/",
@@ -3212,7 +3136,7 @@
             "url": "http://papers.nips.cc/paper/5787-tensorizing-neural-networks"
         },
         {
-            "tag": "babenko2015tree",
+            "id": "babenko2015tree",
             "title": "Tree quantization for large-scale similarity search and classification",
             "year": 2015,
             "authors_detected": "lempitsky/",
@@ -3222,7 +3146,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Babenko_Tree_Quantization_for_2015_CVPR_paper.html"
         },
         {
-            "tag": "li2015two",
+            "id": "li2015two",
             "title": "Two efficient algorithms for approximately orthogonal nonnegative matrix factorization",
             "year": 2015,
             "authors_detected": "cichocki/",
@@ -3236,7 +3160,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6960861/"
         },
         {
-            "tag": "zhao2014tensor",
+            "id": "zhao2014tensor",
             "title": "Tensor-variate gaussian processes regression and its application to video surveillance",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3246,7 +3170,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6853800/"
         },
         {
-            "tag": "dauwels2014predicting",
+            "id": "dauwels2014predicting",
             "title": "Predicting traffic speed in urban transportation subnetworks for multiple horizons",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3256,7 +3180,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7064363/"
         },
         {
-            "tag": "phan2014deflation",
+            "id": "phan2014deflation",
             "title": "Deflation method for CANDECOMP/PARAFAC tensor decomposition",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3266,7 +3190,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6854904/"
         },
         {
-            "tag": "phan2014fast",
+            "id": "phan2014fast",
             "title": "On fast algorithms for orthogonal Tucker decomposition",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3276,7 +3200,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6854910/"
         },
         {
-            "tag": "zhou2014fast",
+            "id": "zhou2014fast",
             "title": "Fast nonnegative tensor factorization by using accelerated proximal gradient",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3286,7 +3210,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-12436-0_51"
         },
         {
-            "tag": "dkos-eigb-2014",
+            "id": "dkos-eigb-2014",
             "title": "Computation of extreme eigenvalues in higher dimensions using block tensor train format",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3303,7 +3227,7 @@
             "notes": " [[UPD of tag. Old: \"dolgov2014computation\".]] [[UPD of author. Old: \"Dolgov, Sergey V and Khoromskij, Boris N and Oseledets, Ivan V and Savostyanov, Dmitry V\".]] [[UPD of journal. Old: \"Computer Physics Communications\".]] [[UPD of pages. Old: \"1207--1216\".]]"
         },
         {
-            "tag": "zdunek2014b",
+            "id": "zdunek2014b",
             "title": "B-spline smoothing of feature vectors in nonnegative matrix factorization",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3313,7 +3237,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-07176-3_7"
         },
         {
-            "tag": "mikhalev2014application",
+            "id": "mikhalev2014application",
             "title": "Application of the multicharge approximation for large dense matrices in the framework of the polarized continuum solvent model",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3327,7 +3251,7 @@
             "url": "http://www.mathnet.ru/eng/vmp226"
         },
         {
-            "tag": "kolesnikov2014low",
+            "id": "kolesnikov2014low",
             "title": "From low-rank approximation to an efficient rational Krylov subspace method for the Lyapunov equation",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3339,7 +3263,7 @@
             "url": "https://arxiv.org/abs/1410.3335"
         },
         {
-            "tag": "caiafa2014fast",
+            "id": "caiafa2014fast",
             "title": "Fast and stable recovery of approximately low multilinear rank tensors from multi-way compressive measurements",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3349,7 +3273,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6854915/"
         },
         {
-            "tag": "zhao2014robust",
+            "id": "zhao2014robust",
             "title": "Robust bayesian tensor factorization for incomplete multiway data",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3359,7 +3283,7 @@
             "url": "https://www.researchgate.net/profile/Shun_Ichi_Amari/publication/266747882_Bayesian_Robust_Tensor_Factorization_for_Incomplete_Multiway_Data/links/54c848330cf22d626a39b16d.pdf"
         },
         {
-            "tag": "jere2014extracting",
+            "id": "jere2014extracting",
             "title": "Extracting commuting patterns in railway networks through matrix decompositions",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3369,7 +3293,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7064362/"
         },
         {
-            "tag": "babenko2014improving",
+            "id": "babenko2014improving",
             "title": "Improving bilayer product quantization for billion-scale approximate nearest neighbors in high dimensions",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3381,7 +3305,7 @@
             "url": "https://arxiv.org/abs/1404.1831"
         },
         {
-            "tag": "jin2014decreasing",
+            "id": "jin2014decreasing",
             "title": "Decreasing the interference of visual-based P300 BCI using facial expression changes",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3391,7 +3315,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7053098/"
         },
         {
-            "tag": "jin2014erp",
+            "id": "jin2014erp",
             "title": "An ERP-based BCI using an oddball paradigm with different faces and reduced errors in critical functions",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3405,7 +3329,7 @@
             "url": "http://www.worldscientific.com/doi/abs/10.1142/S0129065714500270"
         },
         {
-            "tag": "jin2014optimized",
+            "id": "jin2014optimized",
             "title": "An optimized ERP brain--computer interface based on facial expression changes",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3419,7 +3343,7 @@
             "url": "http://iopscience.iop.org/article/10.1088/1741-2560/11/3/036004/meta"
         },
         {
-            "tag": "jin2014synchrony",
+            "id": "jin2014synchrony",
             "title": "Synchrony analysis of paroxysmal gamma waves in meditation EEG",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3429,7 +3353,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6854494/"
         },
         {
-            "tag": "lebedev2014speeding",
+            "id": "lebedev2014speeding",
             "title": "Speeding-up convolutional neural networks using fine-tuned cp-decomposition",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3441,7 +3365,7 @@
             "url": "https://arxiv.org/abs/1412.6553"
         },
         {
-            "tag": "mouri2014revising",
+            "id": "mouri2014revising",
             "title": "Revising algorithm for nonnegative matrix factorization based on minimizing quasi-L1 norm",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3451,7 +3375,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7032894/"
         },
         {
-            "tag": "babenko2014neural",
+            "id": "babenko2014neural",
             "title": "Neural codes for image retrieval",
             "year": 2014,
             "authors_detected": "lempitsky/",
@@ -3461,7 +3385,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-10590-1_38"
         },
         {
-            "tag": "lee2014big",
+            "id": "lee2014big",
             "title": "Big data matrix singular value decomposition based on low-rank tensor train decomposition",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3471,7 +3395,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-12436-0_14"
         },
         {
-            "tag": "nam2014gom",
+            "id": "nam2014gom",
             "title": "GOM-Face: GKP, EOG, and EMG-based multimodal interface with application to humanoid robot control",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3485,7 +3409,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6589166/"
         },
         {
-            "tag": "lee2014fundamental",
+            "id": "lee2014fundamental",
             "title": "Fundamental tensor operations for large-scale data analysis in tensor train formats",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3497,7 +3421,7 @@
             "url": "https://arxiv.org/abs/1405.7786"
         },
         {
-            "tag": "lee2014very",
+            "id": "lee2014very",
             "title": "Very large-scale singular value decomposition using tensor train networks",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3509,7 +3433,7 @@
             "url": "https://arxiv.org/abs/1410.6895"
         },
         {
-            "tag": "zhou2014decomposition",
+            "id": "zhou2014decomposition",
             "title": "Decomposition of big tensors with low multilinear rank",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3521,7 +3445,7 @@
             "url": "https://arxiv.org/abs/1412.1885"
         },
         {
-            "tag": "chaudhury2014computationally",
+            "id": "chaudhury2014computationally",
             "title": "A computationally efficient technique for the solution of multi-dimensional PBMs of granulation via tensor decomposition",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3534,7 +3458,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0098135413003426"
         },
         {
-            "tag": "novikov2014putting",
+            "id": "novikov2014putting",
             "title": "Putting MRFs on a tensor train",
             "year": 2014,
             "authors_detected": "novikov/vetrov/",
@@ -3544,7 +3468,7 @@
             "url": "http://www.jmlr.org/proceedings/papers/v32/novikov14.pdf"
         },
         {
-            "tag": "arteta2014interactive",
+            "id": "arteta2014interactive",
             "title": "Interactive object counting",
             "year": 2014,
             "authors_detected": "lempitsky/",
@@ -3554,7 +3478,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-10578-9_33"
         },
         {
-            "tag": "bot-kryl-2014",
+            "id": "bot-kryl-2014",
             "title": "Iterative across-time solution of linear differential equations: Krylov subspace versus waveform relaxation",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3570,7 +3494,7 @@
             "notes": " [[PARSE: unknown name \"impact\" with value \"2.069\"]]"
         },
         {
-            "tag": "bartunov2014variational",
+            "id": "bartunov2014variational",
             "title": "Variational inference for sequential distance dependent chinese restaurant process",
             "year": 2014,
             "authors_detected": "vetrov/",
@@ -3580,7 +3504,7 @@
             "url": "http://machinelearning.wustl.edu/mlpapers/papers/icml2014c2_bartunov14"
         },
         {
-            "tag": "wu2014nonnegative",
+            "id": "wu2014nonnegative",
             "title": "Nonnegative Shifted Tensor Factorization in time frequency domain",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3590,7 +3514,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6889872/"
         },
         {
-            "tag": "o-revacs-2013",
+            "id": "o-revacs-2013",
             "title": "Solving high-dimensional problems via stable and efficient tensor factorization techniques",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3602,7 +3526,7 @@
             "notes": " [[UPD of year. Old: \"2013\".]] [[UPD of tag. Old: \"oseledets2013solving\".]] [[UPD of booktitle. Old: \"ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY\".]]"
         },
         {
-            "tag": "shevelko2014influence",
+            "id": "shevelko2014influence",
             "title": "Influence of multi-electron charge-changing processes on the average charge states of heavy ions passing through a He-gas target",
             "year": 2014,
             "author": "Shevelko, VP and Winckler, N and Litsarev, MS",
@@ -3614,7 +3538,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0168583X14004856"
         },
         {
-            "tag": "oko-reprank-2014pre",
+            "id": "oko-reprank-2014pre",
             "title": "Algebraic reputation model RepRank and its application to spambot detection",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3627,7 +3551,7 @@
             "notes": " [[UPD of tag. Old: \"ovchinnikov2014algebraic\".]] [[UPD of kind. Old: \"article\".]] [[UPD of author. Old: \"Ovchinnikov, GV and Kolesnikov, DA and Oseledets, Ivan V\".]] [[UPD of url. Old: \"https://arxiv.org/abs/1411.5995\".]]"
         },
         {
-            "tag": "olit-deposit-2014",
+            "id": "olit-deposit-2014",
             "title": "The DEPOSIT computer code based on the low rank approximations",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3643,7 +3567,7 @@
             "notes": " [[PARSE: unknown name \"impact\" with value \"3.078\"]]"
         },
         {
-            "tag": "olub-ksl-2013",
+            "id": "olub-ksl-2013",
             "title": "A projector-splitting integrator for dynamical low-rank approximation",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3660,7 +3584,7 @@
             "notes": " [[UPD of tag. Old: \"lubich2014projector\".]] [[UPD of author. Old: \"Lubich, Christian and Oseledets, Ivan V\".]] [[UPD of journal. Old: \"BIT Numerical Mathematics\".]] [[UPD of pages. Old: \"171--188\".]]"
         },
         {
-            "tag": "zhao2014multilinear",
+            "id": "zhao2014multilinear",
             "title": "Multilinear and nonlinear generalizations of partial least squares: an overview of recent advances",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3674,7 +3598,7 @@
             "url": "http://onlinelibrary.wiley.com/doi/10.1002/widm.1120/full"
         },
         {
-            "tag": "lgrol-cnntensor-2014pre",
+            "id": "lgrol-cnntensor-2014pre",
             "title": "Speeding up convolutional neural networks using fine-tuned CP-decomposition",
             "year": 2014,
             "authors_detected": "rakhuba/oseledets/lempitsky/",
@@ -3684,7 +3608,7 @@
             "notes": " [[PLG: small dist (3) to: \"Speeding-up convolutional neural networks using fine-tuned cp-decomposition\"]]"
         },
         {
-            "tag": "wu2014multifactor",
+            "id": "wu2014multifactor",
             "title": "Multifactor sparse feature extraction using convolutive nonnegative tucker decomposition",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3697,7 +3621,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0925231213009855"
         },
         {
-            "tag": "kharyuk2014compression",
+            "id": "kharyuk2014compression",
             "title": "Compression of fMRI data using wavelet tensor train decomposition",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3711,7 +3635,7 @@
             "url": "http://www.mathnet.ru/eng/vmp282"
         },
         {
-            "tag": "li2014deep",
+            "id": "li2014deep",
             "title": "Deep learning of multifractal attributes from motor imagery induced EEG",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3721,7 +3645,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-12637-1_63"
         },
         {
-            "tag": "oseledets2014effective",
+            "id": "oseledets2014effective",
             "title": "Effective tensor-based methods for the solution of high-dimensional non-stationary problems with the application to the chemical master equation",
             "year": 2014,
             "authors_detected": "oseledets/kolesnikov/",
@@ -3730,7 +3654,7 @@
             "url": "http://conferences.chalmers.se/index.php/ecmtb/ecmtb/paper/view/1203"
         },
         {
-            "tag": "wu2014cyborg",
+            "id": "wu2014cyborg",
             "title": "Cyborg Intelligence: Towards Bio-Machine Intelligent Systems.",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3743,7 +3667,7 @@
             "url": "http://ieeexplore.ieee.org/iel7/9670/6982116/06983477.pdf#page=3"
         },
         {
-            "tag": "tichavsky2014non",
+            "id": "tichavsky2014non",
             "title": "Non-Orthogonal Tensor Diagonalization",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3756,7 +3680,7 @@
             "notes": "Is also in 2017: https://www.scopus.com/record/display.uri?eid=2-s2.0-85017217771&origin=resultslist&sort=plf-f&src=s&sid=8dd1c457724455337c1a7919d458dbff&sot=autdocs&sdt=autdocs&sl=18&s=AU-ID%2857014589600%29&relpos=21&citeCnt=0&searchTerm="
         },
         {
-            "tag": "tichavsky2014tensor",
+            "id": "tichavsky2014tensor",
             "title": "Tensor diagonalization-a new tool for PARAFAC and block-term decomposition",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3768,7 +3692,7 @@
             "url": "https://www.researchgate.net/profile/Andrzej_Cichocki2/publication/260107916_Tensor_diagonalization_-_a_new_tool_for_PARAFAC_and_block-term_decomposition/links/566803e308aef42b57885916.pdf"
         },
         {
-            "tag": "li2014multi",
+            "id": "li2014multi",
             "title": "Multi-tensor completion for estimating missing values in video data",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3778,7 +3702,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7044738/"
         },
         {
-            "tag": "li2014source",
+            "id": "li2014source",
             "title": "Source localization and synchronization analysis on EEG recorded from professional shooters and novices: A comparison study",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3791,7 +3715,7 @@
             "url": "https://www.infona.pl/resource/bwmeta1.element.elsevier-221e8505-b00c-3dc7-8aca-6b4f820f014d"
         },
         {
-            "tag": "kharyuk2014wtt",
+            "id": "kharyuk2014wtt",
             "title": "WTT decomposition for the compression of array's families and its application to image processing",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3805,7 +3729,7 @@
             "url": "http://www.mathnet.ru/eng/vmp245"
         },
         {
-            "tag": "tolstikhina2014collisions",
+            "id": "tolstikhina2014collisions",
             "title": "Collisions of Be, Fe, Mo and W atoms and ions with hydrogen isotopes: electron capture and electron loss cross sections",
             "year": 2014,
             "author": "Tolstikhina, Inga Yu and Litsarev, MS and Kato, D and Song, MY and Yoon, JS and Shevelko, VP",
@@ -3818,7 +3742,7 @@
             "url": "http://iopscience.iop.org/article/10.1088/0953-4075/47/3/035206/meta"
         },
         {
-            "tag": "tomita2014bimodal",
+            "id": "tomita2014bimodal",
             "title": "Bimodal BCI using simultaneously NIRS and EEG",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3832,7 +3756,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6714514/"
         },
         {
-            "tag": "салуев2014web",
+            "id": "салуев2014web",
             "title": "Web-платформа для создания интерактивных обучающих курсов по вычислительным методам",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3845,7 +3769,7 @@
             "url": "https://elibrary.ru/item.asp?id=21244844"
         },
         {
-            "tag": "cong2014low",
+            "id": "cong2014low",
             "title": "Low-rank approximation based non-negative multi-way array decomposition on event-related potentials",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3859,7 +3783,7 @@
             "url": "http://www.worldscientific.com/doi/abs/10.1142/S012906571440005X"
         },
         {
-            "tag": "ganin2014n",
+            "id": "ganin2014n",
             "title": "N^ 4-fields: Neural network nearest neighbor fields for image transforms",
             "year": 2014,
             "authors_detected": "lempitsky/",
@@ -3869,7 +3793,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-16808-1_36"
         },
         {
-            "tag": "babenko2014additive",
+            "id": "babenko2014additive",
             "title": "Additive quantization for extreme vector compression",
             "year": 2014,
             "authors_detected": "lempitsky/",
@@ -3879,7 +3803,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Babenko_Additive_Quantization_for_2014_CVPR_paper.html"
         },
         {
-            "tag": "cor-pbm-2014",
+            "id": "cor-pbm-2014",
             "title": "A computationally efficient technique for the solution of multi-dimensional PBMs of granulation",
             "year": 2014,
             "authors_detected": "oseledets/",
@@ -3893,7 +3817,7 @@
             "doi": "10.1016/j.compchemeng.2013.10.020"
         },
         {
-            "tag": "zhang2014frequency",
+            "id": "zhang2014frequency",
             "title": "Frequency recognition in SSVEP-based BCI using multiset canonical correlation analysis",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3907,7 +3831,7 @@
             "url": "http://www.worldscientific.com/doi/abs/10.1142/S0129065714500130"
         },
         {
-            "tag": "litsarev2014low",
+            "id": "litsarev2014low",
             "title": "Low rank approximations for the DEPOSIT computer code",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3919,7 +3843,7 @@
             "url": "https://arxiv.org/abs/1403.4068"
         },
         {
-            "tag": "zhou2014nonnegative",
+            "id": "zhou2014nonnegative",
             "title": "Nonnegative matrix and tensor factorizations: An algorithmic perspective",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3933,7 +3857,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6784087/"
         },
         {
-            "tag": "cichocki2014era",
+            "id": "cichocki2014era",
             "title": "Era of big data processing: A new approach via tensor networks and tensor decompositions",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3945,7 +3869,7 @@
             "url": "https://arxiv.org/abs/1403.2048"
         },
         {
-            "tag": "cui2014hybrid",
+            "id": "cui2014hybrid",
             "title": "Hybrid-BCI: Classification of auditory and visual related potentials",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3955,7 +3879,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7044768/"
         },
         {
-            "tag": "cichocki2014tensor",
+            "id": "cichocki2014tensor",
             "title": "Tensor networks for big data analytics and large-scale optimization problems",
             "year": 2014,
             "journal": "ArXiv preprint",
@@ -3967,7 +3891,7 @@
             "url": "https://arxiv.org/abs/1407.3124"
         },
         {
-            "tag": "zhang2014aggregation",
+            "id": "zhang2014aggregation",
             "title": "Aggregation of sparse linear discriminant analyses for event-related potential classification in brain-computer interface",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3981,7 +3905,7 @@
             "url": "http://www.worldscientific.com/doi/abs/10.1142/S0129065714500038"
         },
         {
-            "tag": "yokota2014multilinear",
+            "id": "yokota2014multilinear",
             "title": "Multilinear tensor rank estimation via Sparse Tucker Decomposition",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -3991,7 +3915,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/7044685/"
         },
         {
-            "tag": "valenzi2014individual",
+            "id": "valenzi2014individual",
             "title": "Individual classification of emotions using EEG",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -4005,7 +3929,7 @@
             "url": "http://search.proquest.com/openview/dc85723e46074c8f144f089c4350849f/1?pq-origsite=gscholar&cbl=51913"
         },
         {
-            "tag": "yokota2014linked",
+            "id": "yokota2014linked",
             "title": "Linked Tucker2 Decomposition for Flexible Multi-block Data Analysis",
             "year": 2014,
             "authors_detected": "cichocki/",
@@ -4015,7 +3939,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-319-12643-2_14"
         },
         {
-            "tag": "kvaos-wtt-2013",
+            "id": "kvaos-wtt-2013",
             "title": "The tensor structure of a class of adaptive algebraic wavelet transforms",
             "year": 2013,
             "authors_detected": "oseledets/",
@@ -4027,7 +3951,7 @@
             "notes": " [[UPD of tag. Old: \"kazeev2013tensor\".]] [[UPD of kind. Old: \"article\".]] [[UPD of author. Old: \"Kazeev, Vladimir A and Oseledets, Ivan V\".]] [[UPD of url. Old: \"https://www.sam.math.ethz.ch/sam_reports/reports_final/reports2013/2013-28.pdf\".]]"
         },
         {
-            "tag": "voronin2013approach",
+            "id": "voronin2013approach",
             "title": "An approach to segmentation of mouse brain images via intermodal registration",
             "year": 2013,
             "authors_detected": "vetrov/",
@@ -4041,7 +3965,7 @@
             "url": "http://link.springer.com/article/10.1134/S105466181302017X"
         },
         {
-            "tag": "urakami2013electroencephalographic",
+            "id": "urakami2013electroencephalographic",
             "title": "Electroencephalographic gamma-band activity and music perception in musicians and non-musicians",
             "year": 2013,
             "journal": "Activ Nerv Super",
@@ -4054,7 +3978,7 @@
             "url": "http://www.rediviva.sav.sk/55i4/149.pdf"
         },
         {
-            "tag": "tichavsky2013further",
+            "id": "tichavsky2013further",
             "title": "A further improvement of a fast damped GAUSS-NEWTON algorithm for CANDECOMP-PARAFAC tensor decomposition",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4064,7 +3988,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6638809/"
         },
         {
-            "tag": "sungatullina2013multiview",
+            "id": "sungatullina2013multiview",
             "title": "Multiview discriminative learning for age-invariant face recognition",
             "year": 2013,
             "authors_detected": "sungatullina/",
@@ -4074,7 +3998,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6553724/"
         },
         {
-            "tag": "shapovalov2013spatial",
+            "id": "shapovalov2013spatial",
             "title": "Spatial inference machines",
             "year": 2013,
             "authors_detected": "vetrov/",
@@ -4084,7 +4008,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_cvpr_2013/html/Shapovalov_Spatial_Inference_Machines_2013_CVPR_paper.html"
         },
         {
-            "tag": "sanei2013advances",
+            "id": "sanei2013advances",
             "title": "Advances in electroencephalography signal processing [Life Sciences]",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4098,7 +4022,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6375941/"
         },
         {
-            "tag": "amadlou2013differences",
+            "id": "amadlou2013differences",
             "title": "Differences of Functional Connectivity Brain Network in Emotional Judgment",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4108,7 +4032,7 @@
             "url": "http://dspace.uvic.cat/handle/10854/2277"
         },
         {
-            "tag": "phan2013tensor",
+            "id": "phan2013tensor",
             "title": "Tensor completion throughmultiple Kronecker product decomposition",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4118,7 +4042,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6638255/"
         },
         {
-            "tag": "yangel2013learning",
+            "id": "yangel2013learning",
             "title": "Learning a model for shape-constrained image segmentation from weakly labeled data",
             "year": 2013,
             "authors_detected": "vetrov/",
@@ -4128,7 +4052,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-642-40395-8_11"
         },
         {
-            "tag": "phan2013low",
+            "id": "phan2013low",
             "title": "Low complexity damped Gauss--Newton algorithms for CANDECOMP/PARAFAC",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4142,7 +4066,7 @@
             "url": "http://epubs.siam.org/doi/abs/10.1137/100808034"
         },
         {
-            "tag": "phan2013fast",
+            "id": "phan2013fast",
             "title": "Fast alternating LS algorithms for high order CANDECOMP/PARAFAC tensor factorizations",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4156,7 +4080,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6544287/"
         },
         {
-            "tag": "phan2013candecomp",
+            "id": "phan2013candecomp",
             "title": "CANDECOMP/PARAFAC decomposition of high-order tensors through tensor reshaping",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4170,7 +4094,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6542035/"
         },
         {
-            "tag": "phan2013basis",
+            "id": "phan2013basis",
             "title": "From basis components to complex structural patterns",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4180,7 +4104,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6638254/"
         },
         {
-            "tag": "osel-constr-2013",
+            "id": "osel-constr-2013",
             "title": "Constructive representation of functions in low-rank tensor formats",
             "year": 2013,
             "authors_detected": "oseledets/",
@@ -4196,7 +4120,7 @@
             "notes": " [[UPD of tag. Old: \"oseledets2013constructive\".]] [[UPD of author. Old: \"Oseledets, IV\".]] [[UPD of journal. Old: \"Constructive Approximation\".]] [[UPD of pages. Old: \"1--18\".]]"
         },
         {
-            "tag": "olz-als1-2013",
+            "id": "olz-als1-2013",
             "title": "Tensor-Based Multiuser Detection and Intra-Cell Interference Mitigation in LTE PUCCH",
             "year": 2013,
             "authors_detected": "oseledets/",
@@ -4208,7 +4132,7 @@
             "notes": " [[PLG: small dist (7) to: \"Tensor-based multiuser detection and intra-cell interference mitigation in LTE PUCCH\"]]"
         },
         {
-            "tag": "nekrasov2013automatic",
+            "id": "nekrasov2013automatic",
             "title": "Automatic determination of cell division rate using microscope images",
             "year": 2013,
             "journal": "Pattern Recognition and Image Analysis",
@@ -4223,7 +4147,7 @@
             "url": "http://link.springer.com/article/10.1134/S1054661813010094"
         },
         {
-            "tag": "nam2013common",
+            "id": "nam2013common",
             "title": "Common spatial patterns for steady-state somatosensory evoked potentials",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4233,7 +4157,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6609986/"
         },
         {
-            "tag": "agoshkov2013study",
+            "id": "agoshkov2013study",
             "title": "The study of tsunami source reconstruction problem",
             "year": 2013,
             "authors_detected": "rakhuba/",
@@ -4246,7 +4170,7 @@
             "url": "https://www.degruyter.com/view/j/rnam.2013.28.issue-1/rnam-2013-0001/rnam-2013-0001.xml"
         },
         {
-            "tag": "milyaev2013image",
+            "id": "milyaev2013image",
             "title": "Image binarization for end-to-end text understanding in natural images",
             "year": 2013,
             "authors_detected": "lempitsky/",
@@ -4256,7 +4180,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6628598/"
         },
         {
-            "tag": "zdunek2013gnmf",
+            "id": "zdunek2013gnmf",
             "title": "GNMF with Newton-based methods",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4266,7 +4190,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-642-40728-4_12"
         },
         {
-            "tag": "mandal2013non",
+            "id": "mandal2013non",
             "title": "Non-linear canonical correlation analysis using alpha-beta divergence",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4280,7 +4204,7 @@
             "url": "http://www.mdpi.com/1099-4300/15/7/2788/htm"
         },
         {
-            "tag": "ma2013eog",
+            "id": "ma2013eog",
             "title": "EOG/ERP hybrid human-machine interface for robot control",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4290,7 +4214,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6696451/"
         },
         {
-            "tag": "lyashev2013tensor",
+            "id": "lyashev2013tensor",
             "title": "Tensor-based multiuser detection and intra-cell interference mitigation in LTE PUCCH",
             "year": 2013,
             "authors_detected": "oseledets/",
@@ -4300,7 +4224,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6716250/"
         },
         {
-            "tag": "zhang2013l1",
+            "id": "zhang2013l1",
             "title": "L1-regularized multiway canonical correlation analysis for SSVEP-based BCI",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4314,7 +4238,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6623176/"
         },
         {
-            "tag": "zhang2013spatial",
+            "id": "zhang2013spatial",
             "title": "Spatial-temporal discriminant analysis for ERP-based brain-computer interface",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4328,7 +4252,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6471834/"
         },
         {
-            "tag": "lobacheva2013automated",
+            "id": "lobacheva2013automated",
             "title": "Automated real-time classification of functional states based on physiological parameters",
             "year": 2013,
             "journal": "Procedia-Social and Behavioral Sciences",
@@ -4342,7 +4266,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S1877042813027134"
         },
         {
-            "tag": "litsarev2013multiple",
+            "id": "litsarev2013multiple",
             "title": "Multiple-electron losses of highly charged ions colliding with neutral atoms",
             "year": 2013,
             "journal": "Physica Scripta",
@@ -4355,7 +4279,7 @@
             "url": "http://iopscience.iop.org/article/10.1088/0031-8949/2013/T156/014037/meta"
         },
         {
-            "tag": "litsarev2013deposit",
+            "id": "litsarev2013deposit",
             "title": "The DEPOSIT computer code: Calculations of electron-loss cross-sections for complex ions colliding with neutral atoms",
             "year": 2013,
             "journal": "Computer Physics Communications",
@@ -4369,7 +4293,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0010465512003153"
         },
         {
-            "tag": "li2013spectral",
+            "id": "li2013spectral",
             "title": "Spectral Power Estimation for Unevenly Spaced Motor Imagery Data",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4379,7 +4303,7 @@
             "url": "http://link.springer.com/10.1007/978-3-642-42054-2_22"
         },
         {
-            "tag": "urakami2013gamma",
+            "id": "urakami2013gamma",
             "title": "Gamma-band activity; role of music perception in the brain in relation to consciousness and cognition",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4393,7 +4317,7 @@
             "url": "https://www.jstage.jst.go.jp/article/jscn/41/4/41_209/_article/-char/ja/"
         },
         {
-            "tag": "koldovsky2013two",
+            "id": "koldovsky2013two",
             "title": "A two-stage MMSE beamformer for underdetermined signal separation",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4407,7 +4331,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6634221/"
         },
         {
-            "tag": "jukic2013noninvasive",
+            "id": "jukic2013noninvasive",
             "title": "Noninvasive diagnosis of melanoma with tensor decomposition-based feature extraction from clinical color image",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4421,7 +4345,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S1746809413001018"
         },
         {
-            "tag": "jukic2013canonical",
+            "id": "jukic2013canonical",
             "title": "Canonical polyadic decomposition for unsupervised linear feature extraction from protein profiles",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4431,7 +4355,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6811401/"
         },
         {
-            "tag": "jin2013whether",
+            "id": "jin2013whether",
             "title": "Whether generic model works for rapid ERP-based BCI calibration",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4445,7 +4369,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0165027012003925"
         },
         {
-            "tag": "zhao2013affective",
+            "id": "zhao2013affective",
             "title": "An affective BCI using multiple ERP components associated to facial emotion processing",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4456,7 +4380,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-3-642-36083-1_7"
         },
         {
-            "tag": "zhao2013higher",
+            "id": "zhao2013higher",
             "title": "Higher order partial least squares (HOPLS): a generalized multilinear regression method",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4470,7 +4394,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6365194/"
         },
         {
-            "tag": "zhao2013kernel",
+            "id": "zhao2013kernel",
             "title": "Kernel-based tensor partial least squares for reconstruction of limb movements",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4480,7 +4404,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6638324/"
         },
         {
-            "tag": "zhao2013kernelization",
+            "id": "zhao2013kernelization",
             "title": "Kernelization of tensor-based models for multiway data analysis: Processing of multidimensional structured data",
             "year": 2013,
             "journal": "IEEE Signal Processing Magazine",
@@ -4495,7 +4419,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6530728/"
         },
         {
-            "tag": "zhao2013tensor",
+            "id": "zhao2013tensor",
             "title": "A Tensor-Variate Gaussian Process for Classification of Multidimensional Structured Data.",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4504,7 +4428,7 @@
             "url": "https://pdfs.semanticscholar.org/4bff/6e86fdbfc6d6a3acb5e5a431698e05b2dbd2.pdf"
         },
         {
-            "tag": "funase2013fundamental",
+            "id": "funase2013fundamental",
             "title": "Fundamental research on EEG signals related to free-movements and cued-movement in saccadic eye movements and finger movements",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4517,7 +4441,7 @@
             "url": "http://jlc.jst.go.jp/DN/JALC/10023203425?from=Google"
         },
         {
-            "tag": "elgendi2013real",
+            "id": "elgendi2013real",
             "title": "Real-time wireless sonification of brain signals",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4528,7 +4452,7 @@
             "url": "http://link.springer.com/chapter/10.1007/978-94-007-4792-0_24"
         },
         {
-            "tag": "dauwels2013near",
+            "id": "dauwels2013near",
             "title": "Near-lossless multichannel EEG compression based on matrix and tensor decompositions",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4542,7 +4466,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6363503/"
         },
         {
-            "tag": "cui2013patients",
+            "id": "cui2013patients",
             "title": "Patients' consciousness analysis using dynamic approximate entropy and MEMD method",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4552,7 +4476,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6694213/"
         },
         {
-            "tag": "cong2013validating",
+            "id": "cong2013validating",
             "title": "Validating rationale of group-level component analysis based on estimating number of sources in EEG through model order selection",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4566,7 +4490,7 @@
             "url": "http://www.sciencedirect.com/science/article/pii/S0165027012004104"
         },
         {
-            "tag": "cong2013multi",
+            "id": "cong2013multi",
             "title": "Multi-domain feature extraction for small event-related potentials through nonnegative multi-way array decomposition from low dense array EEG",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4580,7 +4504,7 @@
             "url": "http://www.worldscientific.com/doi/abs/10.1142/S0129065713500068"
         },
         {
-            "tag": "cichocki2013tensor",
+            "id": "cichocki2013tensor",
             "title": "Tensor decompositions: a new concept in brain data analysis?",
             "year": 2013,
             "journal": "ArXiv preprint",
@@ -4592,7 +4516,7 @@
             "url": "https://arxiv.org/abs/1305.0395"
         },
         {
-            "tag": "amelchenko2013statistic",
+            "id": "amelchenko2013statistic",
             "title": "Statistic Parametric Mapping of Changes in Gene Activity in Animal Brain during Acoustic Stimulation",
             "year": 2013,
             "authors_detected": "vetrov/",
@@ -4606,7 +4530,7 @@
             "url": "http://search.proquest.com/openview/8ccde9b8208d620e6eb85062795f5214/1?pq-origsite=gscholar&cbl=47742"
         },
         {
-            "tag": "zhou2013accelerated",
+            "id": "zhou2013accelerated",
             "title": "Accelerated canonical polyadic decomposition using mode reduction",
             "year": 2013,
             "journal": "IEEE transactions on neural networks and learning systems",
@@ -4621,7 +4545,7 @@
             "url": "http://ieeexplore.ieee.org/abstract/document/6558484/"
         },
         {
-            "tag": "chai2013symbiotic",
+            "id": "chai2013symbiotic",
             "title": "Symbiotic segmentation and part localization for fine-grained categorization",
             "year": 2013,
             "authors_detected": "lempitsky/",
@@ -4631,7 +4555,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_iccv_2013/html/Chai_Symbiotic_Segmentation_and_2013_ICCV_paper.html"
         },
         {
-            "tag": "caiafa2013multidimensional",
+            "id": "caiafa2013multidimensional",
             "title": "Multidimensional compressed sensing and their applications",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4645,7 +4569,7 @@
             "url": "http://onlinelibrary.wiley.com/doi/10.1002/widm.1108/full"
         },
         {
-            "tag": "caiafa2013computing",
+            "id": "caiafa2013computing",
             "title": "Computing sparse representations of multidimensional signals using kronecker bases",
             "year": 2013,
             "journal": "Neural computation",
@@ -4660,7 +4584,7 @@
             "url": "http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00385"
         },
         {
-            "tag": "brockmeier2013greedy",
+            "id": "brockmeier2013greedy",
             "title": "A greedy algorithm for model selection of tensor decompositions.",
             "year": 2013,
             "authors_detected": "cichocki/",
@@ -4670,7 +4594,7 @@
             "url": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.448.7932&rep=rep1&type=pdf"
         },
         {
-            "tag": "boykov2013guest",
+            "id": "boykov2013guest",
             "title": "Guest Editorial: Energy Optimization Methods",
             "year": 2013,
             "authors_detected": "lempitsky/",
@@ -4684,7 +4608,7 @@
             "url": "http://link.springer.com/article/10.1007/s11263-013-0637-9"
         },
         {
-            "tag": "botchev2013time",
+            "id": "botchev2013time",
             "title": "Time stepping free numerical solution of linear differential equations: Krylov subspace versus waveform relaxation",
             "year": 2013,
             "authors_detected": "oseledets/",
@@ -4694,7 +4618,7 @@
             "url": "http://eprints.eemcs.utwente.nl/23803/"
         },
         {
-            "tag": "baumgartner2013discussion",
+            "id": "baumgartner2013discussion",
             "title": "Discussion of “Time-frequency Techniques in Biomedical Signal Analysis: A Tutorial Review of Similarities and Differences”",
             "year": 2013,
             "journal": "Methods of information in medicine",
@@ -4709,7 +4633,7 @@
             "url": "http://methods.schattauer.de/en/contents/archivestandard/issue/special/manuscript/20018/download.html"
         },
         {
-            "tag": "arteta2013learning",
+            "id": "arteta2013learning",
             "title": "Learning to detect partially overlapping instances",
             "year": 2013,
             "authors_detected": "lempitsky/",
@@ -4719,7 +4643,7 @@
             "url": "http://www.cv-foundation.org/openaccess/content_cvpr_2013/html/Arteta_Learning_to_Detect_2013_CVPR_paper.html"
         },
         {
-            "tag": "mo-poisson2d-2013pre",
+            "id": "mo-poisson2d-2013pre",
             "title": "Fast low-rank solution of the Poisson equation with application to the Stokes problem",
             "year": 2013,
             "journal": "ArXiv preprint",
@@ -4732,7 +4656,7 @@
             "notes": " [[UPD of tag. Old: \"muravleva2013fast\".]] [[UPD of kind. Old: \"article\".]] [[UPD of author. Old: \"Muravleva, EA and Oseledets, IV\".]] [[UPD of url. Old: \"https://arxiv.org/abs/1306.2150\".]]"
         },
         {
-            "tag": "rother2013optimization",
+            "id": "rother2013optimization",
             "title": "Optimization of multi-label problems in computer vision",
             "year": 2011,
             "authors_detected": "lempitsky/",
@@ -4743,7 +4667,7 @@
             "notes": "US Patent 7,925,089"
         },
         {
-            "tag": "cichocki2009nonnegative",
+            "id": "cichocki2009nonnegative",
             "title": "Nonnegative matrix and tensor factorizations: applications to exploratory multi-way data analysis and blind source separation",
             "year": 2009,
             "authors_detected": "cichocki/",
